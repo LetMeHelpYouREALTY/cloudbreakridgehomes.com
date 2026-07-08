@@ -118,6 +118,7 @@ export default function ReviewsSection({
                       src={review.image}
                       alt={review.name}
                       fill
+                      sizes="64px"
                       className="object-cover"
                     />
                   ) : (

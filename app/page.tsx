@@ -1,5 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import HeroBackground from "@/components/sections/HeroBackground";
+import LazyWhenVisible from "@/components/shared/LazyWhenVisible";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
@@ -90,10 +92,7 @@ export default async function Home() {
       <Navbar />
       <main>
         <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
-            style={{ backgroundImage: "url('/Image/hero_bg_1.jpg')" }}
-          />
+          <HeroBackground />
           <div className="relative z-10 container mx-auto px-4 text-center">
             {config.ctaBadge && (
               <span className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-6">
@@ -216,7 +215,9 @@ export default async function Home() {
           </div>
         </section>
 
-        <RealScoutListings />
+        <LazyWhenVisible minHeight={480}>
+          <RealScoutListings />
+        </LazyWhenVisible>
         <WhyChooseUs />
         <ReviewsSection />
 
@@ -241,11 +242,13 @@ export default async function Home() {
                 View Contact Info
               </Link>
             </div>
-            <CalendlyBookingSection
-              title="Book Your Buyer Consultation"
-              subtitle="Schedule a free 30-minute consultation to compare Enclaves and Reserves at Cloudbreak Ridge."
-              variant="dark"
-            />
+            <LazyWhenVisible minHeight={700}>
+              <CalendlyBookingSection
+                title="Book Your Buyer Consultation"
+                subtitle="Schedule a free 30-minute consultation to compare Enclaves and Reserves at Cloudbreak Ridge."
+                variant="dark"
+              />
+            </LazyWhenVisible>
             <p className="mt-6 text-blue-200 text-sm">
               Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
               Properties

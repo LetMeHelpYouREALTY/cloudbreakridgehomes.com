@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site-config";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import CalendlyProvider from "@/components/calendly/CalendlyProvider";
-import { CALENDLY_WIDGET_CSS } from "@/lib/calendly-config";
+import { REALSCOUT_WIDGET_JS } from "@/lib/realscout-config";
 
 const canonicalSiteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
@@ -50,9 +50,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
-        <link href={CALENDLY_WIDGET_CSS} rel="stylesheet" />
-        {/* WidgetTracker */}
-        <Script id="widget-tracker" strategy="afterInteractive">{`
+        <link rel="dns-prefetch" href="https://em.realscout.com" />
+        <link rel="dns-prefetch" href="https://www.realscout.com" />
+        <link rel="dns-prefetch" href="https://assets.calendly.com" />
+        <Script
+          id="realscout-web-components"
+          src={REALSCOUT_WIDGET_JS}
+          type="module"
+          strategy="afterInteractive"
+        />
+        <Script id="widget-tracker" strategy="lazyOnload">{`
           (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()
           {(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),
           (t=d.createElement(e)),(e=d.getElementsByTagName(e)[0]);t.async=1;t.src=i;
