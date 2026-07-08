@@ -7,6 +7,7 @@
  */
 
 import { siteConfig, agentInfo, officeInfo, agentStats } from "./site-config";
+import { getAgentHeadshotUrl } from "./agent-photos";
 import {
   CLOUDBREAK_RIDGE,
   ENCLAVES_COLLECTION,
@@ -99,8 +100,8 @@ export function generateRealEstateAgentSchema() {
       "Berkshire Hathaway HomeServices",
     ],
     url: BASE_URL,
-    logo: `${BASE_URL}/images/dr-jan-duffy.jpg`,
-    image: `${BASE_URL}/images/dr-jan-duffy.jpg`,
+    logo: getAgentHeadshotUrl(),
+    image: getAgentHeadshotUrl(),
     description: siteConfig.description,
     telephone: "+1-702-500-1942",
     email: agentInfo.email,

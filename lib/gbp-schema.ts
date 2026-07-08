@@ -1,6 +1,8 @@
 // Google Business Profile Schema Data
 // Supports GBP ranking factors: Relevance, Distance, Prominence
 
+import { getAgentHeadshotUrl } from "./agent-photos";
+
 export const businessInfo = {
   // NAP - Must match GBP exactly
   name: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
@@ -215,7 +217,7 @@ export function generateLocalBusinessSchema() {
     "@type": "RealEstateAgent",
     "@id": "https://cloudbreakridgehomes.com/#organization",
     name: businessInfo.name,
-    image: "https://cloudbreakridgehomes.com/images/dr-jan-duffy.jpg",
+    image: getAgentHeadshotUrl(),
     url: businessInfo.url,
     telephone: businessInfo.phone.tel,
     email: businessInfo.email,

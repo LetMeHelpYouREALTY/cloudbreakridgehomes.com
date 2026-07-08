@@ -24,6 +24,8 @@ export const agentInfo = {
   phoneTel: "tel:+17025001942",
   email: "info@cloudbreakridgehomes.com",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
+  /** Cloudflare R2 shared headshot — prefer `getAgentHeadshotUrl()` from agent-photos */
+  imagePath: "/images/agent/dr-jan-duffy.jpg",
 };
 
 export const officeInfo = {

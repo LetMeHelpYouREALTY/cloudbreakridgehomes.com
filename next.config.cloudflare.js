@@ -11,6 +11,18 @@ const nextConfig = {
     // Use Cloudflare Images loader
     loader: 'custom',
     loaderFile: './lib/cloudflare-image-loader.ts',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'pub-720ca9b7443b47be981def05abd3d7f0.r2.dev',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'imagedelivery.net',
+        pathname: '/**',
+      },
+    ],
   },
 
   // Compression (handled by Cloudflare)
