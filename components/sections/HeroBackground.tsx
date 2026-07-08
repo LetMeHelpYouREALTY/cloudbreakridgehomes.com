@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const HERO_IMAGE = "/Image/hero_bg_1.jpg";
+const HERO_IMAGE = "/Image/hero_bg_1.webp";
 
 type HeroBackgroundProps = {
   alt?: string;
@@ -18,7 +18,7 @@ export default function HeroBackground({
         priority
         fetchPriority="high"
         sizes="100vw"
-        quality={75}
+        quality={70}
         className="object-cover object-center"
       />
     </div>

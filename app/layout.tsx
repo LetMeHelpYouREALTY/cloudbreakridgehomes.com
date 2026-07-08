@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           id="realscout-web-components"
           src={REALSCOUT_WIDGET_JS}
           type="module"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Script id="widget-tracker" strategy="lazyOnload">{`
           (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()

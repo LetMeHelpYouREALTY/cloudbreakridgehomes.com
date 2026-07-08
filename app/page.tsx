@@ -1,6 +1,9 @@
 import Navbar from "@/components/layouts/Navbar";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import HeroBackground from "@/components/sections/HeroBackground";
+import HeroRealScoutSearch, {
+  HeroSearchFallback,
+} from "@/components/realscout/HeroRealScoutSearch";
 import LazyWhenVisible from "@/components/shared/LazyWhenVisible";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
@@ -21,6 +24,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { CLOUDBREAK_RIDGE } from "@/lib/cloudbreak-ridge";
+import { preload } from "react-dom";
 
 const FAQ_SECTION_COPY: Record<string, { title: string; subtitle: string }> = {
   community: {
@@ -83,6 +87,10 @@ export default async function Home() {
       )
     : combineSchemas(agentSchema, faqSchema);
 
+  if (isCloudbreak) {
+    preload("/Image/hero_bg_1.webp", { as: "image", fetchPriority: "high" });
+  }
+
   return (
     <>
       <script
@@ -107,11 +115,8 @@ export default async function Home() {
             </p>
 
             <div className="mb-8 flex justify-center">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `<realscout-simple-search agent-encoded-id="${config.realscoutAgentId}"></realscout-simple-search>`,
-                }}
-              />
+              <HeroSearchFallback />
+              <HeroRealScoutSearch agentEncodedId={config.realscoutAgentId} />
             </div>
 
             <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
@@ -131,7 +136,7 @@ export default async function Home() {
           </div>
         </section>
 
-        <RealScoutListings />
+        <RealScoutListings deferUntilIdle={isCloudbreak} />
 
         {isCloudbreak && <CloudbreakRidgeOverview />}
 
