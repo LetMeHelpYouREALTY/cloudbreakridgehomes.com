@@ -85,9 +85,10 @@ export function generateRealEstateAgentSchema() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": `${BASE_URL}#organization`,
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
     alternateName: [
       "Cloudbreak Ridge Homes",
+      "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
       "BHHS Nevada Properties",
       "Berkshire Hathaway HomeServices",
     ],

@@ -1,14 +1,15 @@
 # humanstxt.org
 
 /* TEAM */
+Site: Cloudbreak Ridge Homes by Dr. Jan Duffy
 Agent: Dr. Jan Duffy
 License: S.0197614.LLC
-Site: https://cloudbreakridgehomes.com
+Site URL: https://cloudbreakridgehomes.com
 Location: Las Vegas, Nevada, USA
 Phone: (702) 500-1942
 
 Brokerage: Berkshire Hathaway HomeServices Nevada Properties
-Site: https://www.bhhs.com
+Brokerage Site: https://www.bhhs.com
 
 /* THANKS */
 Framework: Next.js 14

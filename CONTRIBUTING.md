@@ -1,4 +1,4 @@
-# Contributing to Cloudbreak Ridge Homes
+# Contributing to Cloudbreak Ridge Homes by Dr. Jan Duffy
 
 ## Development Setup
 

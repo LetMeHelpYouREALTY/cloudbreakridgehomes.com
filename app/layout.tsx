@@ -12,13 +12,17 @@ export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
   const config = getDomainConfig(domain);
   return {
-    title: `${config.neighborhood} | Dr. Jan Duffy, REALTOR® | BHHS Nevada`,
+    title: {
+      default: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
+      template: "%s | Cloudbreak Ridge Homes by Dr. Jan Duffy",
+    },
     description: config.description,
     keywords: config.keywords,
     openGraph: {
-      title: config.heroHeadline,
+      title: config.heroHeadline || "Cloudbreak Ridge Homes by Dr. Jan Duffy",
       description: config.description,
       type: "website",
+      siteName: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
     },
   };
 }

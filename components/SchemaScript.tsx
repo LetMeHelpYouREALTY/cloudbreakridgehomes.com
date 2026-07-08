@@ -119,7 +119,7 @@ export function ReviewSchema({
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": "https://cloudbreakridgehomes.com#organization",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
   };
 
   if (aggregateRating) {
