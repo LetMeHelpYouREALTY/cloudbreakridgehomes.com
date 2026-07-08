@@ -7,6 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Core pages
   const corePages = [
     { url: baseUrl, priority: 1.0, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/enclaves`, priority: 0.95, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/reserves`, priority: 0.95, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/about`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/contact`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/listings`, priority: 0.9, changeFrequency: "daily" as const },
@@ -53,19 +55,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/55-plus-communities/del-webb-lake-las-vegas`, priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
-  // Neighborhood pages
+  // Neighborhood pages (Summerlin-focused hub; legacy subroutes kept crawlable)
   const neighborhoodPages = [
-    { url: `${baseUrl}/neighborhoods`, priority: 0.8, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/summerlin`, priority: 0.8, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/henderson`, priority: 0.8, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/green-valley`, priority: 0.7, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods`, priority: 0.9, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/summerlin`, priority: 0.85, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/neighborhoods/the-ridges`, priority: 0.8, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/southern-highlands`, priority: 0.7, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/north-las-vegas`, priority: 0.7, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/skye-canyon`, priority: 0.7, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/centennial-hills`, priority: 0.7, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/inspirada`, priority: 0.7, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/neighborhoods/mountains-edge`, priority: 0.7, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/neighborhoods/henderson`, priority: 0.5, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/neighborhoods/green-valley`, priority: 0.4, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/neighborhoods/southern-highlands`, priority: 0.4, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/neighborhoods/north-las-vegas`, priority: 0.4, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/neighborhoods/skye-canyon`, priority: 0.4, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/neighborhoods/centennial-hills`, priority: 0.4, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/neighborhoods/inspirada`, priority: 0.4, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/neighborhoods/mountains-edge`, priority: 0.4, changeFrequency: "monthly" as const },
   ];
 
   const allPages = [...corePages, ...servicePages, ...buyerPersonaPages, ...sellerPersonaPages, ...fiftyPlusCommunityPages, ...neighborhoodPages];

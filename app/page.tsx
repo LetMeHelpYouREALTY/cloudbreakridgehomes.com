@@ -3,18 +3,24 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
+import CloudbreakRidgeOverview from "@/components/sections/CloudbreakRidgeOverview";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
 import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
+import {
+  generateRealEstateAgentSchema,
+  generateFAQSchema,
+  generateCloudbreakRidgeCommunitySchema,
+  generateCloudbreakRidgePlaceSchema,
+  generateBreadcrumbSchema,
+  combineSchemas,
+} from "@/lib/schema";
+import { CLOUDBREAK_RIDGE } from "@/lib/cloudbreak-ridge";
 
-// Maps pageType → human-readable FAQ section title/subtitle
-const FAQ_SECTION_COPY: Record<
-  string,
-  { title: string; subtitle: string }
-> = {
+const FAQ_SECTION_COPY: Record<string, { title: string; subtitle: string }> = {
   community: {
     title: "Community Real Estate FAQ",
     subtitle: "Common questions from buyers and sellers in this neighborhood",
@@ -43,65 +49,46 @@ const FAQ_SECTION_COPY: Record<
 
 export default async function Home() {
   const config = await getPageDomainConfig();
-
-  // ── Domain-aware FAQs ────────────────────────────────────────────────────
   const faqs = getFaqsForDomain(config.pageType, config.domain);
-  const faqCopy = FAQ_SECTION_COPY[config.pageType] ?? FAQ_SECTION_COPY["search"];
+  const faqCopy = FAQ_SECTION_COPY[config.pageType] ?? FAQ_SECTION_COPY.search;
+  const isCloudbreak =
+    config.domain === "cloudbreakridgehomes.com" || config.domain === "default";
 
-  // Personalise the FAQ title with the neighborhood name for community/55+ pages
-  const faqTitle =
-    config.pageType === "community" || config.pageType === "55plus"
+  const faqTitle = isCloudbreak
+    ? "Cloudbreak Ridge FAQ"
+    : config.pageType === "community" || config.pageType === "55plus"
       ? `${config.neighborhood} FAQ`
       : faqCopy.title;
 
-  // ── Schema: RealEstateAgent ──────────────────────────────────────────────
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    name: `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
-    url: `https://${config.domain !== "default" ? config.domain : "cloudbreakridgehomes.com"}`,
-    telephone: "+17022221964",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-      addressLocality: "Las Vegas",
-      addressRegion: "NV",
-      postalCode: "89134",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
-    },
-  };
+  const faqSubtitle = isCloudbreak
+    ? "Direct answers about La Madre Peaks, Enclaves, Reserves, and nearby Summerlin parks"
+    : faqCopy.subtitle;
 
-  // ── Schema: FAQPage ──────────────────────────────────────────────────────
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
+  const agentSchema = generateRealEstateAgentSchema();
+  const faqSchema = generateFAQSchema(faqs);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: CLOUDBREAK_RIDGE.name, url: "/#about-cloudbreak-ridge" },
+  ]);
+
+  const jsonLd = isCloudbreak
+    ? combineSchemas(
+        agentSchema,
+        generateCloudbreakRidgeCommunitySchema(),
+        generateCloudbreakRidgePlaceSchema(),
+        faqSchema,
+        breadcrumbSchema
+      )
+    : combineSchemas(agentSchema, faqSchema);
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navbar />
       <main>
-        {/* Domain-Aware Hero */}
         <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-30"
@@ -120,7 +107,6 @@ export default async function Home() {
               {config.heroSubheadline}
             </p>
 
-            {/* RealScout Search Widget */}
             <div className="mb-8 flex justify-center">
               <div
                 dangerouslySetInnerHTML={{
@@ -129,41 +115,58 @@ export default async function Home() {
               />
             </div>
 
-            {/* Trust Indicators */}
             <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">500+</span>
-                <span>Families Helped</span>
+                <span className="font-semibold text-white">La Madre Peaks</span>
+                <span>Newest Summerlin village</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">30+ Years</span>
-                <span>Las Vegas Experience</span>
+                <span className="font-semibold text-white">From $800s</span>
+                <span>Enclaves &amp; Reserves</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">4.9★</span>
-                <span>Client Rating</span>
+                <span className="font-semibold text-white">~5 min</span>
+                <span>to Downtown Summerlin®</span>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Value Proposition */}
+        {isCloudbreak && <CloudbreakRidgeOverview />}
+
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Why Work With Dr. Jan Duffy?
+                Why Work With Dr. Jan Duffy at Cloudbreak Ridge?
               </h2>
               <p className="text-lg text-slate-600">
-                Berkshire Hathaway HomeServices Nevada Properties — the most trusted name in Las Vegas real estate.
+                Local guidance for Summerlin&apos;s newest neighborhood — Berkshire Hathaway
+                HomeServices Nevada Properties.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {[
-                { icon: Shield, title: "Trusted Brand", desc: "Backed by Warren Buffett's Berkshire Hathaway — unmatched integrity" },
-                { icon: Users, title: "50K+ Network", desc: "Global referral network for seamless moves to or from any market" },
-                { icon: TrendingUp, title: "$127M+ Sold", desc: "Proven results across every Las Vegas neighborhood since 2008" },
-                { icon: HomeIcon, title: "Full Service", desc: "Buying, selling, 55+, luxury, investment — one expert handles it all" },
+                {
+                  icon: Shield,
+                  title: "Trusted Brand",
+                  desc: "Backed by Warren Buffett's Berkshire Hathaway — unmatched integrity",
+                },
+                {
+                  icon: Users,
+                  title: "New Construction Help",
+                  desc: "Independent buyer representation for Enclaves and Reserves floorplans",
+                },
+                {
+                  icon: TrendingUp,
+                  title: "$127M+ Sold",
+                  desc: "Proven Summerlin and Las Vegas results since 2008",
+                },
+                {
+                  icon: HomeIcon,
+                  title: "La Madre Peaks Focus",
+                  desc: "Scout’s Point, Grand Park, and 215 Beltway access — mapped for you",
+                },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="text-center p-6">
                   <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
@@ -177,32 +180,37 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* Market Stats */}
-        <section className="py-16 bg-slate-900 text-white">
+        <section className="py-16 bg-slate-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold mb-3">
-                {config.neighborhood} Real Estate Market
+              <h2 className="text-3xl font-bold text-slate-900 mb-3">
+                Cloudbreak Ridge home collections at a glance
               </h2>
-              <p className="text-slate-400">Current data — updated regularly</p>
+              <p className="text-slate-600">
+                Pricing from {CLOUDBREAK_RIDGE.priceFrom} · {CLOUDBREAK_RIDGE.village},{" "}
+                {CLOUDBREAK_RIDGE.masterPlan}
+              </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {[
-                { value: "$450K", label: "Median Price", sub: "+4.2% YoY" },
-                { value: "28", label: "Avg Days on Market", sub: "" },
-                { value: "4,850", label: "Active Listings", sub: "" },
-                { value: "2.1", label: "Months Inventory", sub: "" },
+                { value: "$800s+", label: "Starting prices", sub: "Builder pricing varies" },
+                { value: "2", label: "Collections", sub: "Enclaves & Reserves" },
+                { value: "5", label: "Floorplans", sub: "2,251–3,095 sq ft" },
+                { value: "215", label: "Beltway access", sub: "~5 min to Downtown Summerlin®" },
               ].map(({ value, label, sub }) => (
                 <div key={label} className="text-center">
-                  <div className="text-4xl font-bold text-blue-400 mb-1">{value}</div>
-                  <div className="text-slate-300 text-sm">{label}</div>
-                  {sub && <div className="text-green-400 text-xs mt-1">{sub}</div>}
+                  <div className="text-4xl font-bold text-blue-600 mb-1">{value}</div>
+                  <div className="text-slate-700 text-sm font-medium">{label}</div>
+                  {sub && <div className="text-slate-500 text-xs mt-1">{sub}</div>}
                 </div>
               ))}
             </div>
             <div className="text-center mt-8">
-              <Link href="/market-report" className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors">
-                Full Market Report
+              <Link
+                href="/contact"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-colors"
+              >
+                Ask about available lots
               </Link>
             </div>
           </div>
@@ -212,22 +220,12 @@ export default async function Home() {
         <WhyChooseUs />
         <ReviewsSection />
 
-        {/* Domain-Aware FAQ with FAQPage schema already injected above */}
-        <FAQSection
-          faqs={faqs}
-          title={faqTitle}
-          subtitle={faqCopy.subtitle}
-        />
+        <FAQSection faqs={faqs} title={faqTitle} subtitle={faqSubtitle} />
 
-        {/* Domain-Specific CTA */}
         <section className="py-16 md:py-20 bg-blue-600 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {config.ctaHeadline}
-            </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              {config.ctaSubheadline}
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{config.ctaHeadline}</h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">{config.ctaSubheadline}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <a
                 href="tel:+17022221964"
@@ -245,11 +243,12 @@ export default async function Home() {
             </div>
             <CalendlyBookingSection
               title="Book Your Buyer Consultation"
-              subtitle="Schedule a free 30-minute consultation to discuss your real estate goals."
+              subtitle="Schedule a free 30-minute consultation to compare Enclaves and Reserves at Cloudbreak Ridge."
               variant="dark"
             />
             <p className="mt-6 text-blue-200 text-sm">
-              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
+              Properties
             </p>
           </div>
         </section>

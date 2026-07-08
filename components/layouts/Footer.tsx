@@ -89,10 +89,26 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/enclaves"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Enclaves
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/reserves"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Reserves
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/neighborhoods"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
-                  Neighborhoods
+                  Summerlin Neighborhoods
                 </Link>
               </li>
               <li>

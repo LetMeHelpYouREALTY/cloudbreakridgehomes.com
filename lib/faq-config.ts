@@ -109,6 +109,25 @@ export const FAQ_BY_PAGE_TYPE: Record<string, FAQ[]> = {
 
 export const FAQ_DOMAIN_OVERRIDES: Record<string, FAQ[]> = {
 
+  "cloudbreakridgehomes.com": [
+    { question: "What is Cloudbreak Ridge Homes in Summerlin?",
+      answer: "Cloudbreak Ridge by KB Home is the newest neighborhood to open in the Summerlin master-planned community. It sits in La Madre Peaks, Summerlin’s newest village in Summerlin West, at the base of the La Madre Mountains, with homes priced from the $800,000s." },
+    { question: "Where is Cloudbreak Ridge located?",
+      answer: "The KB Home sales office and models are at 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138, in La Madre Peaks near Mountain Run Drive and Park Drift Trail. The 215 Beltway reaches Downtown Summerlin® in about five minutes." },
+    { question: "Who builds Cloudbreak Ridge?",
+      answer: "KB Home builds Cloudbreak Ridge in La Madre Peaks, Summerlin West — two collections, Enclaves and Reserves." },
+    { question: "What are Enclaves at Cloudbreak Ridge?",
+      answer: "Enclaves at Cloudbreak Ridge is a gated neighborhood of all single-story homes with two floorplans and two-car garages: Plan 2251 (~2,251 sq ft, 3–4 bedrooms, 2.5 baths) and Plan 2387 (~2,387 sq ft, 4 bedrooms, 2.5–3.5 baths)." },
+    { question: "What are Reserves at Cloudbreak Ridge?",
+      answer: "Reserves at Cloudbreak Ridge offers three larger two-story floorplans from about 2,753 to 3,095 square feet, each with a two-car garage and a planned future neighborhood park. Plans are 2753, 2989, and 3095." },
+    { question: "Why bring a Realtor to the first Cloudbreak Ridge visit?",
+      answer: "Builders often require your agent at initial registration. Visiting alone can mean you forfeit buyer representation. Call Dr. Jan Duffy at 702-222-1964 before you go to 1168 Cloudbreak Cove Dr." },
+    { question: "What amenities are near Cloudbreak Ridge?",
+      answer: "Homes are close to Scout’s Point, a planned La Madre Peaks village park; Grand Park (phase one complete); Downtown Summerlin® about five minutes via the 215; and outdoor recreation toward Red Rock Canyon." },
+    { question: "How do I tour Cloudbreak Ridge or compare Enclaves vs Reserves?",
+      answer: "Call or text Dr. Jan Duffy at 702-222-1964, or book a buyer consultation. Register her before your first model visit so you keep independent representation." },
+  ],
+
   "heritagestoneridgevalue.com": [
     { question: "How do I get an accurate Heritage Stonebridge home valuation?",
       answer: "Dr. Jan pulls live Heritage Stonebridge comps — every sale in the past 6 months, adjusted for upgrades, floor plan, and lot position. She does this free with no obligation. Call 702-222-1964 for your personalized valuation." },

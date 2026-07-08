@@ -27,11 +27,13 @@ export default function Navbar() {
   ];
 
   const serviceLinks = [
+    { href: "/enclaves", label: "Enclaves at Cloudbreak Ridge" },
+    { href: "/reserves", label: "Reserves at Cloudbreak Ridge" },
     { href: "/buyers", label: "Home Buying" },
     { href: "/sellers", label: "Home Selling" },
+    { href: "/new-construction", label: "New Construction" },
     { href: "/luxury-homes", label: "Luxury Homes" },
     { href: "/55-plus-communities", label: "55+ Communities" },
-    { href: "/new-construction", label: "New Construction" },
     { href: "/market-report", label: "Market Report" },
     { href: "/market-insights", label: "Market Insights" },
   ];

@@ -69,39 +69,39 @@ const priceRanges = [
 
 const neighborhoods = [
   {
+    name: "Cloudbreak Ridge",
+    description: "KB Home Enclaves & Reserves in La Madre Peaks — 2,251–3,095 sq ft from the $800,000s",
+    medianPrice: "From $800s",
+    daysOnMarket: 0,
+  },
+  {
     name: "Summerlin",
-    description: "Master-planned community with Red Rock views, top schools, and 150+ parks",
-    medianPrice: "$625,000",
+    description: "Master-planned parks, trails, golf, and Downtown Summerlin® with 215 Beltway access",
+    medianPrice: "Varies",
     daysOnMarket: 22,
   },
   {
-    name: "Henderson",
-    description: "Nevada's second-largest city with family-friendly communities and low crime",
-    medianPrice: "$485,000",
-    daysOnMarket: 24,
+    name: "The Ridges",
+    description: "Guard-gated Summerlin custom estates with golf adjacency and elevated views",
+    medianPrice: "Luxury",
+    daysOnMarket: 45,
   },
   {
-    name: "Green Valley",
-    description: "Established Henderson community with mature landscaping and golf courses",
-    medianPrice: "$520,000",
-    daysOnMarket: 26,
+    name: "Downtown Summerlin® area",
+    description: "Lifestyle center about five minutes from Cloudbreak Ridge via the 215",
+    medianPrice: "Adjacent",
+    daysOnMarket: 25,
   },
   {
-    name: "Southern Highlands",
-    description: "Guard-gated luxury community with championship golf and mountain views",
-    medianPrice: "$750,000",
-    daysOnMarket: 32,
+    name: "Red Rock Country Club area",
+    description: "Golf-oriented Summerlin West living near Red Rock Canyon recreation",
+    medianPrice: "Confirm comps",
+    daysOnMarket: 30,
   },
   {
-    name: "North Las Vegas",
-    description: "Affordable new construction and growing infrastructure",
-    medianPrice: "$385,000",
-    daysOnMarket: 18,
-  },
-  {
-    name: "Skye Canyon",
-    description: "Newer master-planned community with modern amenities and mountain access",
-    medianPrice: "$550,000",
+    name: "Grand Park area",
+    description: "Near Summerlin’s largest park (phase one complete) — playgrounds, trails, courts",
+    medianPrice: "By village",
     daysOnMarket: 20,
   },
 ];
@@ -216,15 +216,12 @@ export default function ListingsPage() {
           {/* Neighborhood Overview */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Las Vegas Neighborhoods & Communities
+              Summerlin Neighborhoods & Communities
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Each Las Vegas neighborhood offers a unique lifestyle, from the resort-style living 
-              of Summerlin to the family-friendly communities of Henderson. Understanding these 
-              differences is crucial to finding a home that fits your needs. As a Berkshire 
-              Hathaway HomeServices agent serving Las Vegas since 2008, Dr. Jan Duffy provides 
-              expert guidance on which neighborhoods match your priorities—whether that's schools, 
-              commute times, amenities, or investment potential.
+              Cloudbreak Ridge Homes by Dr. Jan Duffy focuses on Summerlin West and La Madre Peaks —
+              comparing gates, square footage, parks, and commute times rather than school ratings or
+              crime claims. Ask for current comps before relying on any price band.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {neighborhoods.map((neighborhood) => (

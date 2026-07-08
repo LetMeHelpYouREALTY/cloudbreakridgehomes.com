@@ -83,12 +83,12 @@ const buyingSteps = [
 ];
 
 const neighborhoods = [
-  { name: "Summerlin", price: "$625K", description: "Master-planned community with Red Rock views" },
-  { name: "Henderson", price: "$485K", description: "Family-friendly with low crime rates" },
-  { name: "Green Valley", price: "$520K", description: "Established with mature landscaping" },
-  { name: "The Ridges", price: "$2.5M", description: "Ultra-luxury guard-gated estates" },
-  { name: "North Las Vegas", price: "$385K", description: "Affordable new construction" },
-  { name: "Southern Highlands", price: "$750K", description: "Golf course community" },
+  { name: "Cloudbreak Ridge", price: "From $800s", description: "KB Home in La Madre Peaks — Enclaves & Reserves" },
+  { name: "Summerlin", price: "Varies", description: "Master-planned parks, trails, and Downtown Summerlin®" },
+  { name: "The Ridges", price: "Luxury", description: "Guard-gated custom estates with elevated views" },
+  { name: "Grand Park area", price: "By village", description: "Near Summerlin’s largest park campus" },
+  { name: "Downtown Summerlin®", price: "Adjacent", description: "~5 min from Cloudbreak Ridge via the 215" },
+  { name: "Red Rock Country Club area", price: "Confirm", description: "Golf lifestyle near Red Rock Canyon access" },
 ];
 
 export default function BuyersPage() {
@@ -205,13 +205,12 @@ export default function BuyersPage() {
           {/* Neighborhood Guide */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Las Vegas Neighborhoods for Home Buyers
+              Summerlin Areas for Cloudbreak Ridge Buyers
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Las Vegas offers diverse neighborhoods for every lifestyle and budget. Whether you're 
-              seeking luxury estates in guard-gated communities, family homes near top-rated schools, 
-              or affordable new construction, Dr. Jan helps you find the perfect neighborhood. Here's 
-              a quick guide to median prices and what each area offers.
+              Focus on Summerlin West and La Madre Peaks first — parks, trails, gates, square footage,
+              and commute times to Downtown Summerlin® and Red Rock Canyon. Dr. Jan helps you compare
+              Enclaves vs Reserves and nearby Summerlin villages with live builder and MLS data.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {neighborhoods.map((neighborhood) => (

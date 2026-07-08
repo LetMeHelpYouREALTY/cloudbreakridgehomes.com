@@ -12,7 +12,7 @@ export const siteConfig = {
   shortName: "Cloudbreak Ridge",
   url: "https://cloudbreakridgehomes.com",
   description:
-    "Cloudbreak Ridge Homes by Dr. Jan Duffy — expert real estate services in Las Vegas and Henderson, NV. Buy, sell, or invest with your trusted Berkshire Hathaway HomeServices Nevada Properties agent.",
+    "Cloudbreak Ridge Homes by Dr. Jan Duffy — the newest Summerlin neighborhood in La Madre Peaks. Enclaves (gated single-story) and Reserves (two-story) homes from the $800,000s near Scout’s Point, Grand Park, and Downtown Summerlin®.",
 };
 
 export const agentInfo = {
@@ -97,77 +97,50 @@ export const valuePropositions = {
     "Serving Las Vegas since 2008 with $127M+ in closed transactions, Dr. Jan Duffy combines deep local market knowledge with the resources of a global brand.",
 };
 
-// Neighborhoods served
+/** Summerlin-hyperlocal areas (amenities / commute facts — not valley-wide generic list). */
 export const neighborhoods = [
+  {
+    name: "Cloudbreak Ridge / La Madre Peaks",
+    slug: "cloudbreak-ridge",
+    description:
+      "KB Home new construction in La Madre Peaks, Summerlin West — Enclaves & Reserves from the $800,000s at 1168 Cloudbreak Cove Dr.",
+    medianPrice: "From $800s",
+    highlights: ["Gated collections", "2,251–3,095 sq ft", "Scout’s Point nearby", "~5 min Downtown Summerlin®"],
+  },
   {
     name: "Summerlin",
     slug: "summerlin",
-    description: "Master-planned community with parks, trails, and top-rated schools",
-    medianPrice: "$625,000",
-    highlights: ["Red Rock views", "150+ parks", "Top schools", "Golf courses"],
-  },
-  {
-    name: "Henderson",
-    slug: "henderson",
-    description: "Nevada's second-largest city with family-friendly neighborhoods",
-    medianPrice: "$485,000",
-    highlights: ["Low crime rate", "Excellent schools", "Lake Las Vegas", "Green Valley"],
-  },
-  {
-    name: "Green Valley",
-    slug: "green-valley",
-    description: "Established Henderson community with mature landscaping",
-    medianPrice: "$520,000",
-    highlights: ["Golf courses", "Walking trails", "Shopping", "Parks"],
+    description: "Master-planned community with parks, trails, golf, and Downtown Summerlin®",
+    medianPrice: "Varies by village",
+    highlights: ["Parks & trails", "Golf courses", "Downtown Summerlin®", "215 Beltway"],
   },
   {
     name: "The Ridges",
     slug: "the-ridges",
-    description: "Ultra-luxury guard-gated community in Summerlin",
-    medianPrice: "$2.5M",
-    highlights: ["Celebrity homes", "Custom estates", "Bear's Best Golf", "Strip views"],
+    description: "Guard-gated Summerlin estates with golf adjacency and elevated views",
+    medianPrice: "Luxury custom",
+    highlights: ["Guard-gated", "Custom estates", "Bear's Best Golf", "Valley / mountain views"],
   },
   {
-    name: "Southern Highlands",
-    slug: "southern-highlands",
-    description: "Master-planned luxury community with championship golf",
-    medianPrice: "$750,000",
-    highlights: ["Golf community", "Guard-gated", "Mountain views", "Luxury amenities"],
+    name: "Downtown Summerlin® area",
+    slug: "downtown-summerlin",
+    description: "Lifestyle center ~5 minutes from Cloudbreak Ridge via the 215",
+    medianPrice: "Adjacent context",
+    highlights: ["Retail & dining", "Arena / ballpark", "Office & entertainment", "215 access"],
   },
   {
-    name: "North Las Vegas",
-    slug: "north-las-vegas",
-    description: "Rapidly growing area with affordable new construction",
-    medianPrice: "$385,000",
-    highlights: ["New construction", "Affordable", "Growing area", "Family-friendly"],
+    name: "Red Rock Country Club area",
+    slug: "red-rock-country-club",
+    description: "Golf-oriented Summerlin West living near Red Rock Canyon recreation",
+    medianPrice: "Confirm comps",
+    highlights: ["Golf community", "Near Red Rock Canyon", "Summerlin West", "Gated sections"],
   },
   {
-    name: "Skye Canyon",
-    slug: "skye-canyon",
-    description: "Newer master-planned community in northwest Las Vegas",
-    medianPrice: "$550,000",
-    highlights: ["New homes", "Mountain views", "Modern amenities", "Great schools"],
-  },
-  {
-    name: "Centennial Hills",
-    slug: "centennial-hills",
-    description: "Northwest Las Vegas community with mountain proximity",
-    medianPrice: "$495,000",
-    highlights: ["Mountain access", "Parks", "Shopping", "Family-friendly"],
-  },
-  {
-    name: "Inspirada",
-    slug: "inspirada",
-    description: "Henderson master-planned community with resort-style living",
-    medianPrice: "$525,000",
-    highlights: ["Resort pools", "Walking trails", "New construction", "Great schools"],
-  },
-  {
-    name: "Mountains Edge",
-    slug: "mountains-edge",
-    description: "Southwest Las Vegas master-planned community",
-    medianPrice: "$475,000",
-    highlights: ["Mountain views", "Parks", "Growing area", "Affordable luxury"],
+    name: "Grand Park area",
+    slug: "grand-park",
+    description: "Summerlin’s largest park campus (phase one complete) near La Madre Peaks",
+    medianPrice: "By nearby village",
+    highlights: ["Playgrounds", "Trails", "Sports courts", "Fields"],
   },
 ];
 

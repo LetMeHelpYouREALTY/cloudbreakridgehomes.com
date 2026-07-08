@@ -7,6 +7,12 @@
  */
 
 import { siteConfig, agentInfo, officeInfo, agentStats } from "./site-config";
+import {
+  CLOUDBREAK_RIDGE,
+  ENCLAVES_COLLECTION,
+  RESERVES_COLLECTION,
+  NEARBY_AMENITIES,
+} from "./cloudbreak-ridge";
 
 // ============================================================================
 // Types
@@ -578,4 +584,244 @@ export function combineSchemas(...schemas: Record<string, unknown>[]) {
  */
 export function schemaToJsonLd(schema: Record<string, unknown>): string {
   return JSON.stringify(schema);
+}
+
+/**
+ * Cloudbreak Ridge — ResidentialComplex + Place + nested Residence/Offer floor plans.
+ * Kept aligned with visible homepage copy in lib/cloudbreak-ridge.ts (GEO / entity SEO).
+ * FAQPage remains for AEO citeability even after Google retired FAQ rich results (May 2026).
+ */
+export function generateCloudbreakRidgeCommunitySchema() {
+  const complexId = `${BASE_URL}/#residential-complex`;
+  const placeId = `${BASE_URL}/#place-cloudbreak-ridge`;
+
+  const floorPlanOffers = [
+    ...ENCLAVES_COLLECTION.plans,
+    ...RESERVES_COLLECTION.plans,
+  ].map((plan) => ({
+    "@type": "Offer",
+    name: `${plan.name} — ${plan.collection} at Cloudbreak Ridge`,
+    description: plan.summary,
+    priceCurrency: "USD",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "USD",
+      description: `Homes at Cloudbreak Ridge priced from ${CLOUDBREAK_RIDGE.priceFrom}`,
+      minPrice: CLOUDBREAK_RIDGE.priceFromNumericHint,
+    },
+    itemOffered: {
+      "@type": "Residence",
+      name: `${plan.name} (${plan.collection})`,
+      floorSize: {
+        "@type": "QuantitativeValue",
+        value: plan.sqFt,
+        unitCode: "FTK",
+      },
+      numberOfRooms: plan.bedrooms,
+      numberOfBathroomsTotal: plan.baths,
+      additionalProperty: [
+        {
+          "@type": "PropertyValue",
+          name: "Stories",
+          value: String(plan.stories),
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Garage bays",
+          value: String(plan.garageBays),
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Collection",
+          value: plan.collection,
+        },
+      ],
+    },
+  }));
+
+  const communityAddress = {
+    "@type": "PostalAddress" as const,
+    streetAddress: CLOUDBREAK_RIDGE.address.street,
+    addressLocality: CLOUDBREAK_RIDGE.address.city,
+    addressRegion: CLOUDBREAK_RIDGE.address.state,
+    postalCode: CLOUDBREAK_RIDGE.address.zip,
+    addressCountry: "US",
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ResidentialComplex",
+    "@id": complexId,
+    name: CLOUDBREAK_RIDGE.name,
+    alternateName: [
+      CLOUDBREAK_RIDGE.brandName,
+      "Enclaves at Cloudbreak Ridge",
+      "Reserves at Cloudbreak Ridge",
+      "Cloudbreak Ridge by KB Home",
+    ],
+    description: CLOUDBREAK_RIDGE.description,
+    url: BASE_URL,
+    address: communityAddress,
+    hasMap: CLOUDBREAK_RIDGE.mapsSearchUrl,
+    containedInPlace: {
+      "@type": "Place",
+      "@id": placeId,
+      name: `${CLOUDBREAK_RIDGE.village}, ${CLOUDBREAK_RIDGE.masterPlan}`,
+      description: `${CLOUDBREAK_RIDGE.village} is Summerlin's newest village in ${CLOUDBREAK_RIDGE.region} at the base of the ${CLOUDBREAK_RIDGE.landmark}.`,
+      containedInPlace: {
+        "@type": "Place",
+        name: CLOUDBREAK_RIDGE.masterPlan,
+        containedInPlace: {
+          "@type": "City",
+          name: "Las Vegas",
+          addressRegion: "NV",
+        },
+      },
+    },
+    amenityFeature: NEARBY_AMENITIES.map((a) => ({
+      "@type": "LocationFeatureSpecification",
+      name: a.name,
+      value: true,
+      description: a.description,
+    })),
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "Builder",
+        value: CLOUDBREAK_RIDGE.builder,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Price from",
+        value: CLOUDBREAK_RIDGE.priceFrom,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Village",
+        value: CLOUDBREAK_RIDGE.village,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Master plan",
+        value: CLOUDBREAK_RIDGE.masterPlan,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Collections",
+        value: "Enclaves (gated single-story), Reserves (two-story)",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Community address",
+        value: CLOUDBREAK_RIDGE.address.full,
+      },
+    ],
+    makesOffer: floorPlanOffers,
+    broker: {
+      "@id": `${BASE_URL}#organization`,
+    },
+  };
+}
+
+export function generateCloudbreakRidgePlaceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "@id": `${BASE_URL}/#place-cloudbreak-ridge`,
+    name: `${CLOUDBREAK_RIDGE.name}, ${CLOUDBREAK_RIDGE.village}`,
+    description: CLOUDBREAK_RIDGE.shortDescription,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: CLOUDBREAK_RIDGE.address.street,
+      addressLocality: CLOUDBREAK_RIDGE.address.city,
+      addressRegion: CLOUDBREAK_RIDGE.address.state,
+      postalCode: CLOUDBREAK_RIDGE.address.zip,
+      addressCountry: "US",
+    },
+    hasMap: CLOUDBREAK_RIDGE.mapsSearchUrl,
+    containedInPlace: {
+      "@type": "Place",
+      name: CLOUDBREAK_RIDGE.masterPlan,
+    },
+    amenityFeature: NEARBY_AMENITIES.map((a) => ({
+      "@type": "LocationFeatureSpecification",
+      name: a.name,
+      value: true,
+      description: a.description,
+    })),
+  };
+}
+
+/** Collection-level ResidentialComplex for /enclaves or /reserves. */
+export function generateCloudbreakCollectionSchema(
+  collection: "Enclaves" | "Reserves",
+  pagePath: string
+) {
+  const data =
+    collection === "Enclaves" ? ENCLAVES_COLLECTION : RESERVES_COLLECTION;
+  const pageUrl = `${BASE_URL}${pagePath}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ResidentialComplex",
+    "@id": `${pageUrl}#residential-complex`,
+    name: data.name,
+    description: data.summary,
+    url: pageUrl,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: CLOUDBREAK_RIDGE.address.street,
+      addressLocality: CLOUDBREAK_RIDGE.address.city,
+      addressRegion: CLOUDBREAK_RIDGE.address.state,
+      postalCode: CLOUDBREAK_RIDGE.address.zip,
+      addressCountry: "US",
+    },
+    hasMap: CLOUDBREAK_RIDGE.mapsSearchUrl,
+    containedInPlace: {
+      "@type": "Place",
+      "@id": `${BASE_URL}/#place-cloudbreak-ridge`,
+      name: CLOUDBREAK_RIDGE.name,
+    },
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "Builder",
+        value: CLOUDBREAK_RIDGE.builder,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Stories",
+        value: String(data.stories),
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Gated",
+        value: "true",
+      },
+    ],
+    makesOffer: data.plans.map((plan) => ({
+      "@type": "Offer",
+      name: `${plan.name} — ${data.name}`,
+      description: plan.summary,
+      priceCurrency: "USD",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "USD",
+        description: `Homes priced from ${CLOUDBREAK_RIDGE.priceFrom}`,
+        minPrice: CLOUDBREAK_RIDGE.priceFromNumericHint,
+      },
+      itemOffered: {
+        "@type": "Residence",
+        name: plan.name,
+        floorSize: {
+          "@type": "QuantitativeValue",
+          value: plan.sqFt,
+          unitCode: "FTK",
+        },
+        numberOfRooms: plan.bedrooms,
+        numberOfBathroomsTotal: plan.baths,
+      },
+    })),
+    broker: { "@id": `${BASE_URL}#organization` },
+  };
 }
