@@ -826,3 +826,80 @@ export function generateCloudbreakCollectionSchema(
     broker: { "@id": `${BASE_URL}#organization` },
   };
 }
+
+/** ItemList of KB Home floor plans — for /floor-plans hub. */
+export function generateCloudbreakFloorPlanItemListSchema(pagePath = "/floor-plans") {
+  const pageUrl = `${BASE_URL}${pagePath}`;
+  const allPlans = [...ENCLAVES_COLLECTION.plans, ...RESERVES_COLLECTION.plans];
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${pageUrl}#floor-plan-list`,
+    name: "KB Home floor plans at Cloudbreak Ridge",
+    description: `All ${allPlans.length} floor plans at Cloudbreak Ridge by KB Home in La Madre Peaks, Summerlin West.`,
+    numberOfItems: allPlans.length,
+    itemListElement: allPlans.map((plan, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: `${plan.name} — ${plan.collection}`,
+      url: plan.collection === "Enclaves" ? `${BASE_URL}/enclaves` : `${BASE_URL}/reserves`,
+      item: {
+        "@type": "Residence",
+        name: `${plan.name} (${plan.collection} at Cloudbreak Ridge)`,
+        description: plan.summary,
+        floorSize: {
+          "@type": "QuantitativeValue",
+          value: plan.sqFt,
+          unitCode: "FTK",
+        },
+        numberOfRooms: plan.bedrooms,
+        numberOfBathroomsTotal: plan.baths,
+      },
+    })),
+  };
+}
+
+/** Schools near Cloudbreak Ridge — EducationalOrganization list for /schools. */
+export function generateCloudbreakSchoolsSchema(pagePath = "/schools") {
+  const pageUrl = `${BASE_URL}${pagePath}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    name: "Schools near Cloudbreak Ridge, Summerlin",
+    description:
+      "Elementary, middle, and high schools cited by KB Home for Cloudbreak Ridge in La Madre Peaks — verify CCSD zoning before purchase.",
+    url: pageUrl,
+    about: {
+      "@type": "Place",
+      name: CLOUDBREAK_RIDGE.name,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: CLOUDBREAK_RIDGE.address.street,
+        addressLocality: CLOUDBREAK_RIDGE.address.city,
+        addressRegion: CLOUDBREAK_RIDGE.address.state,
+        postalCode: CLOUDBREAK_RIDGE.address.zip,
+        addressCountry: "US",
+      },
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      name: "Schools serving Cloudbreak Ridge (per KB Home, 2026)",
+      itemListElement: [
+        { name: "Linda Rankin Givens Elementary School", level: "Elementary" },
+        { name: "Sig Rogich Middle School", level: "Middle" },
+        { name: "Palo Verde High School", level: "High" },
+      ].map((school, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "EducationalOrganization",
+          name: school.name,
+          educationalLevel: school.level,
+        },
+      })),
+    },
+  };
+}

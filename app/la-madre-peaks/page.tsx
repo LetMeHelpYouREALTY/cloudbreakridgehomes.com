@@ -11,6 +11,12 @@ import {
   LocalCtaBlock,
   LocalInternalLinks,
 } from "@/components/sections/HyperlocalPageBlocks";
+import {
+  SchoolsNearCommunityBlock,
+  CommuteAndAccessBlock,
+  SummerlinMasterAmenitiesBlock,
+  EnclavesVsReservesComparisonBlock,
+} from "@/components/sections/CloudbreakContentBlocks";
 import { CLOUDBREAK_RIDGE, NEARBY_AMENITIES } from "@/lib/cloudbreak-ridge";
 import { siteConfig } from "@/lib/site-config";
 import {
@@ -53,6 +59,11 @@ const faqs = [
     question: "How do I tour homes in La Madre Peaks with a Realtor?",
     answer:
       "Register Dr. Jan Duffy before your first builder visit — call 702-222-1964 or book a consultation. Most builders require your agent on the initial registration.",
+  },
+  {
+    question: "What schools serve La Madre Peaks and Cloudbreak Ridge?",
+    answer:
+      "KB Home lists Linda Rankin Givens Elementary, Sig Rogich Middle, and Palo Verde High for Cloudbreak Ridge buyers. Verify CCSD boundaries for your homesite address before you buy.",
   },
 ];
 
@@ -115,9 +126,8 @@ export default function LaMadrePeaksPage() {
             lead="La Madre Peaks sits in Summerlin West. From Cloudbreak Ridge, the 215 Beltway reaches Downtown Summerlin® in about five minutes; Grand Park is less than five minutes; Red Rock Canyon recreation is a short drive west."
           >
             <p className="text-slate-700">
-              Citeable village context: Summerlin.com (Jun 2, 2026) describes Cloudbreak Ridge as
-              opening in La Madre Peaks with Enclaves and Reserves from the $800,000s, near Scout’s
-              Point and Grand Park.
+              Cloudbreak Ridge by KB Home opened in La Madre Peaks in May 2026 with gated Enclaves
+              and Reserves collections from the $800,000s, near Scout&apos;s Point and Grand Park.
             </p>
           </HyperlocalIntro>
 
@@ -126,8 +136,8 @@ export default function LaMadrePeaksPage() {
               What amenities are near La Madre Peaks?
             </h2>
             <p className="text-slate-700 mb-4">
-              Amenity and commute facts only — playgrounds, trails, courts, and drive times; we do
-              not use school rankings or demographic labels.
+              Village parks, trails, sports courts, and quick drives to Downtown Summerlin® and Red
+              Rock Canyon — practical location facts for buyers comparing La Madre Peaks.
             </p>
             <ul className="space-y-3 text-slate-700 text-sm">
               {NEARBY_AMENITIES.map((a) => (
@@ -139,6 +149,10 @@ export default function LaMadrePeaksPage() {
           </section>
 
           <GeoEntityBlock />
+          <SchoolsNearCommunityBlock />
+          <CommuteAndAccessBlock />
+          <SummerlinMasterAmenitiesBlock />
+          <EnclavesVsReservesComparisonBlock />
           <LocalServicesBlock />
           <FAQSection
             faqs={faqs}

@@ -12,6 +12,10 @@ import {
   LocalInternalLinks,
 } from "@/components/sections/HyperlocalPageBlocks";
 import {
+  SchoolsNearCommunityBlock,
+  CommuteAndAccessBlock,
+} from "@/components/sections/CloudbreakContentBlocks";
+import {
   CLOUDBREAK_RIDGE,
   ENCLAVES_COLLECTION,
   ENCLAVES_FAQS,
@@ -87,7 +91,9 @@ export default function EnclavesPage() {
             </ul>
           </HyperlocalIntro>
 
-          <GeoEntityBlock title="Enclaves entity facts (GEO)" />
+          <GeoEntityBlock title="About the Enclaves at Cloudbreak Ridge" />
+          <SchoolsNearCommunityBlock />
+          <CommuteAndAccessBlock />
           <LocalServicesBlock />
           <FAQSection
             faqs={faqs}

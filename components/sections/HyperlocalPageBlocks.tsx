@@ -11,6 +11,9 @@ import CalendlyButton from "@/components/calendly/CalendlyButton";
 const INTERNAL_LINKS = [
   { href: "/enclaves", label: "Enclaves at Cloudbreak Ridge" },
   { href: "/reserves", label: "Reserves at Cloudbreak Ridge" },
+  { href: "/enclaves-vs-reserves", label: "Enclaves vs Reserves comparison" },
+  { href: "/floor-plans", label: "All KB Home floor plans" },
+  { href: "/schools", label: "Schools near Cloudbreak Ridge" },
   { href: "/neighborhoods", label: "Summerlin neighborhoods near Cloudbreak Ridge" },
   { href: "/la-madre-peaks", label: "La Madre Peaks village guide" },
   { href: "/bring-your-realtor", label: "Bring your Realtor to the first visit" },
@@ -21,7 +24,6 @@ const INTERNAL_LINKS = [
 
 type IntroProps = {
   h2: string;
-  /** Direct answer in first paragraph (AEO). */
   lead: string;
   children?: React.ReactNode;
 };
@@ -37,9 +39,9 @@ export function HyperlocalIntro({ h2, lead, children }: IntroProps) {
   );
 }
 
-/** GEO entity block — community Place/ResidentialComplex facts. */
+/** Community facts block — address, collections, amenities. */
 export function GeoEntityBlock({
-  title = "Cloudbreak Ridge entity facts",
+  title = "About Cloudbreak Ridge",
 }: {
   title?: string;
 }) {
@@ -189,7 +191,7 @@ export function LocalCtaBlock({
       )}
       {showOfficeNap && (
         <div className="text-sm text-blue-100 border-t border-white/20 pt-4">
-          <p className="font-semibold text-white mb-1">Brokerage office NAP (not the community)</p>
+          <p className="font-semibold text-white mb-1">Brokerage office (not the model homes)</p>
           <p>
             {officeInfo.name} · {officeInfo.address.full} · Office line {officeInfo.phone}
           </p>
@@ -202,7 +204,7 @@ export function LocalCtaBlock({
   );
 }
 
-/** Descriptive internal links for crawl + GEO. */
+/** Descriptive internal links for related Cloudbreak Ridge guides. */
 export function LocalInternalLinks({
   excludeHref,
 }: {
@@ -231,7 +233,7 @@ export function LocalInternalLinks({
   );
 }
 
-export function AeoFaqList({
+export function CommunityFaqList({
   faqs,
   title = "Frequently asked questions",
 }: {
@@ -251,9 +253,11 @@ export function AeoFaqList({
       </div>
       <p className="mt-4 text-xs text-slate-500 flex items-start gap-2">
         <Calendar className="h-3.5 w-3.5 mt-0.5 shrink-0" />
-        FAQPage JSON-LD mirrors this visible Q&amp;A for AEO citeability (Google retired FAQ rich
-        results May 2026; schema remains useful for AI Understanding).
+        Pricing and incentives change often — confirm current builder details before you visit.
       </p>
     </section>
   );
 }
+
+/** @deprecated Use CommunityFaqList — kept for imports during migration */
+export const AeoFaqList = CommunityFaqList;

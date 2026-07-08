@@ -12,6 +12,11 @@ import {
   LocalInternalLinks,
 } from "@/components/sections/HyperlocalPageBlocks";
 import {
+  SchoolsNearCommunityBlock,
+  CommuteAndAccessBlock,
+  SummerlinMasterAmenitiesBlock,
+} from "@/components/sections/CloudbreakContentBlocks";
+import {
   CLOUDBREAK_RIDGE,
   RESERVES_COLLECTION,
   RESERVES_FAQS,
@@ -87,7 +92,10 @@ export default function ReservesPage() {
             </ul>
           </HyperlocalIntro>
 
-          <GeoEntityBlock title="Reserves entity facts (GEO)" />
+          <GeoEntityBlock title="About the Reserves at Cloudbreak Ridge" />
+          <SchoolsNearCommunityBlock />
+          <CommuteAndAccessBlock />
+          <SummerlinMasterAmenitiesBlock />
           <LocalServicesBlock />
           <FAQSection
             faqs={faqs}

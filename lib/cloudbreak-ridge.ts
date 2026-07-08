@@ -44,7 +44,13 @@ export const CLOUDBREAK_RIDGE = {
   mapsSearchUrl:
     "https://www.google.com/maps/search/?api=1&query=1168+Cloudbreak+Cove+Dr,+Las+Vegas,+NV+89138",
   intersectionNote:
-    "Northwest corner of Mountain Run Drive and Park Drift Trail in La Madre Peaks.",
+    "Northwest corner of Mountain Run Drive and Park Drift Trail in La Madre Peaks (KB Home also references Park Drift Trail and Sandstone Rise Drive).",
+  /** ~104 homesites across both collections (Summerlin village filings / builder materials, 2026). */
+  collectionSplit: {
+    enclavesHomesites: 32,
+    reservesHomesites: 72,
+    totalHomesites: 104,
+  },
   accessibility: {
     beltway: "215 Beltway",
     downtownSummerlinDrive: "about a five-minute drive",
@@ -185,6 +191,89 @@ export const NEARBY_AMENITIES = [
   },
 ] as const;
 
+/** Schools cited by KB Home for Cloudbreak Ridge — verify zoning with CCSD before you buy. */
+export const SCHOOLS_NEAR_CLOUDBREAK = [
+  {
+    name: "Linda Rankin Givens Elementary School",
+    level: "Elementary",
+    district: "Clark County School District",
+    note: "Listed by KB Home as the elementary school serving Cloudbreak Ridge buyers (May 2026 opening materials).",
+  },
+  {
+    name: "Sig Rogich Middle School",
+    level: "Middle",
+    district: "Clark County School District",
+    note: "Listed by KB Home as the middle school for the community.",
+  },
+  {
+    name: "Palo Verde High School",
+    level: "High",
+    district: "Clark County School District",
+    note: "Listed by KB Home as the high school for the community.",
+  },
+] as const;
+
+export const SCHOOLS_DISCLAIMER =
+  "School assignments can change with boundary updates. Confirm current zoning with the Clark County School District and your lender before you rely on a specific campus.";
+
+/** Commute and regional access — KB Home / Summerlin sources, 2026. */
+export const COMMUTE_AND_ACCESS = {
+  heading: "Commute and regional access from Cloudbreak Ridge",
+  summary:
+    "Cloudbreak Ridge sits in Summerlin West with quick beltway access to employment centers, Harry Reid International Airport, and west-side recreation.",
+  items: [
+    {
+      label: "215 Beltway",
+      detail: "About a five-minute drive to Downtown Summerlin® for shopping, dining, City National Arena, and Las Vegas Ballpark®.",
+    },
+    {
+      label: "Interstates 15 & 215",
+      detail: "Convenient access to Las Vegas employment corridors and valley-wide commutes.",
+    },
+    {
+      label: "Harry Reid International Airport",
+      detail: "Reachable via the 215 and I-15 — helpful for relocators and second-home buyers.",
+    },
+    {
+      label: "Red Rock Canyon & Lone Mountain",
+      detail: "Short drives to Red Rock Canyon National Conservation Area, Lone Mountain Peak, and Lone Mountain Regional Park.",
+    },
+    {
+      label: "Red Rock® Casino Resort & Spa",
+      detail: "Nearby dining and entertainment west of the 215 in Summerlin.",
+    },
+  ],
+} as const;
+
+/** Summerlin master-plan amenities (beyond village parks). */
+export const SUMMERLIN_MASTER_AMENITIES = {
+  heading: "Summerlin resort-style amenities for Cloudbreak Ridge residents",
+  intro:
+    "As part of the Summerlin master plan, Cloudbreak Ridge homeowners can tap the community’s pools, parks, trails, community centers, playgrounds, and sport courts — in addition to La Madre Peaks village assets like Scout’s Point and Grand Park.",
+  items: [
+    "Community pools and recreation centers",
+    "Parks, trails, and playgrounds throughout Summerlin",
+    "Sport courts and athletic fields",
+    "Grand Park — Summerlin’s 100-acre park (phase one complete; additional phases planned)",
+  ],
+} as const;
+
+export const ENCLAVES_VS_RESERVES = {
+  heading: "Enclaves vs Reserves at Cloudbreak Ridge",
+  directAnswer:
+    "Enclaves is the gated single-story collection (two plans, ~2,251–2,387 sq ft). Reserves is the two-story collection (three plans, ~2,753–3,095 sq ft) with a planned future neighborhood park. Both are priced from the $800,000s — confirm live base prices and homesite premiums with KB Home.",
+  rows: [
+    { label: "Stories", enclaves: "Single-story only", reserves: "Two-story" },
+    { label: "Floor plans", enclaves: "2 (Plan 2251, Plan 2387)", reserves: "3 (Plan 2753, Plan 2989, Plan 3095)" },
+    { label: "Square footage", enclaves: "~2,251–2,387 sq ft", reserves: "~2,753–3,095 sq ft" },
+    { label: "Bedrooms / baths", enclaves: "3–4 beds · 2.5–3.5 baths", reserves: "4–5 beds · 2.5–5 baths" },
+    { label: "Garage", enclaves: "2-car on all plans", reserves: "2-car on all plans" },
+    { label: "Gated", enclaves: "Yes", reserves: "Yes" },
+    { label: "Park", enclaves: "Near Scout’s Point & Grand Park", reserves: "Planned future neighborhood park + nearby Grand Park" },
+    { label: "Typical buyer fit", enclaves: "Single-level living, fewer stairs", reserves: "More square footage, separation between floors" },
+  ],
+} as const;
+
 export const WHY_BUY_EARLY = {
   heading: "Why buy early at Cloudbreak Ridge?",
   points: [
@@ -297,5 +386,59 @@ export const RESERVES_FAQS = [
     question: "Should I buy early in Reserves?",
     answer:
       "Early phases typically offer more homesite, elevation, and option choice; prices and premiums can rise later. Bring your Realtor on the first visit — call 702-222-1964 to register Dr. Jan Duffy before you tour.",
+  },
+] as const;
+
+export const SCHOOLS_FAQS = [
+  {
+    question: "What schools serve Cloudbreak Ridge in Summerlin?",
+    answer:
+      "KB Home lists Linda Rankin Givens Elementary School, Sig Rogich Middle School, and Palo Verde High School for Cloudbreak Ridge (May 2026). Confirm current CCSD boundaries before you buy — assignments can change.",
+  },
+  {
+    question: "Are Summerlin schools near Cloudbreak Ridge highly rated?",
+    answer:
+      "Summerlin campuses are widely sought after, but ratings and boundaries shift. Tour schools in person and verify zoning with the Clark County School District for your specific homesite address.",
+  },
+  {
+    question: "How do I verify school zoning for a Cloudbreak Ridge homesite?",
+    answer:
+      "Use the Clark County School District zoning lookup with the lot's full street address, or ask Dr. Jan Duffy to confirm during buyer representation. Do not rely on third-party listing sites alone.",
+  },
+] as const;
+
+export const FLOOR_PLANS_FAQS = [
+  {
+    question: "How many floor plans does Cloudbreak Ridge offer?",
+    answer:
+      "Five KB Home plans across two collections: Enclaves has Plan 2251 (~2,251 sq ft) and Plan 2387 (~2,387 sq ft); Reserves has Plan 2753 (~2,753 sq ft), Plan 2989 (~2,989 sq ft), and Plan 3095 (~3,095 sq ft).",
+  },
+  {
+    question: "What is the smallest floor plan at Cloudbreak Ridge?",
+    answer:
+      "Plan 2251 in Enclaves is the smallest at about 2,251 square feet with three to four bedrooms and 2.5 baths on one level.",
+  },
+  {
+    question: "What is the largest floor plan at Cloudbreak Ridge?",
+    answer:
+      "Plan 3095 in Reserves is the largest at about 3,095 square feet with four to five bedrooms and up to five baths on two stories.",
+  },
+] as const;
+
+export const COMPARISON_FAQS = [
+  {
+    question: "Should I buy in Enclaves or Reserves at Cloudbreak Ridge?",
+    answer:
+      "Choose Enclaves for single-story living around 2,251–2,387 sq ft. Choose Reserves for larger two-story homes (~2,753–3,095 sq ft) and the planned future neighborhood park. Tour both and compare homesite premiums with your Realtor.",
+  },
+  {
+    question: "Is Enclaves or Reserves more expensive at Cloudbreak Ridge?",
+    answer:
+      "Both collections start from the $800,000s on KB Home's public pricing (Reserves from about $839,990 as of mid-2026). Final price depends on plan, elevation, structural options, and homesite premium — confirm live numbers before you write an offer.",
+  },
+  {
+    question: "Are both Enclaves and Reserves gated?",
+    answer:
+      "Yes. Both Enclaves and Reserves at Cloudbreak Ridge are gated KB Home collections within La Madre Peaks, Summerlin West.",
   },
 ] as const;

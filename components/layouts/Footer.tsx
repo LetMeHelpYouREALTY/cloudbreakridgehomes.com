@@ -105,6 +105,38 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/floor-plans"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Floor Plans
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/enclaves-vs-reserves"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Enclaves vs Reserves
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/schools"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Schools
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/la-madre-peaks"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  La Madre Peaks
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/neighborhoods"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >

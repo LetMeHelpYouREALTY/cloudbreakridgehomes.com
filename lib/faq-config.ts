@@ -126,6 +126,10 @@ export const FAQ_DOMAIN_OVERRIDES: Record<string, FAQ[]> = {
       answer: "Homes are close to Scout’s Point, a planned La Madre Peaks village park; Grand Park (phase one complete); Downtown Summerlin® about five minutes via the 215; and outdoor recreation toward Red Rock Canyon." },
     { question: "How do I tour Cloudbreak Ridge or compare Enclaves vs Reserves?",
       answer: "Call or text Dr. Jan Duffy at 702-222-1964, or book a buyer consultation. Register her before your first model visit so you keep independent representation." },
+    { question: "What schools serve Cloudbreak Ridge?",
+      answer: "KB Home lists Linda Rankin Givens Elementary, Sig Rogich Middle, and Palo Verde High for Cloudbreak Ridge (2026). Confirm CCSD zoning for your homesite before you buy." },
+    { question: "Should I choose Enclaves or Reserves?",
+      answer: "Enclaves is single-story (~2,251–2,387 sq ft). Reserves is two-story (~2,753–3,095 sq ft) with a planned neighborhood park. Both are gated and priced from the $800,000s — tour both with your Realtor." },
   ],
 
   "heritagestoneridgevalue.com": [

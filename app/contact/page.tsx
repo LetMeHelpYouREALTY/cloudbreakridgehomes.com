@@ -76,12 +76,11 @@ export default function ContactPage() {
                 How do I reach Dr. Jan for Cloudbreak Ridge?
               </h2>
               <p className="text-slate-700 mb-8">
-                Use the client CTA for tours and first-visit registration. Office NAP below is the
-                Berkshire Hathaway HomeServices Nevada Properties suite — separate from the community
-                models address.
+                Use the client line for tours and first-visit registration. The brokerage office
+                address below is separate from the model homes at Cloudbreak Ridge.
               </p>
 
-              {/* NAP Information */}
+              {/* Office contact */}
               <div className="space-y-4 mb-8">
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
                   <Phone className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />

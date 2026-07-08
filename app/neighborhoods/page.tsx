@@ -14,7 +14,7 @@ import {
   LocalServicesBlock,
   LocalCtaBlock,
   LocalInternalLinks,
-  AeoFaqList,
+  CommunityFaqList,
 } from "@/components/sections/HyperlocalPageBlocks";
 import { CLOUDBREAK_RIDGE_FAQS } from "@/lib/cloudbreak-ridge";
 import { generateFAQSchema, generateRealEstateAgentSchema } from "@/lib/schema";
@@ -147,7 +147,7 @@ export default function NeighborhoodsPage() {
           </section>
 
           <LocalServicesBlock />
-          <AeoFaqList faqs={faqSlice} title="Cloudbreak Ridge & Summerlin FAQ" />
+          <CommunityFaqList faqs={faqSlice} title="Cloudbreak Ridge & Summerlin FAQ" />
           <LocalCtaBlock />
           <LocalInternalLinks excludeHref="/neighborhoods" />
 
@@ -196,7 +196,7 @@ export default function NeighborhoodsPage() {
           </section>
 
           <section className="mb-12 max-w-4xl mx-auto border border-slate-200 rounded-lg p-6">
-            <h2 className="text-xl font-bold text-slate-900 mb-3">Community &amp; office NAP</h2>
+            <h2 className="text-xl font-bold text-slate-900 mb-3">Community &amp; office contact</h2>
             <p className="text-slate-700 text-sm mb-2">
               <strong>Cloudbreak Ridge models:</strong> {CLOUDBREAK_RIDGE.address.full}
             </p>
