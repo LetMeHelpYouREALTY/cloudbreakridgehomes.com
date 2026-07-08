@@ -1,0 +1,31 @@
+---
+description: Always git add, commit, and push to production (main) after substantive work.
+alwaysApply: true
+---
+
+# Always ship to production
+
+After any substantive file change in this repo, **do not wait to be asked**:
+
+1. `git add` (scoped; never secrets / `.env`)
+2. `git commit` with a clear why-focused message
+3. `git push origin main` (production branch)
+
+## Production = main
+
+- Default delivery is **`main`** → Vercel Production.
+- Do not leave finished work only on a feature/Dependabot/preview branch.
+- Prefer fixing on `main` over long-lived PR-only deploys unless the user asks for a PR.
+
+## Skip only when
+
+- Read-only session (no file changes)
+- User says **do not commit**, **do not push**, or **local only**
+- Working tree is clean after your work
+
+## Safety
+
+- No force-push to `main`
+- No `--no-verify` unless explicitly requested
+- No committing secrets
+- Fix broken builds before push when the change is deploy-bound
