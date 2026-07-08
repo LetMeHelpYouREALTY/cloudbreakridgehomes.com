@@ -105,6 +105,8 @@ export default function NeighborhoodsPage() {
             </p>
           </div>
 
+        <RealScoutListings />
+
           <HyperlocalIntro
             h2="Which Summerlin areas matter for Cloudbreak Ridge buyers?"
             lead="Start with La Madre Peaks and Cloudbreak Ridge (Enclaves and Reserves), then compare Grand Park proximity, Downtown Summerlin® (~5 minutes on the 215), The Ridges luxury resale, and Red Rock Canyon recreation — using amenities and commute facts, not demographic labels."
@@ -245,8 +247,7 @@ export default function NeighborhoodsPage() {
           page, La Madre Peaks community guides
         </div>
       </main>
-      <RealScoutListings />
-      <Footer />
+<Footer />
     </>
   );
 }

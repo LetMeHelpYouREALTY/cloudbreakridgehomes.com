@@ -82,6 +82,8 @@ export default function BringYourRealtorPage() {
             </p>
           </div>
 
+        <RealScoutListings />
+
           <HyperlocalIntro
             h2="Do I need my agent at the first Cloudbreak Ridge model visit?"
             lead={`Yes — ${BRING_YOUR_REALTOR.body}`}
@@ -97,8 +99,7 @@ export default function BringYourRealtorPage() {
           <LocalCtaBlock />
           <LocalInternalLinks excludeHref="/bring-your-realtor" />
         </div>
-        <RealScoutListings />
-      </main>
+</main>
       <Footer />
     </>
   );

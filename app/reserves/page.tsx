@@ -72,6 +72,8 @@ export default function ReservesPage() {
             </p>
           </div>
 
+        <RealScoutListings />
+
           <HyperlocalIntro
             h2="What floor plans are in Reserves at Cloudbreak Ridge?"
             lead={`${RESERVES_COLLECTION.summary} Sales office: ${CLOUDBREAK_RIDGE.address.full}. Grand Park is less than five minutes away; Downtown Summerlin® about five minutes on the 215.`}
@@ -95,8 +97,7 @@ export default function ReservesPage() {
           <LocalCtaBlock />
           <LocalInternalLinks excludeHref="/reserves" />
         </div>
-        <RealScoutListings />
-      </main>
+</main>
       <Footer />
     </>
   );

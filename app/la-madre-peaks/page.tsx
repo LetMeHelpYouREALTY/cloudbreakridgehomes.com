@@ -108,6 +108,8 @@ export default function LaMadrePeaksPage() {
             </p>
           </div>
 
+        <RealScoutListings />
+
           <HyperlocalIntro
             h2="Where is La Madre Peaks relative to Downtown Summerlin®?"
             lead="La Madre Peaks sits in Summerlin West. From Cloudbreak Ridge, the 215 Beltway reaches Downtown Summerlin® in about five minutes; Grand Park is less than five minutes; Red Rock Canyon recreation is a short drive west."
@@ -146,8 +148,7 @@ export default function LaMadrePeaksPage() {
           <LocalCtaBlock />
           <LocalInternalLinks excludeHref="/la-madre-peaks" />
         </div>
-        <RealScoutListings />
-      </main>
+</main>
       <Footer />
     </>
   );

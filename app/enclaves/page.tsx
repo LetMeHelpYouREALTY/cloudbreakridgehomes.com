@@ -72,6 +72,8 @@ export default function EnclavesPage() {
             </p>
           </div>
 
+        <RealScoutListings />
+
           <HyperlocalIntro
             h2="Where are Enclaves at Cloudbreak Ridge?"
             lead={`${ENCLAVES_COLLECTION.summary} Models are at ${CLOUDBREAK_RIDGE.address.full}, near Mountain Run Drive and Park Drift Trail. Downtown Summerlin® is about five minutes via the 215 Beltway.`}
@@ -95,8 +97,7 @@ export default function EnclavesPage() {
           <LocalCtaBlock />
           <LocalInternalLinks excludeHref="/enclaves" />
         </div>
-        <RealScoutListings />
-      </main>
+</main>
       <Footer />
     </>
   );

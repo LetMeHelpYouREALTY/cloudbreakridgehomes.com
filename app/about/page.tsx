@@ -135,6 +135,8 @@ export default function AboutPage() {
             </p>
           </div>
 
+        <RealScoutListings />
+
           <section className="mb-12 max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-900 mb-3">
               Who represents buyers at Cloudbreak Ridge?
@@ -473,8 +475,7 @@ export default function AboutPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
-      <Footer />
+<Footer />
     </>
   );
 }

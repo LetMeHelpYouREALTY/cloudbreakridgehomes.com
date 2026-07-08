@@ -131,6 +131,8 @@ export default async function Home() {
           </div>
         </section>
 
+        <RealScoutListings />
+
         {isCloudbreak && <CloudbreakRidgeOverview />}
 
         <section className="py-16 md:py-20 bg-white">
@@ -214,10 +216,6 @@ export default async function Home() {
             </div>
           </div>
         </section>
-
-        <LazyWhenVisible minHeight={480}>
-          <RealScoutListings />
-        </LazyWhenVisible>
         <WhyChooseUs />
         <ReviewsSection />
 
