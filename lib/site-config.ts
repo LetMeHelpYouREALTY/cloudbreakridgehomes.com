@@ -10,7 +10,8 @@ export const siteConfig = {
     "Cloudbreak Ridge Homes by Dr. Jan Duffy | Berkshire Hathaway HomeServices Nevada Properties",
   brandName: "Cloudbreak Ridge Homes",
   shortName: "Cloudbreak Ridge",
-  url: "https://cloudbreakridgehomes.com",
+  /** Canonical production host (apex 301/308s to www — match GSC property + sitemap). */
+  url: "https://www.cloudbreakridgehomes.com",
   description:
     "Cloudbreak Ridge Homes by Dr. Jan Duffy — the newest Summerlin neighborhood in La Madre Peaks. Enclaves (gated single-story) and Reserves (two-story) homes from the $800,000s near Scout’s Point, Grand Park, and Downtown Summerlin®.",
 };

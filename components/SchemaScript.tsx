@@ -8,6 +8,9 @@
  */
 
 import { combineSchemas, schemaToJsonLd } from "@/lib/schema";
+import { siteConfig } from "@/lib/site-config";
+
+const BASE_URL = siteConfig.url;
 
 interface SchemaScriptProps {
   /** Single schema object */
@@ -64,7 +67,7 @@ export function BreadcrumbSchema({
       name: item.name,
       item: item.url.startsWith("http")
         ? item.url
-        : `https://cloudbreakridgehomes.com${item.url}`,
+          : `${BASE_URL}${item.url}`,
     })),
   };
 
@@ -118,7 +121,7 @@ export function ReviewSchema({
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://cloudbreakridgehomes.com#organization",
+    "@id": `${BASE_URL}#organization`,
     name: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
   };
 
@@ -174,7 +177,7 @@ export function NeighborhoodSchema({
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Place",
-    "@id": `https://cloudbreakridgehomes.com/neighborhoods/${slug}#place`,
+    "@id": `${BASE_URL}/neighborhoods/${slug}#place`,
     name: `${name}, Las Vegas`,
     description,
     address: {

@@ -18,7 +18,7 @@ export const businessInfo = {
     tel: "+17025001942",
   },
   email: "info@cloudbreakridgehomes.com",
-  url: "https://cloudbreakridgehomes.com",
+  url: "https://www.cloudbreakridgehomes.com",
 
   // Business Details
   license: "S.0197614.LLC",
@@ -159,11 +159,11 @@ Specialized services include: buyer and seller representation, luxury home sales
 Dr. Jan's approach is simple: treat every client like family, know the market inside and out, and never stop working until the deal closes successfully.`,
 
   // Section 3: Where - Areas served (~250 words)
-  whereWeServe: `Dr. Jan serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County. Neighborhood expertise includes Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, family-friendly Centennial Hills and Skye Canyon, and affordable options in Mountains Edge and North Las Vegas.
+  whereWeServe: `Dr. Jan’s primary focus for this site is Cloudbreak Ridge in La Madre Peaks, Summerlin West, plus broader Summerlin villages (Downtown Summerlin® corridor, The Ridges, Red Rock–adjacent areas). She also assists buyers comparing Summerlin West new construction with Henderson and other Las Vegas Valley options when the search expands.
 
-55+ active adult community specialization covers Sun City Summerlin (Nevada's largest 55+ community), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Investment property expertise spans single-family rentals, multi-family opportunities, and short-term rental analysis across the Las Vegas metro area.
+Neighborhood guidance emphasizes square footage, parks, trails, golf adjacency, gates, and commute times on the 215 Beltway — not demographic labels. Amenities near Cloudbreak Ridge include Scout’s Point (planned), Grand Park (phase one complete), and Downtown Summerlin® about five minutes away.
 
-Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Call (702) 500-1942 for a free consultation or visit cloudbreakridgehomes.com to start your Las Vegas real estate journey today.`,
+Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Client CTA: (702) 222-1964. Office line: (702) 500-1942. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Visit cloudbreakridgehomes.com to tour Enclaves and Reserves with independent representation.`,
 };
 
 // FAQ Schema for GBP Q&A section
@@ -215,7 +215,7 @@ export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "@id": "https://cloudbreakridgehomes.com/#organization",
+    "@id": "https://www.cloudbreakridgehomes.com/#organization",
     name: businessInfo.name,
     image: getAgentHeadshotUrl(),
     url: businessInfo.url,

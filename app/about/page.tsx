@@ -45,7 +45,7 @@ const personSchema = {
   image: drJanDuffyPhotos.headshot.url,
   telephone: "+17025001942",
   email: "info@cloudbreakridgehomes.com",
-  url: "https://cloudbreakridgehomes.com/about",
+  url: "https://www.cloudbreakridgehomes.com/about",
   worksFor: {
     "@type": "RealEstateAgent",
     name: "Berkshire Hathaway HomeServices Nevada Properties",

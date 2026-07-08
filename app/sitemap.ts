@@ -1,7 +1,8 @@
 import { MetadataRoute } from "next";
+import { siteConfig } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://cloudbreakridgehomes.com";
+  const baseUrl = siteConfig.url;
   const lastModified = new Date();
 
   // Core pages
@@ -9,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: baseUrl, priority: 1.0, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/enclaves`, priority: 0.95, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/reserves`, priority: 0.95, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/la-madre-peaks`, priority: 0.95, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/bring-your-realtor`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/about`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/contact`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/listings`, priority: 0.9, changeFrequency: "daily" as const },
@@ -18,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/market-insights`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/google-business`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/faq`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/security-policy`, priority: 0.3, changeFrequency: "yearly" as const },
   ];
 
   // Service pages
@@ -48,11 +52,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/sellers/relocation`, priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
-  // 55+ community sub-pages
+  // 55+ community sub-pages (only routes that exist as page.tsx)
   const fiftyPlusCommunityPages = [
     { url: `${baseUrl}/55-plus-communities/sun-city-summerlin`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/55-plus-communities/sun-city-anthem`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/55-plus-communities/del-webb-lake-las-vegas`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/55-plus-communities/heritage-stonebridge`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/55-plus-communities/trilogy-summerlin`, priority: 0.8, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/55-plus-communities/solera-anthem`, priority: 0.7, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/55-plus-communities/sun-city-aliante`, priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
   // Neighborhood pages (Summerlin-focused hub; legacy subroutes kept crawlable)
@@ -70,7 +78,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/neighborhoods/mountains-edge`, priority: 0.4, changeFrequency: "monthly" as const },
   ];
 
-  const allPages = [...corePages, ...servicePages, ...buyerPersonaPages, ...sellerPersonaPages, ...fiftyPlusCommunityPages, ...neighborhoodPages];
+  const allPages = [
+    ...corePages,
+    ...servicePages,
+    ...buyerPersonaPages,
+    ...sellerPersonaPages,
+    ...fiftyPlusCommunityPages,
+    ...neighborhoodPages,
+  ];
 
   return allPages.map((page) => ({
     url: page.url,

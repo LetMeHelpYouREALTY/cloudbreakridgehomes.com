@@ -49,7 +49,7 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "Berkshire Hathaway HomeServices Nevada Properties",
-    url: "https://cloudbreakridgehomes.com",
+    url: "https://www.cloudbreakridgehomes.com",
   },
 };
 
