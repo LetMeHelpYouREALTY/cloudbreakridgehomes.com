@@ -1,4 +1,4 @@
-# Contributing to HeyBerkshire.com
+# Contributing to Cloudbreak Ridge Homes.com
 
 ## Development Setup
 
@@ -10,8 +10,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/DrJanDuffy/heyberkshire.com.git
-cd heyberkshire.com
+git clone https://github.com/DrJanDuffy/cloudbreakridgehomes.com.git
+cd cloudbreakridgehomes.com
 
 # Install dependencies
 pnpm install
@@ -23,7 +23,7 @@ pnpm dev
 ## Project Structure
 
 ```
-heyberkshire.com/
+cloudbreakridgehomes.com/
 ├── app/                    # Next.js App Router pages
 ├── components/             # React components
 │   ├── calendly/          # Calendly widget integration

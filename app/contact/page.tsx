@@ -2,7 +2,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { Phone, Mail, MapPin, Clock, Calendar, CheckCircle, Star, Users, Shield } from "lucide-react";
-import CalendlyWidget from "@/components/calendly/CalendlyWidget";
+import CalendlyInlineWidget from "@/components/calendly/CalendlyInlineWidget";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -26,7 +26,7 @@ const contactSchema = {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     telephone: "+17025001942",
-    email: "homes@heyberkshire.com",
+    email: "info@cloudbreakridgehomes.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "9406 W Lake Mead Blvd, Suite 100",
@@ -97,10 +97,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
                     <a
-                      href="mailto:homes@heyberkshire.com"
+                      href="mailto:info@cloudbreakridgehomes.com"
                       className="text-blue-600 hover:text-blue-700 font-medium"
                     >
-                      Homes@HeyBerkshire.com
+                      info@cloudbreakridgehomes.com
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
                       Typically respond within 2 hours
@@ -193,7 +193,7 @@ export default function ContactPage() {
                     or in-person meeting at our office.
                   </p>
                 </div>
-                <CalendlyWidget height="600px" />
+                <CalendlyInlineWidget />
               </div>
 
               {/* Why Contact BHHS */}
@@ -272,13 +272,13 @@ export default function ContactPage() {
                 </div>
               </a>
               <a
-                href="mailto:homes@heyberkshire.com"
+                href="mailto:info@cloudbreakridgehomes.com"
                 className="flex items-center justify-center bg-slate-700 hover:bg-slate-800 text-white p-6 rounded-xl transition-colors"
               >
                 <Mail className="h-8 w-8 mr-4" />
                 <div className="text-left">
                   <div className="font-bold text-lg">Send Email</div>
-                  <div className="text-slate-300">Homes@HeyBerkshire.com</div>
+                  <div className="text-slate-300">info@cloudbreakridgehomes.com</div>
                 </div>
               </a>
             </div>

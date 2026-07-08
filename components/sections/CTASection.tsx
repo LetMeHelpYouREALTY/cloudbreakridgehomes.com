@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Home } from "lucide-react";
+import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
 
 export default function CTASection() {
   return (
@@ -46,7 +47,7 @@ export default function CTASection() {
             </Button>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 text-blue-100 text-sm">
+          <div className="flex flex-wrap justify-center gap-6 text-blue-100 text-sm mb-10">
             <div className="flex items-center gap-2">
               <span className="font-semibold text-white">Free Consultation</span>
             </div>
@@ -57,6 +58,12 @@ export default function CTASection() {
               <span className="font-semibold text-white">Expert Guidance</span>
             </div>
           </div>
+
+          <CalendlyBookingSection
+            title="Book Your Buyer Consultation"
+            subtitle="Schedule a free 30-minute consultation with Dr. Jan Duffy."
+            variant="dark"
+          />
         </div>
       </div>
     </section>

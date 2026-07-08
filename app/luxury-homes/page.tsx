@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
 import Link from "next/link";
 import { 
   Phone, 
@@ -426,7 +427,7 @@ export default function LuxuryHomesPage() {
               Berkshire Hathaway prestige your transaction deserves. Confidential consultations 
               available for discerning clients.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <a
                 href="tel:+17025001942"
                 className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
@@ -438,9 +439,14 @@ export default function LuxuryHomesPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center bg-slate-700 hover:bg-slate-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               >
-                Schedule Private Consultation
+                View Contact Info
               </Link>
             </div>
+            <CalendlyBookingSection
+              title="Book a Private Luxury Consultation"
+              subtitle="Schedule a confidential 30-minute consultation with Dr. Jan Duffy."
+              variant="dark"
+            />
             <p className="mt-4 text-slate-400 text-sm">
               Berkshire Hathaway HomeServices Nevada Properties
             </p>

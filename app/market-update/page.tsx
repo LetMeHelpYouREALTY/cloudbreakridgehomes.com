@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
 import Link from "next/link";
 import {
   Phone,
@@ -48,7 +49,7 @@ const articleSchema = {
   publisher: {
     "@type": "Organization",
     name: "Berkshire Hathaway HomeServices Nevada Properties",
-    url: "https://heyberkshire.com",
+    url: "https://cloudbreakridgehomes.com",
   },
 };
 
@@ -404,29 +405,12 @@ export default function MarketUpdatePage() {
             </p>
           </section>
 
-          {/* Newsletter Signup */}
-          <section className="mt-16 max-w-2xl mx-auto text-center">
-            <h3 className="text-xl font-bold text-slate-900 mb-4">
-              Get Weekly Market Updates in Your Inbox
-            </h3>
-            <p className="text-slate-600 mb-6">
-              Join 2,500+ Las Vegas homeowners and investors who receive Dr. Jan's weekly market
-              analysis every Monday morning.
-            </p>
-            <div className="flex gap-2 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-              />
-              <button className="px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-colors">
-                Subscribe
-              </button>
-            </div>
-            <p className="mt-3 text-xs text-slate-500">
-              No spam. Unsubscribe anytime. Your data is protected.
-            </p>
-          </section>
+          {/* Book a Consultation */}
+          <CalendlyBookingSection
+            className="mt-16"
+            title="Get Weekly Market Insights — Book a Consultation"
+            subtitle="Prefer a personalized market briefing? Schedule a 30-minute buyer consultation with Dr. Jan Duffy."
+          />
         </div>
         <div className="text-center text-sm text-slate-500 mt-12">
           Last Updated: January 24, 2026 | Data Source: Las Vegas REALTORS® MLS

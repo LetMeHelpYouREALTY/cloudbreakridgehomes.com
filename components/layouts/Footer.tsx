@@ -1,5 +1,32 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+
+function SocialIcon({ name }: { name: "facebook" | "instagram" | "linkedin" }) {
+  const paths: Record<typeof name, string> = {
+    facebook:
+      "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
+    instagram:
+      "M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z",
+    linkedin:
+      "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-12h4v1.7M2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+  };
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5"
+      aria-hidden="true"
+    >
+      <path d={paths[name]} />
+    </svg>
+  );
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,7 +50,7 @@ export default function Footer() {
                 className="text-slate-400 hover:text-white transition-colors"
                 aria-label="Search Las Vegas Homes"
               >
-                <Facebook className="h-5 w-5" />
+                <SocialIcon name="facebook" />
               </a>
               <a
                 href="http://drjanduffy.realscout.com/"
@@ -32,7 +59,7 @@ export default function Footer() {
                 className="text-slate-400 hover:text-white transition-colors"
                 aria-label="Search Las Vegas Homes"
               >
-                <Instagram className="h-5 w-5" />
+                <SocialIcon name="instagram" />
               </a>
               <a
                 href="http://drjanduffy.realscout.com/"
@@ -41,7 +68,7 @@ export default function Footer() {
                 className="text-slate-400 hover:text-white transition-colors"
                 aria-label="Search Las Vegas Homes"
               >
-                <Linkedin className="h-5 w-5" />
+                <SocialIcon name="linkedin" />
               </a>
             </div>
           </div>
@@ -190,10 +217,10 @@ export default function Footer() {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0" />
                 <Link
-                  href="mailto:homes@heyberkshire.com"
+                  href="mailto:info@cloudbreakridgehomes.com"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
-                  Homes@HeyBerkshire.com
+                  info@cloudbreakridgehomes.com
                 </Link>
               </li>
             </ul>

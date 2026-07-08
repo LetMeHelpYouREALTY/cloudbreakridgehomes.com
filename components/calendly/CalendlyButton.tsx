@@ -1,45 +1,39 @@
 "use client";
 
-import Script from "next/script";
+import { CALENDLY_BUYER_CONSULTATION_URL } from "@/lib/calendly-config";
+import { CALENDLY_LOADED_EVENT } from "./types";
 import "./types";
 
-interface CalendlyButtonProps {
+type CalendlyButtonProps = {
   url?: string;
   text?: string;
   className?: string;
   children?: React.ReactNode;
-}
+};
 
 export default function CalendlyButton({
-  url = "https://calendly.com/drjanduffy/appointment",
+  url = CALENDLY_BUYER_CONSULTATION_URL,
   text = "Schedule time with me",
   className = "inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors",
   children,
 }: CalendlyButtonProps) {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
+
+    const openPopup = () => {
+      window.Calendly?.initPopupWidget({ url });
+    };
+
     if (window.Calendly) {
-      window.Calendly.initPopupWidget({ url });
+      openPopup();
+    } else {
+      window.addEventListener(CALENDLY_LOADED_EVENT, openPopup, { once: true });
     }
   };
 
   return (
-    <>
-      <link
-        href="https://assets.calendly.com/assets/external/widget.css"
-        rel="stylesheet"
-      />
-      <Script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        strategy="lazyOnload"
-      />
-      <a
-        href=""
-        onClick={handleClick}
-        className={className}
-      >
-        {children || text}
-      </a>
-    </>
+    <button type="button" onClick={handleClick} className={className}>
+      {children || text}
+    </button>
   );
 }

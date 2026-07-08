@@ -1,8 +1,8 @@
-// Site Configuration - HeyBerkshire.com
+// Site Configuration - cloudbreakridgehomes.com
 // Berkshire Hathaway HomeServices Nevada Properties
 
 export const siteConfig = {
-  name: "HeyBerkshire",
+  name: "Cloudbreak Ridge Homes",
   fullName: "Berkshire Hathaway HomeServices Nevada Properties",
   tagline: "Private Client Real Estate Advisory",
   /** Full brand line for titles and OG: Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory */
@@ -10,7 +10,7 @@ export const siteConfig = {
     "Berkshire Hathaway HomeServices Nevada Properties | Private Client Real Estate Advisory",
   brandName: "Berkshire Hathaway HomeServices",
   shortName: "BHHS",
-  url: "https://heyberkshire.com",
+  url: "https://cloudbreakridgehomes.com",
   description:
     "Expert real estate services in Las Vegas and Henderson, NV. Buy, sell, or invest with Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent.",
 };
@@ -22,7 +22,7 @@ export const agentInfo = {
   phone: "(702) 500-1942",
   phoneFormatted: "(702) 500-1942",
   phoneTel: "tel:+17025001942",
-  email: "homes@heyberkshire.com",
+  email: "info@cloudbreakridgehomes.com",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
 };
 

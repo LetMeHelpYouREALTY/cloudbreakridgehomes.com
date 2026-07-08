@@ -1,5 +1,5 @@
 /**
- * Schema.org Structured Data Generators for heyberkshire.com
+ * Schema.org Structured Data Generators for cloudbreakridgehomes.com
  * Following Google's 2025 Structured Data Guidelines
  *
  * @see https://schema.org
@@ -65,11 +65,11 @@ const BASE_URL = siteConfig.url;
 
 // Social media profiles (to be updated with actual URLs)
 export const socialProfiles = {
-  facebook: "https://www.facebook.com/heyberkshire",
-  instagram: "https://www.instagram.com/heyberkshire",
+  facebook: "https://www.facebook.com/cloudbreakridgehomes",
+  instagram: "https://www.instagram.com/cloudbreakridgehomes",
   linkedin: "https://www.linkedin.com/in/drjanduffy",
-  tiktok: "https://www.tiktok.com/@heyberkshire",
-  youtube: "https://www.youtube.com/@heyberkshire",
+  tiktok: "https://www.tiktok.com/@cloudbreakridgehomes",
+  youtube: "https://www.youtube.com/@cloudbreakridgehomes",
 };
 
 // ============================================================================
@@ -87,7 +87,7 @@ export function generateRealEstateAgentSchema() {
     "@id": `${BASE_URL}#organization`,
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     alternateName: [
-      "HeyBerkshire",
+      "Cloudbreak Ridge Homes",
       "BHHS Nevada Properties",
       "Berkshire Hathaway HomeServices",
     ],

@@ -3,6 +3,8 @@ import Footer from "@/components/layouts/Footer";
 import Image from "next/image";
 import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CalendlyInlineWidget from "@/components/calendly/CalendlyInlineWidget";
+import CalendlyButton from "@/components/calendly/CalendlyButton";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -114,15 +116,15 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                 </div>
               </div>
 
-              {/* RealScout Widget Integration Point */}
+              {/* Schedule a Showing */}
               <div className="bg-blue-50 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Schedule a Showing</h3>
                 <p className="text-slate-700 mb-4">
-                  Contact us to schedule a private viewing of this property.
+                  Book a private viewing of this property with Dr. Jan Duffy.
                 </p>
-                <Button asChild className="bg-blue-600 hover:bg-blue-700">
-                  <a href="/contact">Contact Agent</a>
-                </Button>
+                <div className="bg-white rounded-lg overflow-hidden border border-slate-200">
+                  <CalendlyInlineWidget />
+                </div>
               </div>
             </div>
 
@@ -138,9 +140,9 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                   <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
                     <a href="tel:+17025001942">Call (702) 500-1942</a>
                   </Button>
-                  <Button asChild variant="outline" className="w-full">
-                    <a href="/contact">Send Message</a>
-                  </Button>
+                  <CalendlyButton className="w-full inline-flex items-center justify-center bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-md font-semibold hover:bg-blue-50 transition-colors">
+                    Schedule Consultation
+                  </CalendlyButton>
                 </div>
               </div>
             </div>

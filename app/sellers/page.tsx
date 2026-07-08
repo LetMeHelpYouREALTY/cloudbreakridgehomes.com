@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
 import Link from "next/link";
 import {
   Phone,
@@ -424,7 +425,7 @@ export default function SellersPage() {
               could sell for with Berkshire Hathaway HomeServices. No obligation, no pressure—just 
               honest advice and expert analysis.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <a
                 href="tel:+17025001942"
                 className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
@@ -436,9 +437,14 @@ export default function SellersPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center bg-slate-700 hover:bg-slate-600 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               >
-                Schedule Consultation
+                View Contact Info
               </Link>
             </div>
+            <CalendlyBookingSection
+              title="Book Your Listing Consultation"
+              subtitle="Schedule a free consultation to discuss selling your Las Vegas home."
+              variant="dark"
+            />
             <p className="mt-4 text-slate-400 text-sm">
               Berkshire Hathaway HomeServices Nevada Properties
             </p>

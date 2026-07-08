@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { getFaqsForDomain } from "@/lib/faq-config";
+import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
 
 // Maps pageType → human-readable FAQ section title/subtitle
 const FAQ_SECTION_COPY: Record<
@@ -58,7 +59,7 @@ export default async function Home() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     name: `Dr. Jan Duffy - ${config.neighborhood} Real Estate`,
-    url: `https://${config.domain !== "default" ? config.domain : "heyberkshire.com"}`,
+    url: `https://${config.domain !== "default" ? config.domain : "cloudbreakridgehomes.com"}`,
     telephone: "+17022221964",
     address: {
       "@type": "PostalAddress",
@@ -227,7 +228,7 @@ export default async function Home() {
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               {config.ctaSubheadline}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <a
                 href="tel:+17022221964"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
@@ -239,9 +240,14 @@ export default async function Home() {
                 href="/contact"
                 className="inline-block bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-md font-bold text-lg transition-colors"
               >
-                Send a Message
+                View Contact Info
               </Link>
             </div>
+            <CalendlyBookingSection
+              title="Book Your Buyer Consultation"
+              subtitle="Schedule a free 30-minute consultation to discuss your real estate goals."
+              variant="dark"
+            />
             <p className="mt-6 text-blue-200 text-sm">
               Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada Properties
             </p>

@@ -9,8 +9,14 @@ declare global {
         textColor: string;
         branding?: boolean;
       }) => void;
+      initInlineWidget: (options: {
+        url: string;
+        parentElement: HTMLElement;
+      }) => void;
     };
   }
 }
+
+export const CALENDLY_LOADED_EVENT = "calendly-loaded";
 
 export {};
