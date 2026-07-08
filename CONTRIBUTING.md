@@ -1,4 +1,4 @@
-# Contributing to Cloudbreak Ridge Homes.com
+# Contributing to Cloudbreak Ridge Homes
 
 ## Development Setup
 
