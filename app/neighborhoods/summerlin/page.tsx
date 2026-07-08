@@ -13,15 +13,14 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Summerlin | Las Vegas Luxury Real Estate",
+  title: "Summerlin & La Madre Peaks Homes | Near Cloudbreak Ridge",
   description:
-    "Find Summerlin homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 500-1942.",
+    "Summerlin West and La Madre Peaks guidance near Cloudbreak Ridge — parks, trails, golf adjacency, 215 commute to Downtown Summerlin®. Dr. Jan Duffy, BHHS. Call 702-222-1964.",
   keywords: [
-    "Berkshire Hathaway HomeServices Summerlin",
-    "Summerlin homes for sale",
-    "Summerlin real estate agent",
-    "Summerlin Las Vegas",
-    "luxury homes Summerlin",
+    "Summerlin West homes",
+    "La Madre Peaks Summerlin",
+    "Cloudbreak Ridge Summerlin",
+    "Downtown Summerlin real estate",
   ],
 };
 
@@ -35,24 +34,24 @@ const breadcrumbs = [
 // FAQ data for schema
 const summerlinFaqs = [
   {
-    question: "What is the current median home price in Summerlin?",
+    question: "Where is Cloudbreak Ridge within Summerlin?",
     answer:
-      "As of January 2026, the median home price in Summerlin is $625,000, representing a 6.8% increase year-over-year. Luxury homes in The Ridges and other guard-gated communities can exceed $2 million.",
+      "Cloudbreak Ridge by KB Home sits in La Madre Peaks, Summerlin’s newest village in Summerlin West, at 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138 — about five minutes to Downtown Summerlin® via the 215.",
   },
   {
-    question: "How long do homes stay on the market in Summerlin?",
+    question: "What collections are available at Cloudbreak Ridge?",
     answer:
-      "Summerlin homes currently average 22 days on market, faster than the Las Vegas Valley average of 28 days. Well-priced homes in desirable villages often receive multiple offers within the first week.",
+      "Enclaves (gated single-story, ~2,251–2,387 sq ft) and Reserves (two-story, ~2,753–3,095 sq ft with a planned neighborhood park). Both are priced from the $800,000s — confirm live builder pricing.",
   },
   {
-    question: "What makes Summerlin different from other Las Vegas communities?",
+    question: "What amenities define Summerlin West near La Madre Peaks?",
     answer:
-      "Summerlin offers 150+ parks, 150+ miles of trails, top-rated schools, and stunning Red Rock Canyon views. The Howard Hughes Corporation has developed Summerlin with careful planning since 1990, creating distinct villages each with unique character.",
+      "Scout’s Point (planned village park), Grand Park (phase one complete with playgrounds, trails, courts, and fields), Downtown Summerlin® about five minutes on the 215, and outdoor recreation toward Red Rock Canyon.",
   },
   {
-    question: "Why should I use a Berkshire Hathaway HomeServices agent in Summerlin?",
+    question: "Why work with Dr. Jan Duffy in Summerlin West?",
     answer:
-      "Berkshire Hathaway HomeServices agents like Dr. Jan Duffy bring deep Summerlin expertise combined with the global resources and trusted reputation of the BHHS brand. This combination helps buyers compete in Summerlin's competitive market and helps sellers maximize their home's value.",
+      "Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties provides independent buyer representation at Cloudbreak Ridge and Summerlin West resale — register before your first model visit. Call 702-222-1964.",
   },
 ];
 
@@ -63,7 +62,7 @@ const pageSchemas = combineSchemas(
     name: "Summerlin",
     slug: "summerlin",
     description:
-      "Premier master-planned community in Las Vegas featuring Red Rock Canyon views, 150+ parks, top-rated schools, and luxury homes from $400K to $10M+.",
+      "Master-planned community including La Madre Peaks and Cloudbreak Ridge by KB Home — parks, trails, golf, and Downtown Summerlin® access via the 215 Beltway.",
     latitude: 36.1672,
     longitude: -115.331,
     containedIn: "Las Vegas",
@@ -150,9 +149,9 @@ export default function SummerlinPage() {
               </p>
               <p>
                 <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has deep roots in Summerlin,
-                and our agents understand the nuances of each village—from the family-friendly atmosphere of
-                The Paseos to the luxury estates of The Ridges. Whether you're a first-time buyer looking at
-                condos in Affinity or a move-up buyer seeking a custom home in Red Rock Country Club, BHHS
+                and our agents understand the nuances of each village—from open-space parks in The Paseos to
+                the luxury estates of The Ridges. Whether you're comparing Cloudbreak Ridge Enclaves vs Reserves
+                in La Madre Peaks or shopping a custom home near Red Rock Country Club, BHHS
                 has the expertise to guide you through the process.
               </p>
 
@@ -340,7 +339,7 @@ export default function SummerlinPage() {
                   What makes Summerlin different from other Las Vegas communities?
                 </h3>
                 <p className="text-slate-600">
-                  Summerlin offers 150+ parks, 150+ miles of trails, top-rated schools, and stunning
+                  Summerlin offers 150+ parks, 150+ miles of trails, Red Rock Canyon access, and stunning
                   Red Rock Canyon views. The Howard Hughes Corporation has developed Summerlin with
                   careful planning since 1990, creating distinct villages each with unique character.
                 </p>

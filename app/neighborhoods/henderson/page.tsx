@@ -6,15 +6,14 @@ import { Phone, Shield, Users, GraduationCap, TreePine } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
+  title: "Henderson Homes vs Summerlin West | Cloudbreak Ridge Context",
   description:
-    "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's family-friendly communities. Median price $485K. Call (702) 500-1942.",
+    "Comparing Henderson (Green Valley, Inspirada) with Summerlin West and Cloudbreak Ridge in La Madre Peaks? Dr. Jan Duffy helps with amenities, sq ft, and commute facts. Call 702-222-1964.",
   keywords: [
-    "Berkshire Hathaway HomeServices Henderson",
+    "Henderson vs Summerlin West",
     "Henderson homes for sale",
-    "Henderson real estate agent",
-    "Henderson Nevada",
     "Green Valley Henderson",
+    "Cloudbreak Ridge comparison",
   ],
 };
 
@@ -22,7 +21,8 @@ const neighborhoodSchema = {
   "@context": "https://schema.org",
   "@type": "Place",
   name: "Henderson, Nevada",
-  description: "Nevada's second-largest city known for safety, schools, and family-friendly communities",
+  description:
+    "Henderson Nevada home search context for buyers also considering Summerlin West and Cloudbreak Ridge — parks, trails, and commute comparisons.",
   geo: {
     "@type": "GeoCoordinates",
     latitude: "36.0395",
@@ -44,26 +44,26 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How safe is Henderson compared to Las Vegas?",
+      name: "How does Henderson compare to Summerlin West for amenities?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Henderson consistently ranks as one of America's safest cities. It has been named the safest city in Nevada and frequently appears in national 'Best Places to Live' rankings for its low crime rates and family-friendly environment.",
+        text: "Henderson offers established parks and trail networks in areas like Green Valley and Inspirada. Summerlin West buyers looking at Cloudbreak Ridge also weigh Scout’s Point, Grand Park, and ~5-minute Downtown Summerlin® access via the 215. Dr. Jan maps amenity and commute tradeoffs — not demographic labels.",
       },
     },
     {
       "@type": "Question",
-      name: "What are the best neighborhoods in Henderson?",
+      name: "What Henderson areas do relocators often compare?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Henderson's top neighborhoods include Green Valley (established, mature landscaping), Inspirada (resort-style amenities), MacDonald Highlands (luxury), Anthem (family-oriented), and Lake Las Vegas (waterfront living). Each offers distinct lifestyle options.",
+        text: "Common comparisons include Green Valley (mature landscaping, established retail), Inspirada (newer resort-style amenities), MacDonald Highlands (custom/luxury), Anthem, and Lake Las Vegas. Many shoppers also tour Cloudbreak Ridge in La Madre Peaks when evaluating Summerlin West new construction.",
       },
     },
     {
       "@type": "Question",
-      name: "Why choose Berkshire Hathaway HomeServices for Henderson real estate?",
+      name: "Why work with Dr. Jan Duffy when comparing Henderson and Summerlin?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BHHS Nevada Properties has served Henderson for decades. Our agents like Dr. Jan Duffy know every community, school district, and HOA. The Berkshire Hathaway name provides trust and resources that benefit both buyers and sellers.",
+        text: "Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties helps buyers compare square footage, parks, HOAs, and commute times across Henderson and Summerlin West — including first-visit registration at Cloudbreak Ridge. Call 702-222-1964.",
       },
     },
   ],
@@ -100,11 +100,12 @@ export default function HendersonPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Henderson
+              Henderson Homes vs Summerlin West
             </h1>
             <p className="text-xl text-slate-600">
-              Nevada's safest city. Find your Henderson home with Dr. Jan Duffy, your trusted{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> Henderson specialist.
+              Comparing Green Valley, Inspirada, or MacDonald Highlands with Cloudbreak Ridge in La
+              Madre Peaks? Dr. Jan Duffy maps amenities, square footage, and commute times — call{" "}
+              <a href="tel:+17022221964" className="text-blue-600 font-semibold">702-222-1964</a>.
             </p>
           </div>
 
@@ -137,21 +138,22 @@ export default function HendersonPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                Why Henderson Is Nevada's Best-Kept Secret
+                How does Henderson compare to Cloudbreak Ridge / Summerlin West?
               </h2>
               <p>
-                <strong>Henderson</strong> has quietly become one of the most desirable cities in the American
-                Southwest. As Nevada's second-largest city with over 320,000 residents, Henderson offers the
-                perfect balance of suburban tranquility and urban convenience. <strong>Berkshire Hathaway
-                HomeServices</strong> has been helping families find their Henderson dream homes for decades,
-                and Dr. Jan Duffy brings unmatched expertise to every transaction.
+                <strong>Henderson</strong> is Nevada&apos;s second-largest city, with diverse housing from
+                Green Valley to Inspirada and MacDonald Highlands. Many buyers also tour{" "}
+                <Link href="/enclaves" className="text-blue-600 font-semibold">Enclaves</Link> and{" "}
+                <Link href="/reserves" className="text-blue-600 font-semibold">Reserves</Link> at
+                Cloudbreak Ridge in La Madre Peaks. Dr. Jan Duffy with{" "}
+                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> helps you compare parks,
+                HOAs, lot sizes, and drive times — not demographic labels.
               </p>
               <p>
-                What sets Henderson apart? Start with safety. Henderson consistently ranks as one of America's
-                safest large cities, making it the top choice for families with children. The city's excellent
-                schools, low crime rates, and community-oriented atmosphere create an environment where
-                families thrive. Add in the fact that Nevada has no state income tax, and you understand why
-                so many Californians are making Henderson their new home.
+                Nevada&apos;s lack of state income tax remains a common relocator topic. For Summerlin West
+                specifics, start with the{" "}
+                <Link href="/la-madre-peaks" className="text-blue-600 font-semibold">La Madre Peaks guide</Link>{" "}
+                and community address at 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138.
               </p>
               <p>
                 The Henderson real estate market offers remarkable diversity. From the established tree-lined
@@ -168,35 +170,36 @@ export default function HendersonPage() {
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
                     <Shield className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">America's Safest City</h4>
+                    <h4 className="font-bold text-slate-900 text-lg">Parks &amp; recreation</h4>
                   </div>
                   <p className="text-slate-600">
-                    Henderson has been named the safest city in Nevada and consistently ranks among America's
-                    safest large cities. The Henderson Police Department's community policing approach and
-                    active neighborhood watch programs contribute to exceptionally low crime rates that give
-                    families peace of mind.
+                    Henderson’s trail and open-space network spans areas like Green Valley and Lake Las Vegas.
+                    Compare that inventory with Summerlin’s Grand Park and Scout’s Point when evaluating
+                    Cloudbreak Ridge commute and amenity tradeoffs.
                   </p>
                 </div>
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
                     <Users className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">Family-First Community</h4>
+                    <h4 className="font-bold text-slate-900 text-lg">Move-up &amp; resale depth</h4>
                   </div>
                   <p className="text-slate-600">
-                    Henderson is designed for families. The city operates over 60 parks, multiple recreation
-                    centers, and hundreds of youth programs. The Henderson Libraries system is award-winning,
-                    and community events throughout the year—from the Henderson Farmers Market to the annual
-                    Heritage Parade—bring neighbors together.
+                    Henderson’s resale and new-construction inventory spans a wide square-footage band —
+                    useful when Cloudbreak Ridge shoppers want a side-by-side on price per foot, lot size,
+                    and HOA structures before choosing Summerlin West new construction.
                   </p>
                 </div>
               </div>
 
-              {/* School Districts */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Henderson School Districts</h3>
+              {/* Amenities — school names only, no rankings */}
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">
+                Schools &amp; amenities (verify boundaries)
+              </h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
-                  Henderson offers some of Nevada's best public schools through Clark County School District,
-                  plus excellent charter and private options:
+                  Dr. Jan shares Clark County School District attendance boundaries and commute times from
+                  specific addresses so you can verify independently — she does not use ranking labels to
+                  steer purchases. Common Henderson area campuses and charters include:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
@@ -349,32 +352,34 @@ export default function HendersonPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  How safe is Henderson compared to Las Vegas?
+                  How does Henderson compare to Summerlin West for amenities?
                 </h3>
                 <p className="text-slate-600">
-                  Henderson consistently ranks as one of America's safest cities. It has been named the
-                  safest city in Nevada and frequently appears in national "Best Places to Live" rankings
-                  for its low crime rates and family-friendly environment.
+                  Henderson offers parks and trail networks in areas like Green Valley and Inspirada.
+                  Summerlin West buyers looking at Cloudbreak Ridge also weigh Scout’s Point, Grand Park,
+                  and ~5-minute Downtown Summerlin® access via the 215. Dr. Jan maps amenity and commute
+                  tradeoffs — not demographic labels.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  What are the best neighborhoods in Henderson?
+                  What Henderson areas do relocators often compare?
                 </h3>
                 <p className="text-slate-600">
-                  Henderson's top neighborhoods include Green Valley (established, mature landscaping),
-                  Inspirada (resort-style amenities), MacDonald Highlands (luxury), Anthem (family-oriented),
-                  and Lake Las Vegas (waterfront living). Each offers distinct lifestyle options.
+                  Common comparisons include Green Valley (mature landscaping, established retail),
+                  Inspirada (newer resort-style amenities), MacDonald Highlands (custom/luxury), Anthem,
+                  and Lake Las Vegas. Many shoppers also tour Cloudbreak Ridge in La Madre Peaks.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why choose Berkshire Hathaway HomeServices for Henderson real estate?
+                  Why work with Dr. Jan Duffy when comparing Henderson and Summerlin?
                 </h3>
                 <p className="text-slate-600">
-                  BHHS Nevada Properties has served Henderson for decades. Our agents like Dr. Jan Duffy
-                  know every community, school district, and HOA. The Berkshire Hathaway name provides
-                  trust and resources that benefit both buyers and sellers.
+                  Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada
+                  Properties helps buyers compare square footage, parks, HOAs, and commute times across
+                  Henderson and Summerlin West — including first-visit registration at Cloudbreak Ridge.
+                  Call 702-222-1964.
                 </p>
               </div>
             </div>

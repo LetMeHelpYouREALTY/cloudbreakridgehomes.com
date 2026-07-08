@@ -7,15 +7,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "Contact Dr. Jan Duffy | Cloudbreak Ridge La Madre Peaks Tours",
   description:
-    "Contact Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Schedule an appointment, get directions, or call (702) 500-1942. Las Vegas, Henderson, Summerlin real estate expert.",
+    "Contact Dr. Jan Duffy for Cloudbreak Ridge tours in La Madre Peaks. Models: 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138. Client line 702-222-1964. Book Calendly. Office: 9406 W Lake Mead Blvd #100.",
   keywords: [
-    "contact real estate agent Las Vegas",
-    "Berkshire Hathaway contact",
+    "contact Cloudbreak Ridge realtor",
     "Dr. Jan Duffy phone",
-    "Las Vegas realtor contact",
-    "schedule real estate appointment",
+    "La Madre Peaks tour",
+    "Summerlin West real estate contact",
   ],
 };
 
@@ -24,8 +23,8 @@ const contactSchema = {
   "@type": "ContactPage",
   mainEntity: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17025001942",
+    name: "Dr. Jan Duffy - Cloudbreak Ridge Homes by Dr. Jan Duffy",
+    telephone: "+17022221964",
     email: "info@cloudbreakridgehomes.com",
     address: {
       "@type": "PostalAddress",
@@ -35,6 +34,10 @@ const contactSchema = {
       postalCode: "89134",
       addressCountry: "US",
     },
+    areaServed: [
+      { "@type": "Place", name: "Cloudbreak Ridge, La Madre Peaks" },
+      { "@type": "Place", name: "Summerlin West" },
+    ],
   },
 };
 
@@ -57,21 +60,23 @@ export default function ContactPage() {
               Contact Dr. Jan Duffy
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Questions about Las Vegas real estate? Your{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> expert is here to help. 
-              Schedule an appointment or reach out directly.
+              Touring <strong>Cloudbreak Ridge</strong> in La Madre Peaks? Call the client line, book
+              Calendly, or get directions to the models at{" "}
+              <strong>1168 Cloudbreak Cove Dr., Las Vegas, NV 89138</strong>. Register before your
+              first KB Home visit so you keep independent representation.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info & Map */}
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                How do I reach Dr. Jan for Cloudbreak Ridge?
+              </h2>
               <p className="text-slate-700 mb-8">
-                Whether you're buying your first home, selling a luxury property, or exploring
-                investment opportunities, I'm here to provide expert guidance backed by the trusted{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> brand. Serving Las Vegas since 2008 
-                with $127M+ in closed transactions.
+                Use the client CTA for tours and first-visit registration. Office NAP below is the
+                Berkshire Hathaway HomeServices Nevada Properties suite — separate from the community
+                models address.
               </p>
 
               {/* NAP Information */}
@@ -79,16 +84,38 @@ export default function ContactPage() {
                 <div className="flex items-start bg-slate-50 rounded-lg p-4">
                   <Phone className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Phone (Call or Text)</h3>
+                    <h3 className="font-semibold text-slate-900 mb-1">Client CTA (Call or Text)</h3>
                     <a
-                      href="tel:+17025001942"
+                      href="tel:+17022221964"
                       className="text-2xl font-bold text-blue-600 hover:text-blue-700"
                     >
-                      (702) 500-1942
+                      (702) 222-1964
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
-                      Available 7 days a week, 9am-6pm
+                      Tour scheduling &amp; first-visit registration
                     </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start bg-blue-50 rounded-lg p-4">
+                  <MapPin className="h-6 w-6 text-blue-600 mr-4 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1">
+                      Cloudbreak Ridge models (community)
+                    </h3>
+                    <address className="not-italic text-slate-700">
+                      1168 Cloudbreak Cove Dr.
+                      <br />
+                      Las Vegas, NV 89138
+                    </address>
+                    <a
+                      href="https://www.google.com/maps/dir/?api=1&destination=1168+Cloudbreak+Cove+Dr,+Las+Vegas,+NV+89138"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-blue-600 font-medium mt-2 inline-block"
+                    >
+                      Directions to models
+                    </a>
                   </div>
                 </div>
 

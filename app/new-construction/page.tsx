@@ -20,17 +20,14 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
+  title: "New Construction Cloudbreak Ridge | KB Home Buyer Agent",
   description:
-    "Free buyer representation on new construction homes in Las Vegas. Dr. Jan Duffy helps you navigate builder contracts, negotiate upgrades, and secure incentives. Call (702) 500-1942.",
+    "Independent buyer representation for Cloudbreak Ridge Enclaves & Reserves (KB Home) in La Madre Peaks, Summerlin West. Register before visit one. Call 702-222-1964.",
   keywords: [
-    "Berkshire Hathaway HomeServices new construction Las Vegas",
-    "new homes Las Vegas",
-    "new construction Henderson",
-    "Las Vegas builders",
-    "Toll Brothers Las Vegas",
-    "Lennar Las Vegas",
-    "KB Home Las Vegas",
+    "Cloudbreak Ridge new construction",
+    "KB Home buyer agent Summerlin",
+    "Enclaves Reserves La Madre Peaks",
+    "bring realtor first visit",
   ],
 };
 
@@ -59,7 +56,7 @@ const faqSchema = {
       name: "Do I have to register Dr. Jan Duffy as my agent on the first visit?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, most builders require your agent to accompany you or be registered on your FIRST visit. If you visit alone and sign the guest registry, you may forfeit your right to free representation. Call (702) 500-1942 to register Dr. Jan Duffy as your buyer's agent before visiting any model home.",
+        text: "Yes, most builders require your agent to accompany you or be registered on your FIRST visit. If you visit alone and sign the guest registry, you may forfeit your right to free representation. Call (702) 222-1964 to register Dr. Jan Duffy as your buyer's agent before visiting Cloudbreak Ridge at 1168 Cloudbreak Cove Dr. or any other model home.",
       },
     },
     {
@@ -127,19 +124,18 @@ const builders = [
   },
   {
     name: "KB Home",
-    segment: "Entry-Level to Mid-Range",
-    priceRange: "$350,000 - $650,000",
+    segment: "Production — Cloudbreak Ridge focus",
+    priceRange: "From the $800,000s at Cloudbreak Ridge (confirm live)",
     communities: [
-      "North Las Vegas (multiple)",
-      "Southwest Las Vegas",
-      "Henderson",
+      "Cloudbreak Ridge — Enclaves & Reserves (La Madre Peaks, Summerlin West)",
+      "Other KB Home communities valley-wide (confirm current inventory)",
     ],
-    currentIncentives: "Up to 6% closing cost credit + free premium lot on select homes",
-    incentiveDeadline: "February 15, 2026",
+    currentIncentives: "Confirm current KB Home incentives before writing an offer",
+    incentiveDeadline: "Rolling — verify with agent + builder",
     highlights: [
-      "Built to Order™ customization",
-      "Energy-efficient construction",
-      "First-time buyer friendly",
+      "Cloudbreak Ridge sales office: 1168 Cloudbreak Cove Dr.",
+      "Built to Order™ personalization",
+      "Bring your Realtor on visit one",
     ],
   },
   {
@@ -255,11 +251,12 @@ export default function NewConstructionPage() {
               Free Buyer Representation
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices New Construction Las Vegas
+              New Construction at Cloudbreak Ridge &amp; Summerlin West
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              Your complete buyer's guide to new homes in Las Vegas. Free representation,
-              expert contract review, and insider knowledge of builder incentives.
+            <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
+              Independent buyer representation for KB Home Enclaves and Reserves in La Madre Peaks —
+              register before your first visit to 1168 Cloudbreak Cove Dr. Call{" "}
+              <a href="tel:+17022221964" className="text-blue-600 font-semibold">702-222-1964</a>.
             </p>
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 text-left max-w-2xl mx-auto">
               <div className="flex items-start">
@@ -270,9 +267,9 @@ export default function NewConstructionPage() {
                   </h3>
                   <p className="text-amber-800 text-sm">
                     Most builders require agent registration on your <strong>first visit</strong>.
-                    Call <a href="tel:+17025001942" className="font-bold underline">(702) 500-1942</a> to 
-                    register Dr. Jan Duffy as your buyer's agent before visiting any model home—or you 
-                    may lose your right to free professional representation.
+                    Call <a href="tel:+17022221964" className="font-bold underline">(702) 222-1964</a> to 
+                    register Dr. Jan Duffy as your buyer&apos;s agent before visiting Cloudbreak Ridge or
+                    any model home—or you may lose your right to free professional representation.
                   </p>
                 </div>
               </div>

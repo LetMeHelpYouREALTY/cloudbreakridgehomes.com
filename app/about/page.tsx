@@ -21,16 +21,15 @@ import type { Metadata } from "next";
 import { drJanDuffyPhotos } from "@/lib/agent-photos";
 
 export const metadata: Metadata = {
-  title: "About Dr. Jan Duffy | Berkshire Hathaway HomeServices Las Vegas",
+  title: "About Dr. Jan Duffy | Cloudbreak Ridge & Summerlin West Realtor",
   description:
-    "Meet Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent. Serving Las Vegas since 2008, $127M+ in transactions, Henderson & Summerlin specialist. Call (702) 500-1942.",
+    "Meet Dr. Jan Duffy — Cloudbreak Ridge Homes specialist for La Madre Peaks, Summerlin West. License S.0197614.LLC, BHHS Nevada Properties. Call 702-222-1964 before your first KB Home visit.",
   keywords: [
     "Dr. Jan Duffy",
-    "Berkshire Hathaway HomeServices agent",
-    "Las Vegas realtor",
+    "Cloudbreak Ridge realtor",
+    "La Madre Peaks agent",
+    "Summerlin West real estate",
     "BHHS Nevada Properties",
-    "Henderson real estate agent",
-    "Summerlin realtor",
   ],
 };
 
@@ -63,13 +62,12 @@ const personSchema = {
     credentialNumber: "S.0197614.LLC",
   },
   knowsAbout: [
-    "Las Vegas real estate",
-    "Henderson properties",
-    "Summerlin homes",
-    "Luxury real estate",
-    "Investment properties",
-    "55+ communities",
-    "California relocation",
+    "Cloudbreak Ridge new construction",
+    "La Madre Peaks Summerlin",
+    "Summerlin West real estate",
+    "KB Home buyer representation",
+    "Enclaves and Reserves floor plans",
+    "Downtown Summerlin® orientation",
   ],
 };
 
@@ -101,18 +99,14 @@ const specializations = [
 ];
 
 const areasServed = [
-  "Las Vegas",
-  "Henderson",
-  "Summerlin",
-  "Green Valley",
-  "North Las Vegas",
-  "Southern Highlands",
-  "Skye Canyon",
-  "Centennial Hills",
+  "Cloudbreak Ridge / La Madre Peaks",
+  "Summerlin West",
+  "Downtown Summerlin® corridor",
   "The Ridges",
-  "Inspirada",
-  "Mountains Edge",
-  "Spring Valley",
+  "Grand Park area",
+  "Red Rock Country Club area",
+  "Summerlin master plan",
+  "Henderson (comparison searches)",
 ];
 
 export default function AboutPage() {
@@ -131,14 +125,28 @@ export default function AboutPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Meet Your Berkshire Hathaway HomeServices Agent
+              About Dr. Jan Duffy — Cloudbreak Ridge &amp; Summerlin West
             </h1>
             <p className="text-xl text-slate-600">
-              Dr. Jan Duffy has been serving Las Vegas since 2008—backed by the most
-              trusted name in real estate. Whether you're buying, selling, investing, or 
-              relocating, you'll receive expert guidance with integrity and professionalism.
+              Independent buyer representation for Cloudbreak Ridge in La Madre Peaks, Summerlin
+              West — Enclaves, Reserves, and nearby Summerlin villages. License S.0197614.LLC,
+              Berkshire Hathaway HomeServices Nevada Properties. Call 702-222-1964 before your
+              first model visit.
             </p>
           </div>
+
+          <section className="mb-12 max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-slate-900 mb-3">
+              Who represents buyers at Cloudbreak Ridge?
+            </h2>
+            <p className="text-slate-700 leading-relaxed">
+              Dr. Jan Duffy works the Cloudbreak Ridge / La Madre Peaks beat: KB Home contracts,
+              lot and elevation choices, Scout’s Point and Grand Park orientation, and 215 commute
+              times to Downtown Summerlin®. Community models:{" "}
+              <strong>1168 Cloudbreak Cove Dr., Las Vegas, NV 89138</strong>. Brokerage office:{" "}
+              <strong>9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134</strong>.
+            </p>
+          </section>
 
           {/* Agent Profile */}
           <section className="mb-16">

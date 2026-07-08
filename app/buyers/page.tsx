@@ -22,30 +22,27 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home Buying Guide Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Buy Cloudbreak Ridge & Summerlin West Homes | Buyer Guide",
   description:
-    "Looking to buy a home in Las Vegas? Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties guides you through every step. Free buyer consultation. Call (702) 500-1942.",
+    "Buyer representation for Cloudbreak Ridge Enclaves & Reserves in La Madre Peaks, plus Summerlin West resale. Register Dr. Jan Duffy before your first model visit. Call 702-222-1964.",
   keywords: [
-    "buy home Las Vegas",
-    "Las Vegas home buyer",
-    "Berkshire Hathaway buyer agent",
-    "Henderson homes for sale",
-    "first time home buyer Las Vegas",
-    "California relocation Las Vegas",
-    "55+ communities Las Vegas",
+    "buy Cloudbreak Ridge",
+    "Summerlin West home buyer",
+    "La Madre Peaks KB Home",
+    "Enclaves Reserves buyer agent",
   ],
 };
 
 const buyerSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Home Buying Services Las Vegas",
+  name: "Buyer Representation — Cloudbreak Ridge & Summerlin West",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-    telephone: "+17025001942",
+    name: "Dr. Jan Duffy - Cloudbreak Ridge Homes by Dr. Jan Duffy",
+    telephone: "+17022221964",
   },
-  areaServed: "Las Vegas, Henderson, Summerlin, Clark County NV",
+  areaServed: "Cloudbreak Ridge, La Madre Peaks, Summerlin West, Las Vegas NV",
   serviceType: "Buyer Representation",
 };
 
@@ -107,12 +104,13 @@ export default function BuyersPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Buy Your Las Vegas Home with Confidence
+              Buy at Cloudbreak Ridge &amp; Summerlin West
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              When you work with a <strong>Berkshire Hathaway HomeServices</strong> buyer's agent,
-              you're backed by the most trusted name in real estate—and it costs you nothing.
-              The seller pays the commission, but the representation is yours.
+              Independent buyer representation for <strong>Enclaves</strong> and{" "}
+              <strong>Reserves</strong> at Cloudbreak Ridge (KB Home) in La Madre Peaks — plus
+              Summerlin West resale when you compare options. Register Dr. Jan before visit one;
+              call <a href="tel:+17022221964" className="text-blue-600 font-semibold">702-222-1964</a>.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Buyer Representation</span>

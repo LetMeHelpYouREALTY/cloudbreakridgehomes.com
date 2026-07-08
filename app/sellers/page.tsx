@@ -21,17 +21,14 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sell Your Las Vegas Home | Berkshire Hathaway HomeServices",
+  title: "Sell Near Cloudbreak Ridge & Summerlin West | Listing Guide",
   description:
-    "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Free home valuation. World-class marketing. Call (702) 500-1942.",
+    "Sell in Summerlin West or compare move-up to Cloudbreak Ridge with Dr. Jan Duffy, BHHS Nevada Properties. Marketing, pricing strategy, and buyer network. Call 702-222-1964.",
   keywords: [
-    "sell home Las Vegas",
-    "Las Vegas listing agent",
-    "Berkshire Hathaway sell house",
-    "Henderson home selling",
-    "what is my home worth Las Vegas",
-    "Las Vegas real estate agent",
-    "Summerlin home selling",
+    "sell Summerlin West home",
+    "Cloudbreak Ridge move up",
+    "La Madre Peaks listing agent",
+    "Summerlin seller representation",
   ],
 };
 
@@ -139,13 +136,13 @@ export default function SellersPage() {
               Berkshire Hathaway HomeServices Nevada Properties
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sell Your Las Vegas Home for Top Dollar
+              Sell Near Cloudbreak Ridge &amp; Summerlin West
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              When you list with <strong>Berkshire Hathaway HomeServices</strong>, you get
-              world-class marketing, expert pricing, and a name that buyers trust. Dr. Jan Duffy 
-              has been serving Las Vegas since 2008—helping sellers achieve top-dollar results 
-              with proven marketing strategies and skilled negotiation.
+              Listing strategy for Summerlin West sellers — and move-up buyers comparing Enclaves
+              or Reserves at Cloudbreak Ridge in La Madre Peaks. Dr. Jan Duffy pairs BHHS marketing
+              with hyperlocal comps. Call{" "}
+              <a href="tel:+17022221964" className="text-blue-600 font-semibold">702-222-1964</a>.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Home Valuation</span>

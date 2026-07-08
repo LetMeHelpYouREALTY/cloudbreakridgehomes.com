@@ -29,6 +29,8 @@ export default function Navbar() {
   const serviceLinks = [
     { href: "/enclaves", label: "Enclaves at Cloudbreak Ridge" },
     { href: "/reserves", label: "Reserves at Cloudbreak Ridge" },
+    { href: "/la-madre-peaks", label: "La Madre Peaks" },
+    { href: "/bring-your-realtor", label: "Bring Your Realtor" },
     { href: "/buyers", label: "Home Buying" },
     { href: "/sellers", label: "Home Selling" },
     { href: "/new-construction", label: "New Construction" },
@@ -124,9 +126,9 @@ export default function Navbar() {
             </div>
 
             <Button asChild className="bg-blue-600 hover:bg-blue-700">
-              <Link href="tel:+17025001942" className="flex items-center gap-2">
+              <Link href="tel:+17022221964" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span className="hidden xl:inline">(702) 500-1942</span>
+                <span className="hidden xl:inline">(702) 222-1964</span>
                 <span className="xl:hidden">Call</span>
               </Link>
             </Button>
@@ -135,7 +137,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-3">
             <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700">
-              <Link href="tel:+17025001942">
+              <Link href="tel:+17022221964">
                 <Phone className="h-4 w-4" />
               </Link>
             </Button>

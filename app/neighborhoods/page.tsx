@@ -7,8 +7,17 @@ import { MapPin, Phone, Home, Trees } from "lucide-react";
 import type { Metadata } from "next";
 import { summerlinAreas } from "@/lib/summerlin-areas";
 import { CLOUDBREAK_RIDGE } from "@/lib/cloudbreak-ridge";
-import { officeInfo, agentInfo } from "@/lib/site-config";
+import { officeInfo, agentInfo, siteConfig } from "@/lib/site-config";
 import CalendlyButton from "@/components/calendly/CalendlyButton";
+import {
+  HyperlocalIntro,
+  LocalServicesBlock,
+  LocalCtaBlock,
+  LocalInternalLinks,
+  AeoFaqList,
+} from "@/components/sections/HyperlocalPageBlocks";
+import { CLOUDBREAK_RIDGE_FAQS } from "@/lib/cloudbreak-ridge";
+import { generateFAQSchema, generateRealEstateAgentSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Summerlin Neighborhoods Near Cloudbreak Ridge | La Madre Peaks",
@@ -22,7 +31,7 @@ export const metadata: Metadata = {
     "Reserves at Cloudbreak Ridge",
     "Downtown Summerlin",
   ],
-  alternates: { canonical: "https://cloudbreakridgehomes.com/neighborhoods" },
+  alternates: { canonical: `${siteConfig.url}/neighborhoods` },
 };
 
 const itemListSchema = {
@@ -37,7 +46,7 @@ const itemListSchema = {
     name: area.name,
     url: area.href.startsWith("http")
       ? area.href
-      : `https://cloudbreakridgehomes.com${area.href === "/" ? "" : area.href}`,
+      : `${siteConfig.url}${area.href === "/" ? "" : area.href}`,
     description: area.description,
   })),
 };
@@ -45,7 +54,7 @@ const itemListSchema = {
 const placeSchema = {
   "@context": "https://schema.org",
   "@type": "Place",
-  "@id": "https://cloudbreakridgehomes.com/neighborhoods#summerlin-hub",
+  "@id": `${siteConfig.url}/neighborhoods#summerlin-hub`,
   name: "Summerlin West & La Madre Peaks",
   description:
     "Neighborhood guide centered on Cloudbreak Ridge by KB Home in La Madre Peaks, Summerlin West, Las Vegas, NV 89138.",
@@ -63,10 +72,22 @@ const placeSchema = {
   },
 };
 
+const faqSlice = CLOUDBREAK_RIDGE_FAQS.slice(0, 6).map((f) => ({
+  question: f.question,
+  answer: f.answer,
+}));
+
+const pageSchemas = [
+  itemListSchema,
+  placeSchema,
+  generateRealEstateAgentSchema(),
+  generateFAQSchema(faqSlice),
+];
+
 export default function NeighborhoodsPage() {
   return (
     <>
-      <SchemaScript id="neighborhoods-schema" schemas={[itemListSchema, placeSchema]} />
+      <SchemaScript id="neighborhoods-schema" schemas={pageSchemas} />
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
@@ -83,6 +104,11 @@ export default function NeighborhoodsPage() {
               Downtown Summerlin® / Red Rock Canyon). No school rankings or crime labels.
             </p>
           </div>
+
+          <HyperlocalIntro
+            h2="Which Summerlin areas matter for Cloudbreak Ridge buyers?"
+            lead="Start with La Madre Peaks and Cloudbreak Ridge (Enclaves and Reserves), then compare Grand Park proximity, Downtown Summerlin® (~5 minutes on the 215), The Ridges luxury resale, and Red Rock Canyon recreation — using amenities and commute facts, not demographic labels."
+          />
 
           <section className="mb-16 max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
@@ -117,6 +143,11 @@ export default function NeighborhoodsPage() {
               ))}
             </div>
           </section>
+
+          <LocalServicesBlock />
+          <AeoFaqList faqs={faqSlice} title="Cloudbreak Ridge & Summerlin FAQ" />
+          <LocalCtaBlock />
+          <LocalInternalLinks excludeHref="/neighborhoods" />
 
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-slate-50 rounded-lg p-8">

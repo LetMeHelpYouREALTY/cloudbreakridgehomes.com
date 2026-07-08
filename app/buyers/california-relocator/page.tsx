@@ -49,7 +49,7 @@ const faqSchema = {
       name: "What neighborhoods do California relocators prefer in Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "California buyers typically gravitate toward Summerlin (similar to Irvine/coastal communities), Henderson (family-friendly like San Diego suburbs), and The Ridges (comparable to Newport Coast luxury). These areas offer the quality and amenities California buyers expect.",
+        text: "California buyers often compare Summerlin West (including La Madre Peaks and Cloudbreak Ridge), Henderson’s Green Valley corridor, and The Ridges for master-planned amenities, parks and trails, square footage, and commute times to employment centers and Harry Reid International Airport.",
       },
     },
     {
@@ -403,7 +403,7 @@ export default function CaliforniaRelocatorPage() {
                 </h3>
                 <p className="text-slate-600">
                   California buyers typically gravitate toward Summerlin (similar to Irvine/coastal
-                  communities), Henderson (family-friendly like San Diego suburbs), and The Ridges
+                  communities), Henderson’s Green Valley corridor (similar amenity density to many San Diego suburbs), and The Ridges
                   (comparable to Newport Coast luxury). These areas offer the quality and amenities
                   California buyers expect.
                 </p>
@@ -430,13 +430,12 @@ export default function CaliforniaRelocatorPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  What about schools compared to California?
+                  How do relocators evaluate school options?
                 </h3>
                 <p className="text-slate-600">
-                  Nevada public schools overall rank lower than California's, but individual schools
-                  in Summerlin and Henderson rate highly. Many California families choose areas with
-                  top-rated schools or consider private options. Dr. Jan provides school-specific
-                  guidance for every neighborhood.
+                  Dr. Jan shares school names, attendance boundaries, and commute times from specific
+                  addresses — including Cloudbreak Ridge / La Madre Peaks — so you can verify
+                  independently. She does not use ranking labels to steer where you buy.
                 </p>
               </div>
             </div>
