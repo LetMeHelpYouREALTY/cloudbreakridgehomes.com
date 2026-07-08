@@ -13,6 +13,7 @@ const INTERNAL_LINKS = [
   { href: "/reserves", label: "Reserves at Cloudbreak Ridge" },
   { href: "/enclaves-vs-reserves", label: "Enclaves vs Reserves comparison" },
   { href: "/floor-plans", label: "All KB Home floor plans" },
+  { href: "/blog", label: "Cloudbreak Ridge blog & updates" },
   { href: "/schools", label: "Schools near Cloudbreak Ridge" },
   { href: "/neighborhoods", label: "Summerlin neighborhoods near Cloudbreak Ridge" },
   { href: "/la-madre-peaks", label: "La Madre Peaks village guide" },

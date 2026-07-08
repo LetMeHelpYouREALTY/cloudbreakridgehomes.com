@@ -289,6 +289,78 @@ export function generateFAQSchema(faqs: FAQItem[]) {
   };
 }
 
+export type BlogPostSchemaInput = {
+  slug: string;
+  title: string;
+  description: string;
+  publishedAt: string;
+  updatedAt?: string;
+  imagePath: string;
+  imageAlt: string;
+  wordCount?: number;
+};
+
+/**
+ * BlogPosting JSON-LD for /blog/[slug] — pairs with visible article + FAQ on the page.
+ */
+export function generateBlogPostingSchema(post: BlogPostSchemaInput) {
+  const pageUrl = `${BASE_URL}/blog/${post.slug}`;
+  const imageUrl = post.imagePath.startsWith("http")
+    ? post.imagePath
+    : `${BASE_URL}${post.imagePath.startsWith("/") ? post.imagePath : `/${post.imagePath}`}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${pageUrl}#blog-posting`,
+    headline: post.title,
+    description: post.description,
+    url: pageUrl,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": pageUrl,
+    },
+    image: [imageUrl],
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
+    author: {
+      "@type": "Person",
+      name: agentInfo.name,
+      jobTitle: agentInfo.title,
+      url: `${BASE_URL}/about`,
+    },
+    publisher: {
+      "@id": `${BASE_URL}#organization`,
+    },
+    ...(post.wordCount ? { wordCount: post.wordCount } : {}),
+  };
+}
+
+/** Blog index ItemList for /blog. */
+export function generateBlogIndexSchema(
+  posts: Array<{ slug: string; title: string; publishedAt: string }>
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${BASE_URL}/blog#collection`,
+    name: "Cloudbreak Ridge & Summerlin Real Estate Blog",
+    description:
+      "Buyer guides, new construction updates, and community news for Cloudbreak Ridge and Summerlin West.",
+    url: `${BASE_URL}/blog`,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: posts.length,
+      itemListElement: posts.map((post, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${BASE_URL}/blog/${post.slug}`,
+        name: post.title,
+      })),
+    },
+  };
+}
+
 /**
  * Generate AggregateRating schema
  */

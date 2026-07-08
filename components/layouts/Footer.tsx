@@ -145,6 +145,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/blog"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/why-berkshire-hathaway"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >

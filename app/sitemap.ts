@@ -23,6 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/market-update`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/market-insights`, priority: 0.9, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/google-business`, priority: 0.9, changeFrequency: "monthly" as const },
+    { url: `${baseUrl}/blog`, priority: 0.88, changeFrequency: "weekly" as const },
+    { url: `${baseUrl}/blog/cloudbreak-ridge-grand-opening-kbhs-below-market-rates`, priority: 0.9, changeFrequency: "weekly" as const },
     { url: `${baseUrl}/faq`, priority: 0.8, changeFrequency: "monthly" as const },
     { url: `${baseUrl}/security-policy`, priority: 0.3, changeFrequency: "yearly" as const },
   ];

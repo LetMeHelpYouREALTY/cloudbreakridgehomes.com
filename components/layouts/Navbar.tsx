@@ -38,6 +38,7 @@ export default function Navbar() {
     { href: "/55-plus-communities", label: "55+ Communities" },
     { href: "/market-report", label: "Market Report" },
     { href: "/market-insights", label: "Market Insights" },
+    { href: "/blog", label: "Blog" },
   ];
 
   return (
