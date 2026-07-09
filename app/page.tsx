@@ -24,8 +24,6 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { CLOUDBREAK_RIDGE } from "@/lib/cloudbreak-ridge";
-import { getPageHero } from "@/lib/page-heroes";
-import { preload } from "react-dom";
 
 const FAQ_SECTION_COPY: Record<string, { title: string; subtitle: string }> = {
   community: {
@@ -87,10 +85,6 @@ export default async function Home() {
         breadcrumbSchema
       )
     : combineSchemas(agentSchema, faqSchema);
-
-  if (isCloudbreak) {
-    preload(getPageHero("home").src, { as: "image", fetchPriority: "high" });
-  }
 
   return (
     <>
