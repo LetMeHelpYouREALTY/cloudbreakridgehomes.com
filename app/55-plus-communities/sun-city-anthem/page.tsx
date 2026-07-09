@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -118,18 +119,7 @@ export default function SunCityAnthemPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Mountain className="h-4 w-4 mr-2" />
-              Henderson's Premier 55+ Community
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sun City Anthem
-            </h1>
-            <p className="text-xl text-slate-600">
-              7,100+ homes. Mountain views. Henderson safety. Championship golf.
-            </p>
-          </div>
+          <PageHero heroKey="sun-city-anthem" title={"Sun City Anthem"} subtitle={"7,100+ homes. Mountain views. Henderson safety. Championship golf."} />
 
         <RealScoutListings />
 

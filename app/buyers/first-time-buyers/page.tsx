@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -93,26 +94,17 @@ export default function FirstTimeBuyersPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Key className="h-4 w-4 mr-2" />
-              Down Payment Assistance Available
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Your First Home in Las Vegas<br />
-              <span className="text-blue-600">Starts Here</span>
-            </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              Down payment assistance. Builder incentives. Expert guidance every step of the way.
-            </p>
-            <a
-              href="tel:+17025001942"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Let's Make Homeownership Happen → (702) 500-1942
-            </a>
-          </div>
+          <PageHero
+            heroKey="first-time-buyers"
+            title={
+              <>
+                Your First Home in Las Vegas
+                <br />
+                <span>Starts Here</span>
+              </>
+            }
+            subtitle="Down payment assistance. Builder incentives. Expert guidance every step of the way."
+          />
 
         <RealScoutListings />
 

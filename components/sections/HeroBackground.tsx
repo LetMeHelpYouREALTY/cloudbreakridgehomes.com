@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const HERO_IMAGE = "/Image/hero_bg_1.webp";
+const HERO_IMAGE = "/images/hero/home.webp";
 
 type HeroBackgroundProps = {
   alt?: string;

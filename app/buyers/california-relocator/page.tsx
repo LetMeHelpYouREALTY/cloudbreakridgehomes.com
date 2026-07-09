@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -122,26 +123,17 @@ export default function CaliforniaRelocatorPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Sun className="h-4 w-4 mr-2" />
-              37% of Las Vegas Buyers Are From California
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Relocating from California?<br />
-              <span className="text-blue-600">Welcome Home to Las Vegas</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-600 mb-8">
-              Zero state income tax. 40-60% lower home prices. Same sunshine.
-            </p>
-            <a
-              href="tel:+17025001942"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Start Your Tax-Free Life → (702) 500-1942
-            </a>
-          </div>
+          <PageHero
+            heroKey="california-relocator"
+            title={
+              <>
+                Relocating from California?
+                <br />
+                <span>Welcome Home to Las Vegas</span>
+              </>
+            }
+            subtitle="Zero state income tax. 40-60% lower home prices. Same sunshine."
+          />
 
         <RealScoutListings />
 

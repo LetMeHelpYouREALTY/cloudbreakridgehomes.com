@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
@@ -99,26 +100,7 @@ export default function BuyersPage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Buy at Cloudbreak Ridge &amp; Summerlin West
-            </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              Independent buyer representation for <strong>Enclaves</strong> and{" "}
-              <strong>Reserves</strong> at Cloudbreak Ridge (KB Home) in La Madre Peaks — plus
-              Summerlin West resale when you compare options. Register Dr. Jan before visit one;
-              call <a href="tel:+17022221964" className="text-blue-600 font-semibold">702-222-1964</a>.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Buyer Representation</span>
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Full MLS Access</span>
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Expert Negotiation</span>
-            </div>
-          </div>
-
+          <PageHero heroKey="buyers" title={"Buy at Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for <strong>Enclaves</strong> and{\" \"} <strong>Reserves</strong> at Cloudbreak Ridge (KB Home) in La Madre Peaks — plus Summerlin West resale when you compare options. Register Dr. Jan before visit one; call <a href=\"tel:+17022221964\" className=\"text-blue-600 font-semibold\">702-222-1964</a>."} />
         <RealScoutListings />
 
           {/* Value Prop */}

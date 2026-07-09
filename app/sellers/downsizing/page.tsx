@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -46,25 +47,7 @@ export default function DownsizingPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Heart className="h-4 w-4 mr-2" />
-              Embrace Low-Maintenance Living
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Simplify. Downsize. Enjoy.
-            </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              Extract your equity. Embrace low-maintenance living. Start your next chapter.
-            </p>
-            <a
-              href="tel:+17025001942"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-700 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Let's Talk About Your Options → (702) 500-1942
-            </a>
-          </div>
+          <PageHero heroKey="downsizing" title={"Simplify. Downsize. Enjoy."} subtitle={"Extract your equity. Embrace low-maintenance living. Start your next chapter."} />
 
         <RealScoutListings />
 

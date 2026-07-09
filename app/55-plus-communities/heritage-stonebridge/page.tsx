@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -81,19 +82,7 @@ export default function HeritageAtStonebridgePage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Shield className="h-4 w-4 mr-2" />
-              Guard-Gated Summerlin 55+ Community
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Heritage at Stonebridge
-            </h1>
-            <p className="text-xl text-slate-600">
-              Boutique 55+ living with guard-gated privacy in the heart of
-              Summerlin.
-            </p>
-          </div>
+          <PageHero heroKey="heritage-stonebridge" title={"Heritage at Stonebridge"} subtitle={"Boutique 55+ living with guard-gated privacy in the heart of Summerlin."} />
 
         <RealScoutListings />
 

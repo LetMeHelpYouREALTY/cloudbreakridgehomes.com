@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -246,36 +247,7 @@ export default function NewConstructionPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Free Buyer Representation
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              New Construction at Cloudbreak Ridge &amp; Summerlin West
-            </h1>
-            <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              Independent buyer representation for KB Home Enclaves and Reserves in La Madre Peaks —
-              register before your first visit to 1168 Cloudbreak Cove Dr. Call{" "}
-              <a href="tel:+17022221964" className="text-blue-600 font-semibold">702-222-1964</a>.
-            </p>
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 text-left max-w-2xl mx-auto">
-              <div className="flex items-start">
-                <AlertTriangle className="h-6 w-6 text-amber-600 mr-3 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-bold text-amber-900 mb-1">
-                    Important: Register Dr. Jan Duffy as Your Agent FIRST
-                  </h3>
-                  <p className="text-amber-800 text-sm">
-                    Most builders require agent registration on your <strong>first visit</strong>.
-                    Call <a href="tel:+17022221964" className="font-bold underline">(702) 222-1964</a> to 
-                    register Dr. Jan Duffy as your buyer&apos;s agent before visiting Cloudbreak Ridge or
-                    any model home—or you may lose your right to free professional representation.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <PageHero heroKey="new-construction" title={"New Construction at Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for KB Home Enclaves and Reserves in La Madre Peaks — register before your first visit to 1168 Cloudbreak Cove Dr. Call{\" \"} <a href=\"tel:+17022221964\" className=\"text-blue-600 font-semibold\">702-222-1964</a>."} />
         <RealScoutListings />
 
           {/* Why Free Representation */}

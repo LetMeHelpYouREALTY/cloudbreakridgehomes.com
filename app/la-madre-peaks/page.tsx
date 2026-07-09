@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import SchemaScript from "@/components/SchemaScript";
@@ -106,18 +107,7 @@ export default function LaMadrePeaksPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-sm font-semibold text-blue-600 mb-3">
-              Cloudbreak Ridge Homes by Dr. Jan Duffy
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              La Madre Peaks, Summerlin West
-            </h1>
-            <p className="text-xl text-slate-600">
-              Summerlin’s newest village at the base of the La Madre Mountains — parks, trails, and
-              new construction including Cloudbreak Ridge
-            </p>
-          </div>
+          <PageHero heroKey="la-madre-peaks" badge={"Cloudbreak Ridge Homes by Dr. Jan Duffy"} title={"La Madre Peaks, Summerlin West"} subtitle={"Summerlin’s newest village at the base of the La Madre Mountains — parks, trails, and new construction including Cloudbreak Ridge"} />
 
         <RealScoutListings />
 

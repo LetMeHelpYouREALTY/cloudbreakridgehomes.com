@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -84,25 +85,7 @@ export default function LuxuryHomesPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Star className="h-4 w-4 mr-2" />
-              $1.2M - $10M+
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Luxury Real Estate
-            </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              Guard-gated estates. Strip penthouses. Uncompromising privacy.
-            </p>
-            <a
-              href="tel:+17025001942"
-              className="inline-flex items-center bg-slate-900 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-slate-800 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Schedule a Private Preview → (702) 500-1942
-            </a>
-          </div>
+          <PageHero heroKey="luxury-homes-las-vegas" title={"Las Vegas Luxury Real Estate"} subtitle={"Guard-gated estates. Strip penthouses. Uncompromising privacy."} />
 
         <RealScoutListings />
 

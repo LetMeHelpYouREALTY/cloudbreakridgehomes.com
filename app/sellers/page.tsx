@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
@@ -131,26 +132,7 @@ export default function SellersPage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sell Near Cloudbreak Ridge &amp; Summerlin West
-            </h1>
-            <p className="text-xl text-slate-600 mb-8">
-              Listing strategy for Summerlin West sellers — and move-up buyers comparing Enclaves
-              or Reserves at Cloudbreak Ridge in La Madre Peaks. Dr. Jan Duffy pairs BHHS marketing
-              with hyperlocal comps. Call{" "}
-              <a href="tel:+17022221964" className="text-blue-600 font-semibold">702-222-1964</a>.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Free Home Valuation</span>
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> World-Class Marketing</span>
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Expert Negotiation</span>
-            </div>
-          </div>
-
+          <PageHero heroKey="sellers" title={"Sell Near Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Listing strategy for Summerlin West sellers — and move-up buyers comparing Enclaves or Reserves at Cloudbreak Ridge in La Madre Peaks. Dr. Jan Duffy pairs BHHS marketing with hyperlocal comps. Call{\" \"} <a href=\"tel:+17022221964\" className=\"text-blue-600 font-semibold\">702-222-1964</a>."} />
         <RealScoutListings />
 
           {/* Market Stats */}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import SchemaScript from "@/components/SchemaScript";
@@ -70,17 +71,7 @@ export default function BringYourRealtorPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-sm font-semibold text-blue-600 mb-3">
-              Cloudbreak Ridge · La Madre Peaks · Summerlin West
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Bring Your Realtor to the First Visit
-            </h1>
-            <p className="text-xl text-slate-600">
-              Protect independent buyer representation at Cloudbreak Ridge by KB Home
-            </p>
-          </div>
+          <PageHero heroKey="bring-your-realtor" badge={"Cloudbreak Ridge · La Madre Peaks · Summerlin West"} title={"Bring Your Realtor to the First Visit"} subtitle={"Protect independent buyer representation at Cloudbreak Ridge by KB Home"} />
 
         <RealScoutListings />
 

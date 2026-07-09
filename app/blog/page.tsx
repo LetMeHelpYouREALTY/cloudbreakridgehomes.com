@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import PageHero from "@/components/sections/PageHero";
 import SchemaScript from "@/components/SchemaScript";
 import { BLOG_POSTS } from "@/lib/blog-posts";
 import { siteConfig } from "@/lib/site-config";
@@ -61,15 +62,12 @@ export default function BlogIndexPage() {
             <span className="text-slate-900">Blog</span>
           </nav>
 
-          <div className="max-w-4xl mx-auto text-center mb-14">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Cloudbreak Ridge &amp; Summerlin Blog
-            </h1>
-            <p className="text-lg text-slate-600">
-              New construction updates, buyer guides, and community news for La Madre Peaks and
-              Summerlin West — written for homebuyers, not industry jargon.
-            </p>
-          </div>
+          <PageHero
+            heroKey="blog"
+            priority
+            title="Cloudbreak Ridge & Summerlin Blog"
+            subtitle="New construction updates, buyer guides, and community news for La Madre Peaks and Summerlin West — written for homebuyers, not industry jargon."
+          />
 
           <div className="max-w-5xl mx-auto grid gap-10">
             {BLOG_POSTS.map((post) => (

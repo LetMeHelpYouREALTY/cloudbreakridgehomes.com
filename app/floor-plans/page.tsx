@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import SchemaScript from "@/components/SchemaScript";
@@ -64,20 +65,14 @@ export default function FloorPlansPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-sm font-semibold text-blue-600 mb-3">
-              Cloudbreak Ridge Homes by Dr. Jan Duffy
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Cloudbreak Ridge Floor Plans
-            </h1>
-            <p className="text-xl text-slate-600">
-              Five KB Home plans across gated Enclaves and Reserves — models at{" "}
-              {CLOUDBREAK_RIDGE.address.full}
-            </p>
-          </div>
+          <PageHero
+            heroKey="floor-plans"
+            badge="Cloudbreak Ridge Homes by Dr. Jan Duffy"
+            title="Cloudbreak Ridge Floor Plans"
+            subtitle={`Five KB Home plans across gated Enclaves and Reserves — models at ${CLOUDBREAK_RIDGE.address.full}`}
+          />
 
-          <RealScoutListings />
+        <RealScoutListings />
 
           <HyperlocalIntro
             h2="How many floor plans does Cloudbreak Ridge offer?"

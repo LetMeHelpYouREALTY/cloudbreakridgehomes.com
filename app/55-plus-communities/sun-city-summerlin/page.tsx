@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -69,18 +70,7 @@ export default function SunCitySummerlinPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Trophy className="h-4 w-4 mr-2" />
-              Nevada's Largest 55+ Community
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sun City Summerlin
-            </h1>
-            <p className="text-xl text-slate-600">
-              7,700+ homes. 3 golf courses. 4 recreation centers. The gold standard of active adult living.
-            </p>
-          </div>
+          <PageHero heroKey="sun-city-summerlin" title={"Sun City Summerlin"} subtitle={"7,700+ homes. 3 golf courses. 4 recreation centers. The gold standard of active adult living."} />
 
         <RealScoutListings />
 

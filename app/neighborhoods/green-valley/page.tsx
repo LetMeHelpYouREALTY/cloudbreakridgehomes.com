@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -79,18 +80,7 @@ export default function GreenValleyPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Green Valley
-            </h1>
-            <p className="text-xl text-slate-600">
-              Henderson's original master-planned community. Find your Green Valley home with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
-            </p>
-          </div>
+          <PageHero heroKey="green-valley" title={"Berkshire Hathaway HomeServices Green Valley"} subtitle={"Henderson's original master-planned community. Find your Green Valley home with{\" \"} <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy."} />
 
         <RealScoutListings />
 

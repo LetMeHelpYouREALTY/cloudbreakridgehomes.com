@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -80,19 +81,7 @@ export default function SunCityAliantePage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <DollarSign className="h-4 w-4 mr-2" />
-              Most Affordable Sun City in Las Vegas
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Sun City Aliante
-            </h1>
-            <p className="text-xl text-slate-600">
-              Full Sun City amenities at the best value. Golf, pools, fitness, and
-              100+ clubs—from $280K.
-            </p>
-          </div>
+          <PageHero heroKey="sun-city-aliante" title={"Sun City Aliante"} subtitle={"Full Sun City amenities at the best value. Golf, pools, fitness, and 100+ clubs—from $280K."} />
 
         <RealScoutListings />
 

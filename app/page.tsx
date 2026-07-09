@@ -88,7 +88,7 @@ export default async function Home() {
     : combineSchemas(agentSchema, faqSchema);
 
   if (isCloudbreak) {
-    preload("/Image/hero_bg_1.webp", { as: "image", fetchPriority: "high" });
+    preload("/images/hero/home.webp", { as: "image", fetchPriority: "high" });
   }
 
   return (

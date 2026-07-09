@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -44,18 +45,7 @@ export default function DelWebbLakeLasVegasPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Waves className="h-4 w-4 mr-2" />
-              Lakefront 55+ Living
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Del Webb at Lake Las Vegas
-            </h1>
-            <p className="text-xl text-slate-600">
-              Modern homes. Lake views. Resort living. The newest Del Webb in Las Vegas.
-            </p>
-          </div>
+          <PageHero heroKey="del-webb-lake-las-vegas" title={"Del Webb at Lake Las Vegas"} subtitle={"Modern homes. Lake views. Resort living. The newest Del Webb in Las Vegas."} />
 
         <RealScoutListings />
 

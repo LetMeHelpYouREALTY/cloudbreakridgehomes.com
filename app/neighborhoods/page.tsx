@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import SchemaScript from "@/components/SchemaScript";
@@ -91,19 +92,7 @@ export default function NeighborhoodsPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Cloudbreak Ridge Homes by Dr. Jan Duffy
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Summerlin Neighborhoods Near Cloudbreak Ridge
-            </h1>
-            <p className="text-xl text-slate-600">
-              Hyperlocal guide to La Madre Peaks, Summerlin West, and nearby Summerlin villages —
-              focused on parks, trails, golf, gates, square footage, and commute times (215 /
-              Downtown Summerlin® / Red Rock Canyon). No school rankings or crime labels.
-            </p>
-          </div>
+          <PageHero heroKey="neighborhoods" title={"Summerlin Neighborhoods Near Cloudbreak Ridge"} subtitle={"Hyperlocal guide to La Madre Peaks, Summerlin West, and nearby Summerlin villages — focused on parks, trails, golf, gates, square footage, and commute times (215 / Downtown Summerlin® / Red Rock Canyon). No school rankings or crime labels."} />
 
         <RealScoutListings />
 

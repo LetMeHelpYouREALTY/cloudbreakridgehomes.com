@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
@@ -81,19 +82,7 @@ export default function SoleraAnthemPage() {
           </div>
 
           {/* Hero */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Heart className="h-4 w-4 mr-2" />
-              Intimate Guard-Gated 55+ Community
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Solera at Anthem
-            </h1>
-            <p className="text-xl text-slate-600">
-              The close-knit alternative to mega-communities. Guard-gated security
-              in Henderson's safest neighborhood.
-            </p>
-          </div>
+          <PageHero heroKey="solera-anthem" title={"Solera at Anthem"} subtitle={"The close-knit alternative to mega-communities. Guard-gated security in Henderson's safest neighborhood."} />
 
         <RealScoutListings />
 

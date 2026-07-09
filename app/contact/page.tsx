@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { Phone, Mail, MapPin, Clock, Calendar, CheckCircle, Star, Users, Shield } from "lucide-react";
@@ -51,21 +52,19 @@ export default function ContactPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          {/* Hero */}
-          <div className="text-center mb-12">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Contact Dr. Jan Duffy
-            </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Touring <strong>Cloudbreak Ridge</strong> in La Madre Peaks? Call the client line, book
-              Calendly, or get directions to the models at{" "}
-              <strong>1168 Cloudbreak Cove Dr., Las Vegas, NV 89138</strong>. Register before your
-              first KB Home visit so you keep independent representation.
-            </p>
-          </div>
+          <PageHero
+            heroKey="contact"
+            badge="Berkshire Hathaway HomeServices Nevada Properties"
+            title="Contact Dr. Jan Duffy"
+            subtitle={
+              <>
+                Touring <strong>Cloudbreak Ridge</strong> in La Madre Peaks? Call the client line,
+                book Calendly, or get directions to the models at{" "}
+                <strong>1168 Cloudbreak Cove Dr., Las Vegas, NV 89138</strong>. Register before
+                your first KB Home visit so you keep independent representation.
+              </>
+            }
+          />
 
         <RealScoutListings />
 

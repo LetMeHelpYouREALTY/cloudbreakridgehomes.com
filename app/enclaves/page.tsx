@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import SchemaScript from "@/components/SchemaScript";
@@ -63,18 +64,12 @@ export default function EnclavesPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-sm font-semibold text-blue-600 mb-3">
-              Cloudbreak Ridge Homes by Dr. Jan Duffy · La Madre Peaks
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Enclaves at Cloudbreak Ridge
-            </h1>
-            <p className="text-xl text-slate-600">
-              Gated single-story KB Home collection in {CLOUDBREAK_RIDGE.village},{" "}
-              {CLOUDBREAK_RIDGE.region} — from {CLOUDBREAK_RIDGE.priceFrom}
-            </p>
-          </div>
+          <PageHero
+            heroKey="enclaves"
+            badge="Cloudbreak Ridge Homes by Dr. Jan Duffy · La Madre Peaks"
+            title="Enclaves at Cloudbreak Ridge"
+            subtitle={`Gated single-story KB Home collection in ${CLOUDBREAK_RIDGE.village}, ${CLOUDBREAK_RIDGE.region} — from ${CLOUDBREAK_RIDGE.priceFrom}`}
+          />
 
         <RealScoutListings />
 

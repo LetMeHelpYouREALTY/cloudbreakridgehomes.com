@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import PageHero from "@/components/sections/PageHero";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import CalendlyBookingSection from "@/components/calendly/CalendlyBookingSection";
@@ -75,23 +76,7 @@ export default function MarketUpdatePage() {
           </div>
 
           {/* Header */}
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Calendar className="h-4 w-4 mr-2" />
-              Week of January 20, 2026
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Berkshire Hathaway HomeServices Las Vegas Market Update
-            </h1>
-            <p className="text-xl text-slate-600">
-              Your weekly insider report on Las Vegas Valley real estate from{" "}
-              <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>
-            </p>
-            <div className="flex items-center justify-center mt-6 text-slate-500 text-sm">
-              <span>By Dr. Jan Duffy, REALTOR® | BHHS Nevada Properties</span>
-            </div>
-          </div>
-
+          <PageHero heroKey="market-update" title={"Berkshire Hathaway HomeServices Las Vegas Market Update"} subtitle={"Your weekly insider report on Las Vegas Valley real estate from{\" \"} <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>"} />
         <RealScoutListings />
 
           {/* Key Statistics */}
