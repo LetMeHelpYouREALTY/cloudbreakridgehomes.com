@@ -1,6 +1,6 @@
 import Navbar from "@/components/layouts/Navbar";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
-import HeroBackground from "@/components/sections/HeroBackground";
+import PageHero from "@/components/sections/PageHero";
 import HeroRealScoutSearch, {
   HeroSearchFallback,
 } from "@/components/realscout/HeroRealScoutSearch";
@@ -24,6 +24,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { CLOUDBREAK_RIDGE } from "@/lib/cloudbreak-ridge";
+import { getPageHero } from "@/lib/page-heroes";
 import { preload } from "react-dom";
 
 const FAQ_SECTION_COPY: Record<string, { title: string; subtitle: string }> = {
@@ -88,7 +89,7 @@ export default async function Home() {
     : combineSchemas(agentSchema, faqSchema);
 
   if (isCloudbreak) {
-    preload("/images/hero/home.webp", { as: "image", fetchPriority: "high" });
+    preload(getPageHero("home").src, { as: "image", fetchPriority: "high" });
   }
 
   return (
@@ -99,42 +100,34 @@ export default async function Home() {
       />
       <Navbar />
       <main>
-        <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
-          <HeroBackground />
-          <div className="relative z-10 container mx-auto px-4 text-center">
-            {config.ctaBadge && (
-              <span className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-6">
-                {config.ctaBadge}
-              </span>
-            )}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              {config.heroHeadline}
-            </h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto">
-              {config.heroSubheadline}
-            </p>
+        <PageHero
+          heroKey="home"
+          priority
+          className="mb-0 md:mb-0 rounded-none -mx-0 md:mx-0 md:rounded-none"
+          badge={config.ctaBadge}
+          title={config.heroHeadline}
+          subtitle={config.heroSubheadline}
+        >
+          <div className="mt-8 mb-8 flex justify-center">
+            <HeroSearchFallback />
+            <HeroRealScoutSearch agentEncodedId={config.realscoutAgentId} />
+          </div>
 
-            <div className="mb-8 flex justify-center">
-              <HeroSearchFallback />
-              <HeroRealScoutSearch agentEncodedId={config.realscoutAgentId} />
+          <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
+            <div className="flex items-center gap-2">
+              <span className="font-semibold text-white">La Madre Peaks</span>
+              <span>Newest Summerlin village</span>
             </div>
-
-            <div className="flex flex-wrap justify-center gap-6 text-white/80 text-sm">
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">La Madre Peaks</span>
-                <span>Newest Summerlin village</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">From $800s</span>
-                <span>Enclaves &amp; Reserves</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="font-semibold text-white">~5 min</span>
-                <span>to Downtown Summerlin®</span>
-              </div>
+            <div className="flex items-center gap-2">
+              <span className="font-semibold text-white">From $800s</span>
+              <span>Enclaves &amp; Reserves</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="font-semibold text-white">~5 min</span>
+              <span>to Downtown Summerlin®</span>
             </div>
           </div>
-        </section>
+        </PageHero>
 
         <RealScoutListings deferUntilIdle={isCloudbreak} />
 

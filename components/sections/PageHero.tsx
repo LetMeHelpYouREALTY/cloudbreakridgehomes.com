@@ -37,9 +37,9 @@ type PageHeroProps = {
 };
 
 const TITLE_CLASS =
-  "text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight text-balance [&_span]:text-blue-200";
+  "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-balance [&_span]:text-blue-200";
 const SUBTITLE_CLASS =
-  "text-lg md:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed text-balance [&_a]:text-blue-200 [&_a]:font-semibold [&_a]:underline-offset-2 hover:[&_a]:underline [&_strong]:text-white";
+  "text-lg md:text-xl lg:text-2xl text-white/85 max-w-3xl mx-auto leading-relaxed text-balance [&_a]:text-blue-200 [&_a]:font-semibold [&_a]:underline-offset-2 hover:[&_a]:underline [&_strong]:text-white";
 
 /**
  * Full-width hero band with page-specific background image (public/images/hero/{key}.webp).
