@@ -36,10 +36,9 @@ type PageHeroProps = {
   className?: string;
 };
 
-const TITLE_CLASS =
-  "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-balance [&_span]:text-blue-200";
-const SUBTITLE_CLASS =
-  "text-lg md:text-xl lg:text-2xl text-white/85 max-w-3xl mx-auto leading-relaxed text-balance [&_a]:text-blue-200 [&_a]:font-semibold [&_a]:underline-offset-2 hover:[&_a]:underline [&_strong]:text-white";
+const TEXT_SHADOW = "[text-shadow:0_2px_16px_rgba(0,0,0,0.65),0_1px_3px_rgba(0,0,0,0.8)]";
+const TITLE_CLASS = `text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-balance [&_span]:text-blue-200 ${TEXT_SHADOW}`;
+const SUBTITLE_CLASS = `text-lg md:text-xl lg:text-2xl text-white/95 max-w-3xl mx-auto leading-relaxed text-balance [&_a]:text-blue-200 [&_a]:font-semibold [&_a]:underline-offset-2 hover:[&_a]:underline [&_strong]:text-white ${TEXT_SHADOW}`;
 
 /**
  * Full-width hero band with page-specific background image (public/images/hero/{key}.webp).
@@ -70,12 +69,14 @@ export default function PageHero({
           quality={75}
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-900/55 to-slate-900/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/55 via-slate-950/15 to-slate-950/60" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-14 md:py-20 lg:py-24 text-center text-white">
         {badge && (
-          <p className="text-sm font-semibold text-blue-200 mb-3 tracking-wide">{badge}</p>
+          <p className={`text-sm font-semibold text-blue-200 mb-3 tracking-wide ${TEXT_SHADOW}`}>
+            {badge}
+          </p>
         )}
         {typeof title === "string" ? (
           /<[a-z][\s\S]*>/i.test(normalizeHeroText(title)) ? (
