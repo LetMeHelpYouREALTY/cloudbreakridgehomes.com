@@ -88,10 +88,10 @@ const realEstateAgentSchema = {
   url: "https://www.cloudbreakridgehomes.com/buyers/california-relocator",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
+    streetAddress: "1168 Cloudbreak Cove Dr., Suite A",
     addressLocality: "Las Vegas",
     addressRegion: "NV",
-    postalCode: "89134",
+    postalCode: "89138",
   },
   areaServed: ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas"],
   priceRange: "$350,000 - $10,000,000+",

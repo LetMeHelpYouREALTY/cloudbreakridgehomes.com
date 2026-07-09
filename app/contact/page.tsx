@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | Cloudbreak Ridge La Madre Peaks Tours",
   description:
-    "Contact Dr. Jan Duffy for Cloudbreak Ridge tours in La Madre Peaks. Models: 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138. Client line 702-222-1964. Book Calendly. Office: 9406 W Lake Mead Blvd #100.",
+    "Contact Dr. Jan Duffy for Cloudbreak Ridge tours in La Madre Peaks. Models: 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138. Client line 702-222-1964. Book Calendly. Office: 1168 Cloudbreak Cove Dr., Suite A.",
   keywords: [
     "contact Cloudbreak Ridge realtor",
     "Dr. Jan Duffy phone",
@@ -29,10 +29,10 @@ const contactSchema = {
     email: "info@cloudbreakridgehomes.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
+      streetAddress: "1168 Cloudbreak Cove Dr., Suite A",
       addressLocality: "Las Vegas",
       addressRegion: "NV",
-      postalCode: "89134",
+      postalCode: "89138",
       addressCountry: "US",
     },
     areaServed: [
@@ -142,8 +142,8 @@ export default function ContactPage() {
                     <address className="not-italic text-slate-700">
                       Berkshire Hathaway HomeServices<br />
                       Nevada Properties<br />
-                      9406 W Lake Mead Blvd, Suite 100<br />
-                      Las Vegas, NV 89134
+                      1168 Cloudbreak Cove Dr., Suite A<br />
+                      Las Vegas, NV 89138
                     </address>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ export default function ContactPage() {
               {/* Google Map Embed */}
               <div className="rounded-xl overflow-hidden shadow-md mb-4">
                 <iframe
-                  src="https://maps.google.com/maps?q=9406+W+Lake+Mead+Blvd+Suite+100,+Las+Vegas,+NV+89134&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=1168+Cloudbreak+Cove+Dr+Suite+A,+Las+Vegas,+NV+89138&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
@@ -181,7 +181,7 @@ export default function ContactPage() {
               {/* Map Action Buttons */}
               <div className="flex gap-3 mb-8">
                 <a
-                  href="https://www.google.com/maps/dir//9406+W+Lake+Mead+Blvd+Suite+100,+Las+Vegas,+NV+89134"
+                  href="https://www.google.com/maps/dir//1168+Cloudbreak+Cove+Dr+Suite+A,+Las+Vegas,+NV+89138"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-colors"
@@ -190,7 +190,7 @@ export default function ContactPage() {
                   Get Directions
                 </a>
                 <a
-                  href="https://maps.google.com/?q=Berkshire+Hathaway+HomeServices+Nevada+Properties+9406+W+Lake+Mead+Blvd+Las+Vegas+NV"
+                  href="https://maps.google.com/?q=Berkshire+Hathaway+HomeServices+Nevada+Properties+1168+Cloudbreak+Cove+Dr+Suite+A+Las+Vegas+NV"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-3 rounded-lg font-medium transition-colors"

@@ -147,7 +147,7 @@ const faqCategories = [
       },
       {
         q: "How do I contact Dr. Jan Duffy?",
-        a: "Call or text (702) 500-1942 or email info@cloudbreakridgehomes.com. Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+        a: "Call or text (702) 500-1942 or email info@cloudbreakridgehomes.com. Office located at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138.",
       },
       {
         q: "What areas does Dr. Jan cover?",

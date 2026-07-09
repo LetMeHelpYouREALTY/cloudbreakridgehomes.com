@@ -256,9 +256,9 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-blue-400 flex-shrink-0 mt-0.5" />
                 <span className="text-slate-300 text-sm">
-                  9406 W Lake Mead Blvd, Suite 100
+                  1168 Cloudbreak Cove Dr., Suite A
                   <br />
-                  Las Vegas, NV 89134
+                  Las Vegas, NV 89138
                 </span>
               </li>
               <li className="flex items-center">

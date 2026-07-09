@@ -7,10 +7,10 @@ export const businessInfo = {
   // NAP - Must match GBP exactly
   name: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
   address: {
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
+    streetAddress: "1168 Cloudbreak Cove Dr., Suite A",
     addressLocality: "Las Vegas",
     addressRegion: "NV",
-    postalCode: "89134",
+    postalCode: "89138",
     addressCountry: "US",
   },
   phone: {
@@ -37,8 +37,8 @@ export const businessInfo = {
 
   // Geo coordinates for distance ranking
   geo: {
-    latitude: 36.1941,
-    longitude: -115.2678,
+    latitude: 36.194063,
+    longitude: -115.373438,
   },
 
   // Service areas - Start focused, expand with prominence
@@ -163,7 +163,7 @@ Dr. Jan's approach is simple: treat every client like family, know the market in
 
 Neighborhood guidance emphasizes square footage, parks, trails, golf adjacency, gates, and commute times on the 215 Beltway — not demographic labels. Amenities near Cloudbreak Ridge include Scout’s Point (planned), Grand Park (phase one complete), and Downtown Summerlin® about five minutes away.
 
-Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Client CTA: (702) 222-1964. Office line: (702) 500-1942. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Visit cloudbreakridgehomes.com to tour Enclaves and Reserves with independent representation.`,
+Office located at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138. Client CTA: (702) 222-1964. Office line: (702) 500-1942. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Visit cloudbreakridgehomes.com to tour Enclaves and Reserves with independent representation.`,
 };
 
 // FAQ Schema for GBP Q&A section
@@ -202,7 +202,7 @@ export const gbpFAQs = [
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",
-    answer: "Call or text (702) 500-1942 for immediate assistance, or email info@cloudbreakridgehomes.com. Office visits available at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
+    answer: "Call or text (702) 500-1942 for immediate assistance, or email info@cloudbreakridgehomes.com. Office visits available at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
   },
   {
     question: "Does Dr. Jan help with investment properties in Las Vegas?",

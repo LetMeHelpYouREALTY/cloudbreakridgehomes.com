@@ -31,16 +31,17 @@ export const agentInfo = {
 
 export const officeInfo = {
   name: "Berkshire Hathaway HomeServices Nevada Properties",
+  /** Suite A — distinct from the KB Home sales office at the same street (see lib/cloudbreak-ridge.ts). */
   address: {
-    street: "9406 W Lake Mead Blvd, Suite 100",
+    street: "1168 Cloudbreak Cove Dr., Suite A",
     city: "Las Vegas",
     state: "NV",
-    zip: "89134",
-    full: "9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
+    zip: "89138",
+    full: "1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138",
   },
   coordinates: {
-    lat: 36.1893,
-    lng: -115.2821,
+    lat: 36.194063,
+    lng: -115.373438,
   },
   phone: "(702) 500-1942",
   phoneTel: "tel:+17025001942",

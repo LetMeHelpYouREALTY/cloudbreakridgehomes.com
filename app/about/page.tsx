@@ -51,10 +51,10 @@ const personSchema = {
     name: "Berkshire Hathaway HomeServices Nevada Properties",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "9406 W Lake Mead Blvd, Suite 100",
+      streetAddress: "1168 Cloudbreak Cove Dr., Suite A",
       addressLocality: "Las Vegas",
       addressRegion: "NV",
-      postalCode: "89134",
+      postalCode: "89138",
     },
   },
   hasCredential: {
@@ -132,9 +132,10 @@ export default function AboutPage() {
             <p className="text-slate-700 leading-relaxed">
               Dr. Jan Duffy works the Cloudbreak Ridge / La Madre Peaks beat: KB Home contracts,
               lot and elevation choices, Scout’s Point and Grand Park orientation, and 215 commute
-              times to Downtown Summerlin®. Community models:{" "}
-              <strong>1168 Cloudbreak Cove Dr., Las Vegas, NV 89138</strong>. Brokerage office:{" "}
-              <strong>9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134</strong>.
+              times to Downtown Summerlin®. KB Home models:{" "}
+              <strong>1168 Cloudbreak Cove Dr., Las Vegas, NV 89138</strong>. Dr. Jan Duffy's brokerage
+              office is at the same address,{" "}
+              <strong>Suite A</strong> — separate from the builder's sales office.
             </p>
           </section>
 
@@ -199,8 +200,8 @@ export default function AboutPage() {
                     <div className="flex items-start text-slate-700">
                       <MapPin className="h-5 w-5 mr-3 text-blue-600 mt-0.5" />
                       <address className="not-italic">
-                        9406 W Lake Mead Blvd, Suite 100<br />
-                        Las Vegas, NV 89134
+                        1168 Cloudbreak Cove Dr., Suite A<br />
+                        Las Vegas, NV 89138
                       </address>
                     </div>
                     <div className="flex items-center text-slate-700">
