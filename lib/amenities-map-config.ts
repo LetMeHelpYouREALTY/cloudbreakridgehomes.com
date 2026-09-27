@@ -33,82 +33,69 @@ export type AmenityCategoryId =
 export type AmenityCategoryConfig = {
   id: AmenityCategoryId;
   label: string;
-  /** Google Places (New) primary types — first match used for searchNearby */
+  /** Google Places (New) primary types — all passed in one searchNearby call */
   primaryTypes: string[];
-  /** Legacy PlacesService nearbySearch type (fallback) */
-  legacyType?: string;
 };
 
 /**
- * Category order tuned for master-planned family new construction in Summerlin West
- * (Parks & daily errands first; schools included — not a 55+ or Strip high-rise site).
+ * Category order tuned for master-planned new construction in Summerlin West
+ * (Parks & daily errands first; schools included).
  */
 export const AMENITY_CATEGORIES: AmenityCategoryConfig[] = [
   {
     id: "parks",
     label: "Parks",
     primaryTypes: ["park", "national_park"],
-    legacyType: "park",
   },
   {
     id: "grocery",
     label: "Grocery",
     primaryTypes: ["grocery_store", "supermarket"],
-    legacyType: "grocery_or_supermarket",
   },
   {
     id: "restaurants",
     label: "Restaurants",
     primaryTypes: ["restaurant"],
-    legacyType: "restaurant",
   },
   {
     id: "cafes",
     label: "Cafes",
     primaryTypes: ["cafe", "coffee_shop"],
-    legacyType: "cafe",
   },
   {
     id: "healthcare",
     label: "Healthcare",
     primaryTypes: ["hospital", "doctor", "medical_clinic"],
-    legacyType: "hospital",
   },
   {
     id: "golf",
     label: "Golf",
     primaryTypes: ["golf_course"],
-    legacyType: "golf_course",
   },
   {
     id: "fitness",
     label: "Fitness",
     primaryTypes: ["gym", "fitness_center"],
-    legacyType: "gym",
   },
   {
     id: "shopping",
     label: "Shopping",
     primaryTypes: ["shopping_mall", "department_store"],
-    legacyType: "shopping_mall",
   },
   {
     id: "pharmacies",
     label: "Pharmacies",
     primaryTypes: ["pharmacy", "drugstore"],
-    legacyType: "pharmacy",
   },
   {
     id: "schools",
     label: "Schools",
     primaryTypes: ["school", "primary_school", "secondary_school"],
-    legacyType: "school",
   },
   {
     id: "parking",
     label: "Parking",
     primaryTypes: ["parking", "parking_garage"],
-    legacyType: "parking",
   },
 ];
 
