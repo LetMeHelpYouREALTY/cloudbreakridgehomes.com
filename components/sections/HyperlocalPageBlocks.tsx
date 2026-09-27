@@ -15,6 +15,7 @@ const INTERNAL_LINKS = [
   { href: "/floor-plans", label: "All KB Home floor plans" },
   { href: "/blog", label: "Cloudbreak Ridge blog & updates" },
   { href: "/schools", label: "Schools near Cloudbreak Ridge" },
+  { href: "/amenities", label: "Nearby amenities map & guide" },
   { href: "/neighborhoods", label: "Summerlin neighborhoods near Cloudbreak Ridge" },
   { href: "/la-madre-peaks", label: "La Madre Peaks village guide" },
   { href: "/bring-your-realtor", label: "Bring your Realtor to the first visit" },
