@@ -19,6 +19,7 @@ import {
 } from "@/components/sections/HyperlocalPageBlocks";
 import { CLOUDBREAK_RIDGE_FAQS } from "@/lib/cloudbreak-ridge";
 import { generateFAQSchema, generateRealEstateAgentSchema } from "@/lib/schema";
+import NearbyAmenitiesSection from "@/components/maps/NearbyAmenitiesSection";
 
 export const metadata: Metadata = {
   title: "Summerlin Neighborhoods Near Cloudbreak Ridge | La Madre Peaks",
@@ -137,6 +138,9 @@ export default function NeighborhoodsPage() {
 
           <LocalServicesBlock />
           <CommunityFaqList faqs={faqSlice} title="Cloudbreak Ridge & Summerlin FAQ" />
+        </div>
+        <NearbyAmenitiesSection variant="interior" title="Amenities Near Summerlin West" />
+        <div className="container mx-auto px-4">
           <LocalCtaBlock />
           <LocalInternalLinks excludeHref="/neighborhoods" />
 

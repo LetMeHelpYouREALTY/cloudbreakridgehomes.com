@@ -26,6 +26,10 @@ export const PAGE_HEROES = {
     src: "/images/hero/la-madre-peaks.webp",
     alt: "La Madre Peaks village and La Madre Mountains, Summerlin West",
   },
+  amenities: {
+    src: "/images/hero/neighborhoods.webp",
+    alt: "Parks, shopping, and recreation near Cloudbreak Ridge in Summerlin West, Las Vegas",
+  },
   "bring-your-realtor": {
     src: "/images/hero/bring-your-realtor.webp",
     alt: "Register your buyer agent before touring Cloudbreak Ridge model homes",
