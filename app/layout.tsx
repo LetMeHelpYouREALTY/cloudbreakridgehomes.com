@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import CalendlyProvider from "@/components/calendly/CalendlyProvider";
 import { REALSCOUT_WIDGET_JS } from "@/lib/realscout-config";
+import { PAGE_HEROES } from "@/lib/page-heroes";
 
 const canonicalSiteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
@@ -22,13 +23,19 @@ const googleSiteVerification =
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
   const config = getDomainConfig(domain);
+  const isCloudbreakSite = config.domain === "cloudbreakridgehomes.com";
+  const metaDescription = isCloudbreakSite
+    ? siteConfig.metaDescription
+    : config.description;
+  const ogImageUrl = new URL(PAGE_HEROES.home.src, canonicalSiteUrl).href;
+
   return {
     metadataBase: new URL(canonicalSiteUrl),
     title: {
       default: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
       template: "%s | Cloudbreak Ridge Homes by Dr. Jan Duffy",
     },
-    description: config.description,
+    description: metaDescription,
     keywords: config.keywords,
     alternates: {
       canonical: "/",
@@ -38,11 +45,29 @@ export async function generateMetadata(): Promise<Metadata> {
       : undefined,
     openGraph: {
       title: config.heroHeadline || "Cloudbreak Ridge Homes by Dr. Jan Duffy",
-      description: config.description,
+      description: metaDescription,
       type: "website",
       siteName: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
       url: canonicalSiteUrl,
+      ...(isCloudbreakSite && {
+        images: [
+          {
+            url: ogImageUrl,
+            width: 1920,
+            height: 1080,
+            alt: PAGE_HEROES.home.alt,
+          },
+        ],
+      }),
     },
+    ...(isCloudbreakSite && {
+      twitter: {
+        card: "summary_large_image",
+        title: config.heroHeadline || "Cloudbreak Ridge Homes by Dr. Jan Duffy",
+        description: metaDescription,
+        images: [ogImageUrl],
+      },
+    }),
   };
 }
 

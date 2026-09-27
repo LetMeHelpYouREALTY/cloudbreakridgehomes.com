@@ -14,6 +14,9 @@ export const siteConfig = {
   url: "https://www.cloudbreakridgehomes.com",
   description:
     "Cloudbreak Ridge Homes by Dr. Jan Duffy — the newest Summerlin neighborhood in La Madre Peaks. Enclaves (gated single-story) and Reserves (two-story) homes from the $800,000s near Scout’s Point, Grand Park, and Downtown Summerlin®.",
+  /** Meta / Open Graph description (120–160 characters). */
+  metaDescription:
+    "Cloudbreak Ridge Homes by Dr. Jan Duffy — KB Home Enclaves & Reserves in La Madre Peaks, Summerlin West, from the $800,000s.",
 };
 
 export const agentInfo = {
