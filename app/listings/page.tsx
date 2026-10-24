@@ -19,6 +19,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import NearbyAmenitiesSection from "@/components/maps/NearbyAmenitiesSection";
 
 export const metadata: Metadata = {
   title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
@@ -447,6 +448,12 @@ export default function ListingsPage() {
           </section>
 
           {/* CTA */}
+        </div>
+        <NearbyAmenitiesSection
+          variant="interior"
+          title="Explore Amenities Near Cloudbreak Ridge"
+        />
+        <div className="container mx-auto px-4">
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Find Your Las Vegas Home?

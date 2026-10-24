@@ -17,6 +17,7 @@ import {
   CommuteAndAccessBlock,
   SummerlinMasterAmenitiesBlock,
 } from "@/components/sections/CloudbreakContentBlocks";
+import NearbyAmenitiesSection from "@/components/maps/NearbyAmenitiesSection";
 import {
   CLOUDBREAK_RIDGE,
   RESERVES_COLLECTION,
@@ -92,6 +93,9 @@ export default function ReservesPage() {
           <CommuteAndAccessBlock />
           <SummerlinMasterAmenitiesBlock />
           <LocalServicesBlock />
+        </div>
+        <NearbyAmenitiesSection variant="interior" title="Amenities Near Reserves" />
+        <div className="container mx-auto px-4">
           <FAQSection
             faqs={faqs}
             title="Reserves FAQ"

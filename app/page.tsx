@@ -9,6 +9,7 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CloudbreakRidgeOverview from "@/components/sections/CloudbreakRidgeOverview";
+import NearbyAmenitiesSection from "@/components/maps/NearbyAmenitiesSection";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
 import { Phone, Home as HomeIcon, TrendingUp, Shield, Users } from "lucide-react";
@@ -126,6 +127,8 @@ export default async function Home() {
         <RealScoutListings deferUntilIdle={isCloudbreak} />
 
         {isCloudbreak && <CloudbreakRidgeOverview />}
+
+        {isCloudbreak && <NearbyAmenitiesSection title="What's Nearby Cloudbreak Ridge" />}
 
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">

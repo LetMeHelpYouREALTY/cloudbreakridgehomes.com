@@ -12,6 +12,7 @@ import {
   LocalCtaBlock,
   LocalInternalLinks,
 } from "@/components/sections/HyperlocalPageBlocks";
+import NearbyAmenitiesSection from "@/components/maps/NearbyAmenitiesSection";
 import {
   SchoolsNearCommunityBlock,
   CommuteAndAccessBlock,
@@ -144,6 +145,12 @@ export default function LaMadrePeaksPage() {
           <SummerlinMasterAmenitiesBlock />
           <EnclavesVsReservesComparisonBlock />
           <LocalServicesBlock />
+        </div>
+        <NearbyAmenitiesSection
+          variant="interior"
+          title="What's Nearby La Madre Peaks"
+        />
+        <div className="container mx-auto px-4">
           <FAQSection
             faqs={faqs}
             title="La Madre Peaks FAQ"

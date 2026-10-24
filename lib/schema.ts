@@ -14,6 +14,8 @@ import {
   RESERVES_COLLECTION,
   NEARBY_AMENITIES,
 } from "./cloudbreak-ridge";
+import { COMMUNITY_MAP_CENTER } from "./amenities-map-config";
+import { VERIFIED_NEARBY_PLACES } from "./nearby-amenities-content";
 
 // ============================================================================
 // Types
@@ -133,6 +135,15 @@ export function generateRealEstateAgentSchema() {
       {
         "@type": "Place",
         name: "Summerlin",
+      },
+      {
+        "@type": "Place",
+        name: CLOUDBREAK_RIDGE.name,
+        description: CLOUDBREAK_RIDGE.shortDescription,
+        containedInPlace: {
+          "@type": "Place",
+          name: `${CLOUDBREAK_RIDGE.village}, ${CLOUDBREAK_RIDGE.masterPlan}`,
+        },
       },
       {
         "@type": "City",
@@ -812,6 +823,11 @@ export function generateCloudbreakRidgePlaceSchema() {
       addressCountry: "US",
     },
     hasMap: CLOUDBREAK_RIDGE.mapsSearchUrl,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: COMMUNITY_MAP_CENTER.lat,
+      longitude: COMMUNITY_MAP_CENTER.lng,
+    },
     containedInPlace: {
       "@type": "Place",
       name: CLOUDBREAK_RIDGE.masterPlan,
@@ -823,6 +839,47 @@ export function generateCloudbreakRidgePlaceSchema() {
       description: a.description,
     })),
   };
+}
+
+/** ItemList of verified nearby places for /amenities (GEO / AEO). */
+export function generateNearbyAmenitiesItemListSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${BASE_URL}/amenities#itemlist`,
+    name: `Nearby amenities near ${CLOUDBREAK_RIDGE.name}, Las Vegas`,
+    description: `Featured parks, shopping, healthcare, golf, and schools near ${CLOUDBREAK_RIDGE.address.full}.`,
+    numberOfItems: VERIFIED_NEARBY_PLACES.length,
+    itemListElement: VERIFIED_NEARBY_PLACES.map((place, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": place.schemaType,
+        name: place.name,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: place.streetAddress,
+          addressLocality: place.addressLocality,
+          addressRegion: place.addressRegion,
+          postalCode: place.postalCode,
+          addressCountry: "US",
+        },
+      },
+    })),
+  };
+}
+
+export function generateAmenitiesPageSchemaBundle(faqs: FAQItem[]) {
+  return combineSchemas(
+    generateRealEstateAgentSchema(),
+    generateCloudbreakRidgePlaceSchema(),
+    generateFAQSchema(faqs),
+    generateBreadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Nearby Amenities", url: "/amenities" },
+    ]),
+    generateNearbyAmenitiesItemListSchema()
+  );
 }
 
 /** Collection-level ResidentialComplex for /enclaves or /reserves. */

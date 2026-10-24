@@ -16,6 +16,7 @@ import {
   SchoolsNearCommunityBlock,
   CommuteAndAccessBlock,
 } from "@/components/sections/CloudbreakContentBlocks";
+import NearbyAmenitiesSection from "@/components/maps/NearbyAmenitiesSection";
 import {
   CLOUDBREAK_RIDGE,
   ENCLAVES_COLLECTION,
@@ -90,6 +91,9 @@ export default function EnclavesPage() {
           <SchoolsNearCommunityBlock />
           <CommuteAndAccessBlock />
           <LocalServicesBlock />
+        </div>
+        <NearbyAmenitiesSection variant="interior" title="Amenities Near Enclaves" />
+        <div className="container mx-auto px-4">
           <FAQSection
             faqs={faqs}
             title="Enclaves FAQ"

@@ -19,6 +19,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
+import NearbyAmenitiesSection from "@/components/maps/NearbyAmenitiesSection";
 
 export const metadata: Metadata = {
   title: "New Construction Cloudbreak Ridge | KB Home Buyer Agent",
@@ -660,7 +661,11 @@ export default function NewConstructionPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">
+        <NearbyAmenitiesSection
+          variant="interior"
+          title="What's Near Cloudbreak Ridge New Construction"
+        />
+        <div className="text-center text-sm text-slate-500 mt-8 container mx-auto px-4">
           Last Updated: January 2026 | Incentives subject to change
         </div>
       </main>
