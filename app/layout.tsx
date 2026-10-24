@@ -7,6 +7,7 @@ import { siteConfig } from "@/lib/site-config";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import CalendlyProvider from "@/components/calendly/CalendlyProvider";
+import GlobalHeroBanner from "@/components/layout/GlobalHeroBanner";
 import { REALSCOUT_WIDGET_JS } from "@/lib/realscout-config";
 import { PAGE_HEROES } from "@/lib/page-heroes";
 
@@ -95,6 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}</Script>
       </head>
       <body>
+        <GlobalHeroBanner />
         {children}
         <CalendlyProvider />
         <Analytics />
