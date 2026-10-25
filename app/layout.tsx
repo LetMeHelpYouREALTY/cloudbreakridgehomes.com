@@ -21,7 +21,7 @@ const googleSiteVerification =
   process.env.GOOGLE_SITE_VERIFICATION;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const domain = headers().get("x-domain") || "";
+  const domain = (await headers()).get("x-domain") || "";
   const config = getDomainConfig(domain);
   const isCloudbreakSite = config.domain === "cloudbreakridgehomes.com";
   const metaDescription = isCloudbreakSite
