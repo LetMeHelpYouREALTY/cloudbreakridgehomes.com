@@ -21,7 +21,7 @@ const googleSiteVerification =
   process.env.GOOGLE_SITE_VERIFICATION;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const domain = headers().get("x-domain") || "";
+  const domain = (await headers()).get("x-domain") || "";
   const config = getDomainConfig(domain);
   const isCloudbreakSite = config.domain === "cloudbreakridgehomes.com";
   const metaDescription = isCloudbreakSite
@@ -71,7 +71,11 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={GeistSans.className}>
       <head>
