@@ -435,8 +435,8 @@ export default function NewConstructionPage() {
                   </h3>
                   <p className="text-slate-600">
                     Call{" "}
-                    <a href="tel:+17025001942" className="text-blue-600 font-semibold hover:underline">
-                      (702) 500-1942
+                    <a href="tel:+17025001955" className="text-blue-600 font-semibold hover:underline">
+                      (702) 500-1955
                     </a>{" "}
                     to register Dr. Jan Duffy as your buyer's agent before any builder visits. We'll 
                     discuss your needs, budget, and preferred locations, then accompany you to model homes.
@@ -559,8 +559,8 @@ export default function NewConstructionPage() {
                   Yes, most builders require your agent to accompany you or be registered on your
                   FIRST visit. If you visit alone and sign the guest registry, you may forfeit your
                   right to free representation. Call{" "}
-                  <a href="tel:+17025001942" className="text-blue-600 font-semibold hover:underline">
-                    (702) 500-1942
+                  <a href="tel:+17025001955" className="text-blue-600 font-semibold hover:underline">
+                    (702) 500-1955
                   </a>{" "}
                   to register Dr. Jan Duffy as your buyer's agent before visiting any model home.
                 </p>
@@ -636,17 +636,17 @@ export default function NewConstructionPage() {
               Ready to Tour New Construction?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Call <strong>(702) 500-1942</strong> to register Dr. Jan Duffy as your buyer's agent 
+              Call <strong>(702) 500-1955</strong> to register Dr. Jan Duffy as your buyer's agent 
               <strong> before</strong> visiting any model home—or you may lose your right to free 
               professional representation. Current incentive information available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="inline-flex items-center justify-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call (702) 500-1942
+                Call (702) 500-1955
               </a>
               <Link
                 href="/contact"

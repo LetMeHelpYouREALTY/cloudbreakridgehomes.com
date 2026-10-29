@@ -164,7 +164,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                     asChild
                     className="w-full bg-blue-600 hover:bg-blue-700"
                   >
-                    <a href="tel:+17025001942">Call (702) 500-1942</a>
+                    <a href="tel:+17025001955">Call (702) 500-1955</a>
                   </Button>
                   <CalendlyButton className="w-full inline-flex items-center justify-center bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-md font-semibold hover:bg-blue-50 transition-colors">
                     Schedule Consultation
