@@ -25,7 +25,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Buy Cloudbreak Ridge & Summerlin West Homes | Buyer Guide",
   description:
-    "Buyer representation for Cloudbreak Ridge Enclaves & Reserves in La Madre Peaks, plus Summerlin West resale. Register Dr. Jan Duffy before your first model visit. Call 702-222-1964.",
+    "Buyer representation for Cloudbreak Ridge Enclaves & Reserves in La Madre Peaks, plus Summerlin West resale. Register Dr. Jan Duffy before your first model visit. Call 702-500-1955.",
   keywords: [
     "buy Cloudbreak Ridge",
     "Summerlin West home buyer",
@@ -41,7 +41,7 @@ const buyerSchema = {
   provider: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Cloudbreak Ridge Homes by Dr. Jan Duffy",
-    telephone: "+17022221964",
+    telephone: "+17025001955",
   },
   areaServed: "Cloudbreak Ridge, La Madre Peaks, Summerlin West, Las Vegas NV",
   serviceType: "Buyer Representation",
@@ -100,7 +100,7 @@ export default function BuyersPage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero */}
-          <PageHero heroKey="buyers" title={"Buy at Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for <strong>Enclaves</strong> and{\" \"} <strong>Reserves</strong> at Cloudbreak Ridge (KB Home) in La Madre Peaks — plus Summerlin West resale when you compare options. Register Dr. Jan before visit one; call <a href=\"tel:+17022221964\" className=\"text-blue-600 font-semibold\">702-222-1964</a>."} />
+          <PageHero heroKey="buyers" title={"Buy at Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for <strong>Enclaves</strong> and{\" \"} <strong>Reserves</strong> at Cloudbreak Ridge (KB Home) in La Madre Peaks — plus Summerlin West resale when you compare options. Register Dr. Jan before visit one; call <a href=\"tel:+17025001955\" className=\"text-blue-600 font-semibold\">702-500-1955</a>."} />
         <RealScoutListings />
 
           {/* Value Prop */}

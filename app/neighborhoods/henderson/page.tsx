@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Henderson Homes vs Summerlin West | Cloudbreak Ridge Context",
   description:
-    "Comparing Henderson (Green Valley, Inspirada) with Summerlin West and Cloudbreak Ridge in La Madre Peaks? Dr. Jan Duffy helps with amenities, sq ft, and commute facts. Call 702-222-1964.",
+    "Comparing Henderson (Green Valley, Inspirada) with Summerlin West and Cloudbreak Ridge in La Madre Peaks? Dr. Jan Duffy helps with amenities, sq ft, and commute facts. Call 702-500-1955.",
   keywords: [
     "Henderson vs Summerlin West",
     "Henderson homes for sale",
@@ -64,7 +64,7 @@ const faqSchema = {
       name: "Why work with Dr. Jan Duffy when comparing Henderson and Summerlin?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties helps buyers compare square footage, parks, HOAs, and commute times across Henderson and Summerlin West — including first-visit registration at Cloudbreak Ridge. Call 702-222-1964.",
+        text: "Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties helps buyers compare square footage, parks, HOAs, and commute times across Henderson and Summerlin West — including first-visit registration at Cloudbreak Ridge. Call 702-500-1955.",
       },
     },
   ],
@@ -96,7 +96,7 @@ export default function HendersonPage() {
           </div>
 
           {/* Hero */}
-          <PageHero heroKey="henderson" title={"Henderson Homes vs Summerlin West"} subtitle={"Comparing Green Valley, Inspirada, or MacDonald Highlands with Cloudbreak Ridge in La Madre Peaks? Dr. Jan Duffy maps amenities, square footage, and commute times — call{\" \"} <a href=\"tel:+17022221964\" className=\"text-blue-600 font-semibold\">702-222-1964</a>."} />
+          <PageHero heroKey="henderson" title={"Henderson Homes vs Summerlin West"} subtitle={"Comparing Green Valley, Inspirada, or MacDonald Highlands with Cloudbreak Ridge in La Madre Peaks? Dr. Jan Duffy maps amenities, square footage, and commute times — call{\" \"} <a href=\"tel:+17025001955\" className=\"text-blue-600 font-semibold\">702-500-1955</a>."} />
 
         <RealScoutListings />
 
@@ -370,7 +370,7 @@ export default function HendersonPage() {
                   Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada
                   Properties helps buyers compare square footage, parks, HOAs, and commute times across
                   Henderson and Summerlin West — including first-visit registration at Cloudbreak Ridge.
-                  Call 702-222-1964.
+                  Call 702-500-1955.
                 </p>
               </div>
             </div>
