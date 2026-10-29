@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | Cloudbreak Ridge La Madre Peaks Tours",
   description:
-    "Contact Dr. Jan Duffy for Cloudbreak Ridge tours in La Madre Peaks. Models: 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138. Client line 702-222-1964. Book Calendly. Office: 1168 Cloudbreak Cove Dr., Suite A.",
+    "Contact Dr. Jan Duffy for Cloudbreak Ridge tours in La Madre Peaks. Models: 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138. Client line 702-500-1955. Book Calendly. Office: 1168 Cloudbreak Cove Dr., Suite A.",
   keywords: [
     "contact Cloudbreak Ridge realtor",
     "Dr. Jan Duffy phone",
@@ -25,7 +25,7 @@ const contactSchema = {
   mainEntity: {
     "@type": "RealEstateAgent",
     name: "Dr. Jan Duffy - Cloudbreak Ridge Homes by Dr. Jan Duffy",
-    telephone: "+17022221964",
+    telephone: "+17025001955",
     email: "info@cloudbreakridgehomes.com",
     address: {
       "@type": "PostalAddress",
@@ -86,10 +86,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">Client CTA (Call or Text)</h3>
                     <a
-                      href="tel:+17022221964"
+                      href="tel:+17025001955"
                       className="text-2xl font-bold text-blue-600 hover:text-blue-700"
                     >
-                      (702) 222-1964
+                      (702) 500-1955
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
                       Tour scheduling &amp; first-visit registration

@@ -31,7 +31,7 @@ import {
 export const metadata: Metadata = {
   title: "Schools Near Cloudbreak Ridge | La Madre Peaks Summerlin",
   description:
-    "Schools near Cloudbreak Ridge by KB Home: Linda Rankin Givens Elementary, Sig Rogich Middle, and Palo Verde High (per KB Home, 2026). Verify CCSD zoning before you buy. Call 702-222-1964.",
+    "Schools near Cloudbreak Ridge by KB Home: Linda Rankin Givens Elementary, Sig Rogich Middle, and Palo Verde High (per KB Home, 2026). Verify CCSD zoning before you buy. Call 702-500-1955.",
   alternates: { canonical: `${siteConfig.url}/schools` },
   keywords: [
     "Cloudbreak Ridge schools",

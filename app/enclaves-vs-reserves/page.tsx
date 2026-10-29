@@ -33,7 +33,7 @@ import {
 export const metadata: Metadata = {
   title: "Enclaves vs Reserves at Cloudbreak Ridge | Which KB Home Collection?",
   description:
-    "Compare Enclaves (single-story, ~2,251–2,387 sq ft) vs Reserves (two-story, ~2,753–3,095 sq ft) at Cloudbreak Ridge in La Madre Peaks. Gated KB Home from the $800,000s. Call 702-222-1964.",
+    "Compare Enclaves (single-story, ~2,251–2,387 sq ft) vs Reserves (two-story, ~2,753–3,095 sq ft) at Cloudbreak Ridge in La Madre Peaks. Gated KB Home from the $800,000s. Call 702-500-1955.",
   alternates: { canonical: `${siteConfig.url}/enclaves-vs-reserves` },
   keywords: [
     "Enclaves vs Reserves Cloudbreak Ridge",

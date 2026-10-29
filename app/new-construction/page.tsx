@@ -23,7 +23,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "New Construction Cloudbreak Ridge | KB Home Buyer Agent",
   description:
-    "Independent buyer representation for Cloudbreak Ridge Enclaves & Reserves (KB Home) in La Madre Peaks, Summerlin West. Register before visit one. Call 702-222-1964.",
+    "Independent buyer representation for Cloudbreak Ridge Enclaves & Reserves (KB Home) in La Madre Peaks, Summerlin West. Register before visit one. Call 702-500-1955.",
   keywords: [
     "Cloudbreak Ridge new construction",
     "KB Home buyer agent Summerlin",
@@ -57,7 +57,7 @@ const faqSchema = {
       name: "Do I have to register Dr. Jan Duffy as my agent on the first visit?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, most builders require your agent to accompany you or be registered on your FIRST visit. If you visit alone and sign the guest registry, you may forfeit your right to free representation. Call (702) 222-1964 to register Dr. Jan Duffy as your buyer's agent before visiting Cloudbreak Ridge at 1168 Cloudbreak Cove Dr. or any other model home.",
+        text: "Yes, most builders require your agent to accompany you or be registered on your FIRST visit. If you visit alone and sign the guest registry, you may forfeit your right to free representation. Call (702) 500-1955 to register Dr. Jan Duffy as your buyer's agent before visiting Cloudbreak Ridge at 1168 Cloudbreak Cove Dr. or any other model home.",
       },
     },
     {
@@ -247,7 +247,7 @@ export default function NewConstructionPage() {
           </div>
 
           {/* Hero */}
-          <PageHero heroKey="new-construction" title={"New Construction at Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for KB Home Enclaves and Reserves in La Madre Peaks — register before your first visit to 1168 Cloudbreak Cove Dr. Call{\" \"} <a href=\"tel:+17022221964\" className=\"text-blue-600 font-semibold\">702-222-1964</a>."} />
+          <PageHero heroKey="new-construction" title={"New Construction at Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for KB Home Enclaves and Reserves in La Madre Peaks — register before your first visit to 1168 Cloudbreak Cove Dr. Call{\" \"} <a href=\"tel:+17025001955\" className=\"text-blue-600 font-semibold\">702-500-1955</a>."} />
         <RealScoutListings />
 
           {/* Why Free Representation */}

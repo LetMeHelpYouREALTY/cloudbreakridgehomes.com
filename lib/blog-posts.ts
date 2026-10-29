@@ -75,7 +75,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       {
         heading: "Why register a Realtor before your first visit?",
         paragraphs: [
-          "Most builders require your buyer’s agent on the first model-home registration. Visiting alone can limit independent representation. Call Dr. Jan Duffy at 702-222-1964 before you tour Cloudbreak Ridge so she can register with you and review Enclaves vs Reserves floor plans, homesite premiums, and KBHS vs outside lender options.",
+          "Most builders require your buyer’s agent on the first model-home registration. Visiting alone can limit independent representation. Call Dr. Jan Duffy at 702-500-1955 before you tour Cloudbreak Ridge so she can register with you and review Enclaves vs Reserves floor plans, homesite premiums, and KBHS vs outside lender options.",
         ],
       },
     ],

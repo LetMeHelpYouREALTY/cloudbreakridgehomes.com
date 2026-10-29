@@ -24,7 +24,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sell Near Cloudbreak Ridge & Summerlin West | Listing Guide",
   description:
-    "Sell in Summerlin West or compare move-up to Cloudbreak Ridge with Dr. Jan Duffy, BHHS Nevada Properties. Marketing, pricing strategy, and buyer network. Call 702-222-1964.",
+    "Sell in Summerlin West or compare move-up to Cloudbreak Ridge with Dr. Jan Duffy, BHHS Nevada Properties. Marketing, pricing strategy, and buyer network. Call 702-500-1955.",
   keywords: [
     "sell Summerlin West home",
     "Cloudbreak Ridge move up",
@@ -132,7 +132,7 @@ export default function SellersPage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero */}
-          <PageHero heroKey="sellers" title={"Sell Near Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Listing strategy for Summerlin West sellers — and move-up buyers comparing Enclaves or Reserves at Cloudbreak Ridge in La Madre Peaks. Dr. Jan Duffy pairs BHHS marketing with hyperlocal comps. Call{\" \"} <a href=\"tel:+17022221964\" className=\"text-blue-600 font-semibold\">702-222-1964</a>."} />
+          <PageHero heroKey="sellers" title={"Sell Near Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Listing strategy for Summerlin West sellers — and move-up buyers comparing Enclaves or Reserves at Cloudbreak Ridge in La Madre Peaks. Dr. Jan Duffy pairs BHHS marketing with hyperlocal comps. Call{\" \"} <a href=\"tel:+17025001955\" className=\"text-blue-600 font-semibold\">702-500-1955</a>."} />
         <RealScoutListings />
 
           {/* Market Stats */}

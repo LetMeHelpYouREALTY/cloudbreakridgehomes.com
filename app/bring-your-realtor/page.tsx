@@ -24,7 +24,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Bring Your Realtor to Cloudbreak Ridge | First Visit Registration",
   description:
-    "Builders usually require your buyer’s agent on the first model visit. Register Dr. Jan Duffy before touring Cloudbreak Ridge at 1168 Cloudbreak Cove Dr., La Madre Peaks. Call 702-222-1964.",
+    "Builders usually require your buyer’s agent on the first model visit. Register Dr. Jan Duffy before touring Cloudbreak Ridge at 1168 Cloudbreak Cove Dr., La Madre Peaks. Call 702-500-1955.",
   alternates: { canonical: `${siteConfig.url}/bring-your-realtor` },
   keywords: [
     "bring your realtor new construction",
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     question: "What address should I put in my GPS for Cloudbreak Ridge?",
-    answer: `Use ${CLOUDBREAK_RIDGE.address.full}. Call 702-222-1964 so Dr. Jan Duffy can meet you or be registered before you sign the guest book.`,
+    answer: `Use ${CLOUDBREAK_RIDGE.address.full}. Call 702-500-1955 so Dr. Jan Duffy can meet you or be registered before you sign the guest book.`,
   },
   {
     question: "What does Dr. Jan help with after registration?",

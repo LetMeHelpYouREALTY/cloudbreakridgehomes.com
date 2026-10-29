@@ -34,7 +34,7 @@ import {
 export const metadata: Metadata = {
   title: "Cloudbreak Ridge Floor Plans | KB Home Enclaves & Reserves",
   description:
-    "All five KB Home floor plans at Cloudbreak Ridge: Enclaves Plan 2251 & 2387 (single-story) and Reserves Plan 2753, 2989 & 3095 (two-story) in La Madre Peaks. From the $800,000s. Call 702-222-1964.",
+    "All five KB Home floor plans at Cloudbreak Ridge: Enclaves Plan 2251 & 2387 (single-story) and Reserves Plan 2753, 2989 & 3095 (two-story) in La Madre Peaks. From the $800,000s. Call 702-500-1955.",
   alternates: { canonical: `${siteConfig.url}/floor-plans` },
   keywords: [
     "Cloudbreak Ridge floor plans",
