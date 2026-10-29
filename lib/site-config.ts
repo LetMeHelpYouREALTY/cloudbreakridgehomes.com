@@ -23,9 +23,9 @@ export const agentInfo = {
   name: "Dr. Jan Duffy",
   title: "REALTOR®",
   license: "S.0197614.LLC",
-  phone: "(702) 500-1942",
-  phoneFormatted: "(702) 500-1942",
-  phoneTel: "tel:+17025001942",
+  phone: "(702) 500-1955",
+  phoneFormatted: "(702) 500-1955",
+  phoneTel: "tel:+17025001955",
   email: "info@cloudbreakridgehomes.com",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
   /** Cloudflare R2 shared headshot — prefer `getAgentHeadshotUrl()` from agent-photos */
@@ -46,8 +46,8 @@ export const officeInfo = {
     lat: 36.194063,
     lng: -115.373438,
   },
-  phone: "(702) 500-1942",
-  phoneTel: "tel:+17025001942",
+  phone: "(702) 500-1955",
+  phoneTel: "tel:+17025001955",
 };
 
 // Market Statistics (Updated January 2026)

@@ -201,11 +201,11 @@ export default function Navbar() {
               <div className="pt-4">
                 <Button asChild className="bg-blue-600 hover:bg-blue-700 w-full">
                   <Link
-                    href="tel:+17025001942"
+                    href="tel:+17025001955"
                     className="flex items-center justify-center gap-2"
                   >
                     <Phone className="h-4 w-4" />
-                    Call Dr. Jan: (702) 500-1942
+                    Call Dr. Jan: (702) 500-1955
                   </Link>
                 </Button>
               </div>

@@ -14,8 +14,8 @@ export const businessInfo = {
     addressCountry: "US",
   },
   phone: {
-    display: "(702) 500-1942",
-    tel: "+17025001942",
+    display: "(702) 500-1955",
+    tel: "+17025001955",
   },
   email: "info@cloudbreakridgehomes.com",
   url: "https://www.cloudbreakridgehomes.com",
@@ -163,7 +163,7 @@ Dr. Jan's approach is simple: treat every client like family, know the market in
 
 Neighborhood guidance emphasizes square footage, parks, trails, golf adjacency, gates, and commute times on the 215 Beltway — not demographic labels. Amenities near Cloudbreak Ridge include Scout’s Point (planned), Grand Park (phase one complete), and Downtown Summerlin® about five minutes away.
 
-Office located at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138. Client CTA: (702) 500-1955. Office line: (702) 500-1942. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Visit cloudbreakridgehomes.com to tour Enclaves and Reserves with independent representation.`,
+Office located at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138. Call (702) 500-1955. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Visit cloudbreakridgehomes.com to tour Enclaves and Reserves with independent representation.`,
 };
 
 // FAQ Schema for GBP Q&A section
@@ -174,7 +174,7 @@ export const gbpFAQs = [
   },
   {
     question: "Does Dr. Jan help buyers relocating from California?",
-    answer: "Yes! California relocation is a specialty. Dr. Jan helps CA buyers understand Nevada's 0% state income tax advantage, compare home values (40-60% lower than comparable CA properties), and find the perfect Las Vegas neighborhood. Call (702) 500-1942 for California relocation assistance.",
+    answer: "Yes! California relocation is a specialty. Dr. Jan helps CA buyers understand Nevada's 0% state income tax advantage, compare home values (40-60% lower than comparable CA properties), and find the perfect Las Vegas neighborhood. Call (702) 500-1955 for California relocation assistance.",
   },
   {
     question: "What 55+ communities does Dr. Jan specialize in?",
@@ -186,7 +186,7 @@ export const gbpFAQs = [
   },
   {
     question: "How does Dr. Jan help with probate or divorce real estate sales?",
-    answer: "Dr. Jan handles sensitive transactions with discretion and professionalism. For probate sales, she coordinates with estate attorneys and ensures court compliance. For divorce sales, she provides neutral representation and works with both parties' attorneys. Call (702) 500-1942 for a confidential consultation.",
+    answer: "Dr. Jan handles sensitive transactions with discretion and professionalism. For probate sales, she coordinates with estate attorneys and ensures court compliance. For divorce sales, she provides neutral representation and works with both parties' attorneys. Call (702) 500-1955 for a confidential consultation.",
   },
   {
     question: "What is the average home price in Las Vegas in 2026?",
@@ -202,11 +202,11 @@ export const gbpFAQs = [
   },
   {
     question: "How do I schedule a consultation with Dr. Jan Duffy?",
-    answer: "Call or text (702) 500-1942 for immediate assistance, or email info@cloudbreakridgehomes.com. Office visits available at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
+    answer: "Call or text (702) 500-1955 for immediate assistance, or email info@cloudbreakridgehomes.com. Office visits available at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138. Monday-Friday 9am-6pm, Saturday 10am-4pm, Sunday by appointment.",
   },
   {
     question: "Does Dr. Jan help with investment properties in Las Vegas?",
-    answer: "Yes! Dr. Jan provides investment property consulting including rental property analysis, cap rate calculations, short-term rental regulations, and multi-family opportunities across the Las Vegas Valley. Contact (702) 500-1942 for investment property guidance.",
+    answer: "Yes! Dr. Jan provides investment property consulting including rental property analysis, cap rate calculations, short-term rental regulations, and multi-family opportunities across the Las Vegas Valley. Contact (702) 500-1955 for investment property guidance.",
   },
 ];
 

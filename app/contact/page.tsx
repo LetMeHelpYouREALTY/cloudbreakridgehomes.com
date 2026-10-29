@@ -289,13 +289,13 @@ export default function ContactPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <a
-                href="tel:+17025001942"
+                href="tel:+17025001955"
                 className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-xl transition-colors"
               >
                 <Phone className="h-8 w-8 mr-4" />
                 <div className="text-left">
                   <div className="font-bold text-lg">Call Now</div>
-                  <div className="text-blue-100">(702) 500-1942</div>
+                  <div className="text-blue-100">(702) 500-1955</div>
                 </div>
               </a>
               <a
@@ -328,7 +328,7 @@ export default function ContactPage() {
                 },
                 {
                   q: "How quickly can you respond to inquiries?",
-                  a: "I typically respond to calls, texts, and emails within 2 hours during business hours (9am-6pm daily). For urgent matters, calling or texting (702) 500-1942 is the fastest way to reach me.",
+                  a: "I typically respond to calls, texts, and emails within 2 hours during business hours (9am-6pm daily). For urgent matters, calling or texting (702) 500-1955 is the fastest way to reach me.",
                 },
                 {
                   q: "Do you charge for consultations?",
