@@ -302,7 +302,7 @@ export default function HendersonPage() {
               <p>
                 Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Henderson home search means
                 working with agents who understand the subtle differences between Henderson's many communities.
-                Dr. Jan Duffy can explain which neighborhoods have the best schools for your children's ages,
+                Dr. Jan Duffy can explain which neighborhoods have the nearby public schools for your children's ages,
                 which HOAs are well-managed, and which areas offer the strongest investment potential. That
                 local knowledge, backed by the resources and reputation of Berkshire Hathaway, makes all the
                 difference.
@@ -314,7 +314,7 @@ export default function HendersonPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Henderson offers something for everyone—young professionals, growing families, active retirees.
+                "Henderson offers something for everyone—condos, single-story homes, and 4+ bedroom floor plans.
                 As a Berkshire Hathaway HomeServices agent, I help clients cut through the options and find
                 the community that fits their lifestyle. There's a reason Henderson keeps winning 'Best Places
                 to Live' awards."
