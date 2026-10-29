@@ -35,7 +35,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Reserves at Cloudbreak Ridge | Two-Story KB Home Summerlin",
   description:
-    "Reserves at Cloudbreak Ridge — two-story KB Home plans (~2,753–3,095 sq ft) with a planned neighborhood park in La Madre Peaks, Summerlin West. 1168 Cloudbreak Cove Dr. Call 702-222-1964.",
+    "Reserves at Cloudbreak Ridge — two-story KB Home plans (~2,753–3,095 sq ft) with a planned neighborhood park in La Madre Peaks, Summerlin West. 1168 Cloudbreak Cove Dr. Call 702-500-1942.",
   alternates: { canonical: `${siteConfig.url}/reserves` },
   keywords: [
     "Reserves at Cloudbreak Ridge",

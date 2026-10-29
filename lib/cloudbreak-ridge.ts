@@ -58,8 +58,8 @@ export const CLOUDBREAK_RIDGE = {
     grandPark: "less than five minutes to Grand Park",
   },
   /** Client CTA per portfolio operating instructions */
-  ctaPhone: "(702) 222-1964",
-  ctaPhoneTel: "tel:+17022221964",
+  ctaPhone: "(702) 500-1942",
+  ctaPhoneTel: "tel:+17025001942",
 } as const;
 
 export type FloorPlan = {
@@ -329,7 +329,7 @@ export const CLOUDBREAK_RIDGE_FAQS = [
   {
     question: "Why bring a Realtor to the first Cloudbreak Ridge visit?",
     answer:
-      "Builders often require your agent at initial registration. Visiting alone can mean you forfeit buyer representation. Call Dr. Jan Duffy at 702-222-1964 or book a consultation before you go to 1168 Cloudbreak Cove Dr.",
+      "Builders often require your agent at initial registration. Visiting alone can mean you forfeit buyer representation. Call Dr. Jan Duffy at 702-500-1942 or book a consultation before you go to 1168 Cloudbreak Cove Dr.",
   },
   {
     question: "What amenities are near Cloudbreak Ridge?",
@@ -339,7 +339,7 @@ export const CLOUDBREAK_RIDGE_FAQS = [
   {
     question: "How do I tour Cloudbreak Ridge or compare Enclaves vs Reserves?",
     answer:
-      "Call or text Dr. Jan Duffy at 702-222-1964, or book a buyer consultation. Register her before your first model visit so you keep independent representation while comparing floorplans and homesites with KB Home.",
+      "Call or text Dr. Jan Duffy at 702-500-1942, or book a buyer consultation. Register her before your first model visit so you keep independent representation while comparing floorplans and homesites with KB Home.",
   },
 ] as const;
 
@@ -357,7 +357,7 @@ export const ENCLAVES_FAQS = [
   {
     question: "What is the address for Enclaves / Cloudbreak Ridge models?",
     answer:
-      "KB Home’s Cloudbreak Ridge sales office is at 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138. Call Dr. Jan Duffy at 702-222-1964 before your first visit so she can register with you.",
+      "KB Home’s Cloudbreak Ridge sales office is at 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138. Call Dr. Jan Duffy at 702-500-1942 before your first visit so she can register with you.",
   },
   {
     question: "How do Enclaves compare to Reserves?",
@@ -385,7 +385,7 @@ export const RESERVES_FAQS = [
   {
     question: "Should I buy early in Reserves?",
     answer:
-      "Early phases typically offer more homesite, elevation, and option choice; prices and premiums can rise later. Bring your Realtor on the first visit — call 702-222-1964 to register Dr. Jan Duffy before you tour.",
+      "Early phases typically offer more homesite, elevation, and option choice; prices and premiums can rise later. Bring your Realtor on the first visit — call 702-500-1942 to register Dr. Jan Duffy before you tour.",
   },
 ] as const;
 

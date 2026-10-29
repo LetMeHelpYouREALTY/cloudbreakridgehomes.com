@@ -34,7 +34,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Enclaves at Cloudbreak Ridge | Single-Story KB Home Summerlin",
   description:
-    "Enclaves at Cloudbreak Ridge — gated single-story KB Home floorplans (Plan 2251 ~2,251 sq ft; Plan 2387 ~2,387 sq ft) in La Madre Peaks, Summerlin West. 1168 Cloudbreak Cove Dr. Call 702-222-1964.",
+    "Enclaves at Cloudbreak Ridge — gated single-story KB Home floorplans (Plan 2251 ~2,251 sq ft; Plan 2387 ~2,387 sq ft) in La Madre Peaks, Summerlin West. 1168 Cloudbreak Cove Dr. Call 702-500-1942.",
   alternates: { canonical: `${siteConfig.url}/enclaves` },
   keywords: [
     "Enclaves at Cloudbreak Ridge",
