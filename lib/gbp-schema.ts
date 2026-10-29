@@ -163,7 +163,7 @@ Dr. Jan's approach is simple: treat every client like family, know the market in
 
 Neighborhood guidance emphasizes square footage, parks, trails, golf adjacency, gates, and commute times on the 215 Beltway — not demographic labels. Amenities near Cloudbreak Ridge include Scout’s Point (planned), Grand Park (phase one complete), and Downtown Summerlin® about five minutes away.
 
-Office located at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138. Client CTA: (702) 222-1964. Office line: (702) 500-1942. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Visit cloudbreakridgehomes.com to tour Enclaves and Reserves with independent representation.`,
+Office located at 1168 Cloudbreak Cove Dr., Suite A, Las Vegas, NV 89138. Client CTA: (702) 500-1942. Available Monday through Friday 9am-6pm, Saturday 10am-4pm, and Sunday by appointment. Visit cloudbreakridgehomes.com to tour Enclaves and Reserves with independent representation.`,
 };
 
 // FAQ Schema for GBP Q&A section

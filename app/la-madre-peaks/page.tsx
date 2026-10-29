@@ -31,7 +31,7 @@ import {
 export const metadata: Metadata = {
   title: "La Madre Peaks Summerlin West | Village Near Cloudbreak Ridge",
   description:
-    "La Madre Peaks is Summerlin’s newest village in Summerlin West at the base of the La Madre Mountains — home to Cloudbreak Ridge by KB Home near Scout’s Point and Grand Park. Call 702-222-1964.",
+    "La Madre Peaks is Summerlin’s newest village in Summerlin West at the base of the La Madre Mountains — home to Cloudbreak Ridge by KB Home near Scout’s Point and Grand Park. Call 702-500-1942.",
   alternates: { canonical: `${siteConfig.url}/la-madre-peaks` },
   keywords: [
     "La Madre Peaks",
@@ -59,7 +59,7 @@ const faqs = [
   {
     question: "How do I tour homes in La Madre Peaks with a Realtor?",
     answer:
-      "Register Dr. Jan Duffy before your first builder visit — call 702-222-1964 or book a consultation. Most builders require your agent on the initial registration.",
+      "Register Dr. Jan Duffy before your first builder visit — call 702-500-1942 or book a consultation. Most builders require your agent on the initial registration.",
   },
   {
     question: "What schools serve La Madre Peaks and Cloudbreak Ridge?",

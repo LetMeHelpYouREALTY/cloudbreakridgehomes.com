@@ -24,7 +24,7 @@ import { drJanDuffyPhotos } from "@/lib/agent-photos";
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Cloudbreak Ridge & Summerlin West Realtor",
   description:
-    "Meet Dr. Jan Duffy — Cloudbreak Ridge Homes specialist for La Madre Peaks, Summerlin West. License S.0197614.LLC, BHHS Nevada Properties. Call 702-222-1964 before your first KB Home visit.",
+    "Meet Dr. Jan Duffy — Cloudbreak Ridge Homes specialist for La Madre Peaks, Summerlin West. License S.0197614.LLC, BHHS Nevada Properties. Call 702-500-1942 before your first KB Home visit.",
   keywords: [
     "Dr. Jan Duffy",
     "Cloudbreak Ridge realtor",
@@ -121,7 +121,7 @@ export default function AboutPage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
-          <PageHero heroKey="about" title={"About Dr. Jan Duffy — Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for Cloudbreak Ridge in La Madre Peaks, Summerlin West — Enclaves, Reserves, and nearby Summerlin villages. License S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. Call 702-222-1964 before your first model visit."} />
+          <PageHero heroKey="about" title={"About Dr. Jan Duffy — Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for Cloudbreak Ridge in La Madre Peaks, Summerlin West — Enclaves, Reserves, and nearby Summerlin villages. License S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. Call 702-500-1942 before your first model visit."} />
 
         <RealScoutListings />
 

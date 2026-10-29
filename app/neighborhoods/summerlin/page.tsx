@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Summerlin & La Madre Peaks Homes | Near Cloudbreak Ridge",
   description:
-    "Summerlin West and La Madre Peaks guidance near Cloudbreak Ridge — parks, trails, golf adjacency, 215 commute to Downtown Summerlin®. Dr. Jan Duffy, BHHS. Call 702-222-1964.",
+    "Summerlin West and La Madre Peaks guidance near Cloudbreak Ridge — parks, trails, golf adjacency, 215 commute to Downtown Summerlin®. Dr. Jan Duffy, BHHS. Call 702-500-1942.",
   keywords: [
     "Summerlin West homes",
     "La Madre Peaks Summerlin",
@@ -52,7 +52,7 @@ const summerlinFaqs = [
   {
     question: "Why work with Dr. Jan Duffy in Summerlin West?",
     answer:
-      "Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties provides independent buyer representation at Cloudbreak Ridge and Summerlin West resale — register before your first model visit. Call 702-222-1964.",
+      "Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties provides independent buyer representation at Cloudbreak Ridge and Summerlin West resale — register before your first model visit. Call 702-500-1942.",
   },
 ];
 
