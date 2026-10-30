@@ -18,11 +18,11 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
+  title: "Dr. Jan Duffy Market Update | January 2026",
   description:
-    "Weekly Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1955.",
+    "Weekly Las Vegas real estate market update from Dr. Jan Duffy. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices Las Vegas market update",
+    "Dr. Jan Duffy market update",
     "Las Vegas real estate market",
     "Las Vegas housing market 2026",
     "Henderson real estate market",
@@ -35,7 +35,7 @@ const articleSchema = {
   "@type": "NewsArticle",
   headline: "Las Vegas Real Estate Market Update - Week of January 20, 2026",
   description:
-    "Weekly market analysis from Berkshire Hathaway HomeServices Nevada Properties covering Las Vegas Valley real estate trends, statistics, and expert insights.",
+    "Weekly market analysis from Dr. Jan Duffy covering Las Vegas Valley real estate trends, statistics, and expert insights.",
   datePublished: "2026-01-20",
   dateModified: "2026-01-24",
   author: {
@@ -44,12 +44,12 @@ const articleSchema = {
     jobTitle: "REALTOR®",
     worksFor: {
       "@type": "RealEstateAgent",
-      name: "Berkshire Hathaway HomeServices Nevada Properties",
+      name: "Dr. Jan Duffy",
     },
   },
   publisher: {
     "@type": "Organization",
-    name: "Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     url: "https://www.cloudbreakridgehomes.com",
   },
 };
@@ -76,7 +76,7 @@ export default function MarketUpdatePage() {
           </div>
 
           {/* Header */}
-          <PageHero heroKey="market-update" title={"Berkshire Hathaway HomeServices Las Vegas Market Update"} subtitle={"Your weekly insider report on Las Vegas Valley real estate from{\" \"} <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>"} />
+          <PageHero heroKey="market-update" title={"Dr. Jan Duffy Market Update"} subtitle={"Your weekly insider report on Las Vegas Valley real estate from{\" \"} <strong>Dr. Jan Duffy</strong>"} />
         <RealScoutListings />
 
           {/* Key Statistics */}
@@ -201,7 +201,7 @@ export default function MarketUpdatePage() {
                 <p>
                   What I'm watching closely: <strong>new listing activity</strong>. If inventory
                   continues declining while sales remain strong, we could see more competitive
-                  conditions by spring. <strong>Berkshire Hathaway HomeServices</strong> buyers
+                  conditions by spring. <strong>Dr. Jan Duffy</strong> buyers
                   should be prepared to move quickly on desirable properties, while sellers should
                   consider listing before the traditional spring rush creates more competition."
                 </p>
@@ -213,7 +213,7 @@ export default function MarketUpdatePage() {
                 <div>
                   <div className="font-bold text-slate-900">Dr. Jan Duffy</div>
                   <div className="text-slate-500 text-sm">
-                    REALTOR® | Berkshire Hathaway HomeServices Nevada Properties
+                    REALTOR® | Dr. Jan Duffy
                   </div>
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function MarketUpdatePage() {
                   <li className="flex items-start">
                     <ArrowRight className="h-5 w-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>Work with an expert.</strong> A Berkshire Hathaway HomeServices agent
+                      <strong>Work with an expert.</strong> A Dr. Jan Duffy agent
                       can identify properties before they hit the market and negotiate effectively.
                     </span>
                   </li>
@@ -299,7 +299,7 @@ export default function MarketUpdatePage() {
                   <li className="flex items-start">
                     <ArrowRight className="h-5 w-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>Leverage the BHHS brand.</strong> Berkshire Hathaway HomeServices
+                      <strong>Leverage Dr. Jan Duffy's brand.</strong> Dr. Jan Duffy
                       marketing reaches qualified buyers locally, nationally, and internationally.
                     </span>
                   </li>
@@ -388,7 +388,7 @@ export default function MarketUpdatePage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy
             </p>
           </section>
 

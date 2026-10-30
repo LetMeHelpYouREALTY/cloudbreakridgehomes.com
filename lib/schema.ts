@@ -95,9 +95,9 @@ export function generateRealEstateAgentSchema() {
     name: "Cloudbreak Ridge Homes by Dr. Jan Duffy",
     alternateName: [
       "Cloudbreak Ridge Homes",
-      "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-      "BHHS Nevada Properties",
-      "Berkshire Hathaway HomeServices",
+      "Dr. Jan Duffy",
+      "Dr. Jan Duffy",
+      "Dr. Jan Duffy",
     ],
     url: BASE_URL,
     logo: getAgentHeadshotUrl(),
@@ -168,21 +168,14 @@ export function generateRealEstateAgentSchema() {
     parentOrganization: {
       "@type": "Organization",
       "@id": `${BASE_URL}#parent-organization`,
-      name: "Berkshire Hathaway HomeServices Nevada Properties",
+      name: "Dr. Jan Duffy",
       url: "https://www.bfrre.com",
       parentOrganization: {
         "@type": "Organization",
-        name: "Berkshire Hathaway HomeServices",
+        name: "Dr. Jan Duffy",
         url: "https://www.bhhs.com",
         sameAs: "https://en.wikipedia.org/wiki/Berkshire_Hathaway_HomeServices",
       },
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: agentStats.averageRating.toString(),
-      reviewCount: agentStats.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
     },
     knowsAbout: [
       "Las Vegas real estate",
@@ -195,24 +188,24 @@ export function generateRealEstateAgentSchema() {
       "55+ communities",
       "First-time homebuyers",
     ],
-    slogan: "Your Berkshire Hathaway HomeServices expert in Las Vegas",
+    slogan: "Your Dr. Jan Duffy expert in Las Vegas",
   };
 }
 
 /**
- * Generate Organization schema for BHHS brand
+ * Generate Organization schema for Dr. Jan Duffy's brand
  */
 export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${BASE_URL}#parent-organization`,
-    name: "Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     url: "https://www.bfrre.com",
     logo: `${BASE_URL}/favicon-32x32.png`,
     parentOrganization: {
       "@type": "Organization",
-      name: "Berkshire Hathaway HomeServices",
+      name: "Dr. Jan Duffy",
       url: "https://www.bhhs.com",
       sameAs: [
         "https://en.wikipedia.org/wiki/Berkshire_Hathaway_HomeServices",
@@ -387,7 +380,7 @@ export function generateReviewSchema(reviews: ReviewItem[]) {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": `${BASE_URL}#organization`,
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     aggregateRating: generateAggregateRatingSchema(
       agentStats.averageRating,
       agentStats.reviewCount

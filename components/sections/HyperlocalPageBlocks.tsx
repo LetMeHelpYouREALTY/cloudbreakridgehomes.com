@@ -123,7 +123,7 @@ export function LocalServicesBlock({
         What realtor services do you offer at Cloudbreak Ridge?
       </h2>
       <p className="text-slate-700 mb-6">
-        Dr. Jan Duffy ({agentInfo.license}) with {agentInfo.brokerage} represents buyers shopping{" "}
+        Dr. Jan Duffy represents buyers shopping{" "}
         {CLOUDBREAK_RIDGE.name} in {CLOUDBREAK_RIDGE.village} — and Summerlin West resale when
         comparing options.
       </p>
@@ -197,7 +197,7 @@ export function LocalCtaBlock({
             {officeInfo.name} · {officeInfo.address.full} · Office line {officeInfo.phone}
           </p>
           <p className="mt-1">
-            {agentInfo.name}, {agentInfo.title} · License {agentInfo.license}
+            {agentInfo.name}, {agentInfo.title} · Licensed since 2008
           </p>
         </div>
       )}

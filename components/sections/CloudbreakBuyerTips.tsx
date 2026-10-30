@@ -56,7 +56,7 @@ export default function CloudbreakBuyerTips() {
             <Link href="/contact" className="text-blue-600 hover:underline">
               contact Dr. Jan Duffy
             </Link>{" "}
-            · Berkshire Hathaway HomeServices Nevada Properties.
+            · Dr. Jan Duffy.
           </p>
         </div>
       </div>

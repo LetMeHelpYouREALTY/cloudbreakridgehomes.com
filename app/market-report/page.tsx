@@ -7,15 +7,15 @@ import { TrendingUp, TrendingDown, Home, Calendar, DollarSign, BarChart, Phone }
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Real Estate Market Report January 2026 | Dr. Jan Duffy",
   description:
-    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
+    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Dr. Jan Duffy.",
   keywords: [
     "Las Vegas real estate market",
     "Las Vegas home prices 2026",
     "Henderson real estate market",
     "Nevada housing market",
-    "Berkshire Hathaway market report",
+    "Dr. Jan Duffy market report",
   ],
 };
 
@@ -47,7 +47,7 @@ export default function MarketReportPage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
-          <PageHero heroKey="market-report" title={"Las Vegas Real Estate Market Report"} subtitle={"January 2026 | Expert analysis from{\" \"} <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>"} />
+          <PageHero heroKey="market-report" title={"Las Vegas Real Estate Market Report"} subtitle={"January 2026 | Expert analysis from{\" \"} <strong>Dr. Jan Duffy</strong>"} />
 
         <RealScoutListings />
 
@@ -182,7 +182,7 @@ export default function MarketReportPage() {
                 proper pricing and preparation."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy
               </cite>
             </div>
 
@@ -302,7 +302,7 @@ export default function MarketReportPage() {
               Call (702) 500-1955
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy
             </p>
           </section>
         </div>

@@ -64,7 +64,7 @@ const faqSchema = {
       name: "Why work with Dr. Jan Duffy when comparing Henderson and Summerlin?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties helps buyers compare square footage, parks, HOAs, and commute times across Henderson and Summerlin West — including first-visit registration at Cloudbreak Ridge. Call 702-500-1955.",
+        text: "Dr. Jan Duffy helps buyers compare square footage, parks, HOAs, and commute times across Henderson and Summerlin West — including first-visit registration at Cloudbreak Ridge. Call 702-500-1955.",
       },
     },
   ],
@@ -137,7 +137,7 @@ export default function HendersonPage() {
                 <Link href="/enclaves" className="text-blue-600 font-semibold">Enclaves</Link> and{" "}
                 <Link href="/reserves" className="text-blue-600 font-semibold">Reserves</Link> at
                 Cloudbreak Ridge in La Madre Peaks. Dr. Jan Duffy with{" "}
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> helps you compare parks,
+                <strong>Dr. Jan Duffy</strong> helps you compare parks,
                 HOAs, lot sizes, and drive times — not demographic labels.
               </p>
               <p>
@@ -151,7 +151,7 @@ export default function HendersonPage() {
                 streets of <strong>Green Valley</strong> to the resort-style amenities of <strong>Inspirada</strong>,
                 from the luxury estates of <strong>MacDonald Highlands</strong> to the waterfront properties at
                 <strong> Lake Las Vegas</strong>—Henderson has a community for every lifestyle and budget.
-                <strong> Berkshire Hathaway HomeServices Nevada Properties</strong> agents know each of these
+                <strong> Dr. Jan Duffy</strong> agents know each of these
                 communities intimately.
               </p>
 
@@ -300,11 +300,11 @@ export default function HendersonPage() {
                 properties exceeding $2 million in guard-gated communities.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Henderson home search means
+                Choosing <strong>Dr. Jan Duffy</strong> for your Henderson home search means
                 working with agents who understand the subtle differences between Henderson's many communities.
                 Dr. Jan Duffy can explain which neighborhoods have the nearby public schools for your children's ages,
                 which HOAs are well-managed, and which areas offer the strongest investment potential. That
-                local knowledge, backed by the resources and reputation of Berkshire Hathaway, makes all the
+                local knowledge, backed by the resources and reputation of Dr. Jan Duffy, makes all the
                 difference.
               </p>
             </div>
@@ -315,12 +315,12 @@ export default function HendersonPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Henderson offers something for everyone—condos, single-story homes, and 4+ bedroom floor plans.
-                As a Berkshire Hathaway HomeServices agent, I help clients cut through the options and find
+                As Dr. Jan Duffy agent, I help clients cut through the options and find
                 the community that fits their lifestyle. There's a reason Henderson keeps winning 'Best Places
                 to Live' awards."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -367,8 +367,7 @@ export default function HendersonPage() {
                   Why work with Dr. Jan Duffy when comparing Henderson and Summerlin?
                 </h3>
                 <p className="text-slate-600">
-                  Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada
-                  Properties helps buyers compare square footage, parks, HOAs, and commute times across
+                  Dr. Jan Duffy helps buyers compare square footage, parks, HOAs, and commute times across
                   Henderson and Summerlin West — including first-visit registration at Cloudbreak Ridge.
                   Call 702-500-1955.
                 </p>
@@ -382,7 +381,7 @@ export default function HendersonPage() {
               Find Your Henderson Home Today
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Henderson expert,
+              Contact Dr. Jan Duffy, your Dr. Jan Duffy Henderson expert,
               for personalized guidance and local market insights.
             </p>
             <a
@@ -393,7 +392,7 @@ export default function HendersonPage() {
               Call (702) 500-1955
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy
             </p>
           </section>
         </div>
