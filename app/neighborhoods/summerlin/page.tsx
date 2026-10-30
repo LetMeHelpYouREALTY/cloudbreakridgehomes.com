@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Summerlin & La Madre Peaks Homes | Near Cloudbreak Ridge",
   description:
-    "Summerlin West and La Madre Peaks guidance near Cloudbreak Ridge — parks, trails, golf adjacency, 215 commute to Downtown Summerlin®. Dr. Jan Duffy, BHHS. Call 702-500-1955.",
+    "Summerlin West and La Madre Peaks guidance near Cloudbreak Ridge — parks, trails, golf adjacency, 215 commute to Downtown Summerlin®. Dr. Jan Duffy. Call 702-500-1955.",
   keywords: [
     "Summerlin West homes",
     "La Madre Peaks Summerlin",
@@ -52,7 +52,7 @@ const summerlinFaqs = [
   {
     question: "Why work with Dr. Jan Duffy in Summerlin West?",
     answer:
-      "Dr. Jan Duffy (License S.0197614.LLC) with Berkshire Hathaway HomeServices Nevada Properties provides independent buyer representation at Cloudbreak Ridge and Summerlin West resale — register before your first model visit. Call 702-500-1955.",
+      "Dr. Jan Duffy's brokerage provides independent buyer representation at Cloudbreak Ridge and Summerlin West resale — register before your first model visit. Call 702-500-1955.",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function SummerlinPage() {
           </div>
 
           {/* Hero */}
-          <PageHero heroKey="summerlin" title={"Berkshire Hathaway HomeServices Summerlin"} subtitle={"Discover Las Vegas's premier master-planned community with Dr. Jan Duffy, your trusted{\" \"} <strong>Berkshire Hathaway HomeServices</strong> Summerlin expert."} />
+          <PageHero heroKey="summerlin" title={"Dr. Jan Duffy Summerlin"} subtitle={"Discover Las Vegas's premier master-planned community with Dr. Jan Duffy, your trusted{\" \"} <strong>Dr. Jan Duffy</strong> Summerlin expert."} />
 
         <RealScoutListings />
 
@@ -128,7 +128,7 @@ export default function SummerlinPage() {
               </h2>
               <p>
                 When homebuyers search for the best neighborhoods in Las Vegas, <strong>Summerlin</strong> consistently
-                ranks at the top. As a <strong>Berkshire Hathaway HomeServices</strong> agent specializing in Summerlin
+                ranks at the top. As <strong>Dr. Jan Duffy</strong> agent specializing in Summerlin
                 real estate, Dr. Jan Duffy has helped hundreds of families find their perfect home in this
                 award-winning master-planned community.
               </p>
@@ -140,10 +140,10 @@ export default function SummerlinPage() {
                 enjoy an active, healthy lifestyle that's hard to find elsewhere in the desert Southwest.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has deep roots in Summerlin,
+                <strong>Dr. Jan Duffy</strong> has deep roots in Summerlin,
                 and our agents understand the nuances of each village—from open-space parks in The Paseos to
                 the luxury estates of The Ridges. Whether you're comparing Cloudbreak Ridge Enclaves vs Reserves
-                in La Madre Peaks or shopping a custom home near Red Rock Country Club, BHHS
+                in La Madre Peaks or shopping a custom home near Red Rock Country Club, Dr. Duffy
                 has the expertise to guide you through the process.
               </p>
 
@@ -276,9 +276,9 @@ export default function SummerlinPage() {
                 a fraction of the cost—with no state income tax.
               </p>
               <p>
-                Working with a <strong>Berkshire Hathaway HomeServices</strong> agent gives you access to listings
+                Working with <strong>Dr. Jan Duffy</strong> agent gives you access to listings
                 before they hit the market, expert negotiation skills, and the backing of a globally trusted brand.
-                Dr. Jan Duffy has been serving Summerlin since 2008, which means you'll have insights that online 
+                Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas, which means you'll have insights that online 
                 searches simply can't provide—from which streets have the best mountain views to which builders 
                 offer the best construction quality.
               </p>
@@ -292,10 +292,10 @@ export default function SummerlinPage() {
                 "Summerlin isn't just a neighborhood—it's a lifestyle. I've been serving this area since
                 2008, and I can tell you exactly which villages have the floor plans you want, which offer the
                 best investment potential, and where you'll find the hidden gems. That local knowledge is
-                what sets Berkshire Hathaway HomeServices apart."
+                what sets Dr. Jan Duffy apart."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -338,11 +338,11 @@ export default function SummerlinPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why should I use a Berkshire Hathaway HomeServices agent in Summerlin?
+                  Why should I use Dr. Jan Duffy agent in Summerlin?
                 </h3>
                 <p className="text-slate-600">
-                  Berkshire Hathaway HomeServices agents like Dr. Jan Duffy bring deep Summerlin expertise
-                  combined with the global resources and trusted reputation of the BHHS brand. This
+                  Dr. Jan Duffy agents like Dr. Jan Duffy bring deep Summerlin expertise
+                  combined with the global resources and trusted reputation of Dr. Jan Duffy's brand. This
                   combination helps buyers compete in Summerlin's competitive market and helps sellers
                   maximize their home's value.
                 </p>
@@ -356,7 +356,7 @@ export default function SummerlinPage() {
               Ready to Find Your Summerlin Home?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Summerlin specialist,
+              Contact Dr. Jan Duffy, your Dr. Jan Duffy Summerlin specialist,
               for a personalized home search or free market analysis.
             </p>
             <a
@@ -367,7 +367,7 @@ export default function SummerlinPage() {
               Call (702) 500-1955
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy
             </p>
           </section>
         </div>

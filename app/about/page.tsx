@@ -24,13 +24,13 @@ import { drJanDuffyPhotos } from "@/lib/agent-photos";
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Cloudbreak Ridge & Summerlin West Realtor",
   description:
-    "Meet Dr. Jan Duffy — Cloudbreak Ridge Homes specialist for La Madre Peaks, Summerlin West. License S.0197614.LLC, BHHS Nevada Properties. Call 702-500-1955 before your first KB Home visit.",
+    "Meet Dr. Jan Duffy — Cloudbreak Ridge Homes specialist for La Madre Peaks, Summerlin West. Call 702-500-1955 before your first KB Home visit.",
   keywords: [
     "Dr. Jan Duffy",
     "Cloudbreak Ridge realtor",
     "La Madre Peaks agent",
     "Summerlin West real estate",
-    "BHHS Nevada Properties",
+    "Dr. Jan Duffy",
   ],
 };
 
@@ -41,14 +41,14 @@ const personSchema = {
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
   description:
-    "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas, Henderson, and Summerlin since 2008.",
+    "Real estate agent licensed since 2008 · 35 years in Las Vegas.",
   image: drJanDuffyPhotos.headshot.url,
   telephone: "+17025001955",
   email: "info@cloudbreakridgehomes.com",
   url: "https://www.cloudbreakridgehomes.com/about",
   worksFor: {
     "@type": "RealEstateAgent",
-    name: "Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     address: {
       "@type": "PostalAddress",
       streetAddress: "1168 Cloudbreak Cove Dr., Suite A",
@@ -121,7 +121,7 @@ export default function AboutPage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
-          <PageHero heroKey="about" title={"About Dr. Jan Duffy — Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for Cloudbreak Ridge in La Madre Peaks, Summerlin West — Enclaves, Reserves, and nearby Summerlin villages. License S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. Call 702-500-1955 before your first model visit."} />
+          <PageHero heroKey="about" title={"About Dr. Jan Duffy — Cloudbreak Ridge &amp; Summerlin West"} subtitle={"Independent buyer representation for Cloudbreak Ridge in La Madre Peaks, Summerlin West — Enclaves, Reserves, and nearby Summerlin villages. Call 702-500-1955 before your first model visit."} />
 
         <RealScoutListings />
 
@@ -145,26 +145,26 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Dr. Jan Duffy</h2>
                 <p className="text-lg text-blue-600 mb-6">
-                  REALTOR® | License S.0197614.LLC
+                  REALTOR®
                 </p>
 
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
                   <p>
-                    When you choose to work with <strong>Berkshire Hathaway HomeServices</strong>,
+                    When you choose to work with <strong>Dr. Jan Duffy</strong>,
                     you're choosing a legacy of trust, integrity, and excellence. I'm proud to
                     represent this iconic brand in the Las Vegas real estate market, bringing 
                     world-class resources and local expertise to every client I serve.
                   </p>
                   <p>
-                    Since 2008, I've closed $127 million in transactions and
+                    Licensed since 2008, I've closed $127M+ in transactions and
                     helped hundreds of families find their perfect home in Las Vegas, Henderson,
                     Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
                     new construction, investment real estate, 55+ active adult communities, and 
                     relocations—particularly for California families seeking Nevada's tax advantages.
                   </p>
                   <p>
-                    What sets <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
-                    apart? We're backed by Warren Buffett's Berkshire Hathaway Inc.—a name synonymous
+                    What sets <strong>Dr. Jan Duffy</strong>{" "}
+                    apart? We're backed by a Warren Buffett company—a name synonymous
                     with financial strength and ethical standards. When you're making the biggest
                     financial decision of your life, that trust matters. You deserve an agent who 
                     puts your interests first, provides honest advice, and has the resources to 
@@ -218,7 +218,7 @@ export default function AboutPage() {
                   the transaction. I treat every client like family and won't stop until we achieve 
                   your real estate goals."
                   <cite className="block mt-2 text-slate-900 font-semibold not-italic">
-                    — Dr. Jan Duffy, BHHS Nevada Properties
+                    — Dr. Jan Duffy
                   </cite>
                 </blockquote>
               </div>
@@ -240,8 +240,8 @@ export default function AboutPage() {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 2008</div>
-                    <div className="text-sm text-slate-600">Serving Las Vegas</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">Licensed since 2008</div>
+                    <div className="text-sm text-slate-600">35 years in Las Vegas</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">$127M+</div>
@@ -252,8 +252,8 @@ export default function AboutPage() {
                     <div className="text-sm text-slate-600">Transactions</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">4.9★</div>
-                    <div className="text-sm text-slate-600">Client Rating</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">5.0★</div>
+                    <div className="text-sm text-slate-600">Realtor.com · 50 reviews</div>
                   </div>
                 </div>
 
@@ -306,14 +306,13 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Why BHHS Section */}
+          {/* Why Dr. Duffy Section */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              Why Berkshire Hathaway HomeServices?
+              Why Dr. Jan Duffy?
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              Berkshire Hathaway HomeServices is the only real estate brand backed by Warren 
-              Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, 
+              Dr. Jan Duffy's brokerage is the only real estate brand backed by a Warren Buffett company. This means unmatched financial stability, 
               ethical standards, and a commitment to client service that defines every transaction.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -323,7 +322,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="font-bold text-xl mb-2">Trusted Brand</h3>
                 <p className="text-slate-300 text-sm">
-                  The only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.—a 
+                  The only real estate brand backed by a Warren Buffett company—a 
                   name synonymous with trust and integrity worldwide.
                 </p>
               </div>
@@ -353,7 +352,7 @@ export default function AboutPage() {
                 href="/why-berkshire-hathaway"
                 className="inline-block bg-white text-slate-900 px-8 py-3 rounded-md font-semibold hover:bg-slate-100 transition-colors"
               >
-                Learn More About BHHS
+                Learn More About Dr. Duffy
               </Link>
             </div>
           </section>
@@ -361,7 +360,7 @@ export default function AboutPage() {
           {/* Areas Served */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              Areas Served by BHHS Nevada Properties
+              Areas Served by Dr. Jan Duffy
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Dr. Jan Duffy serves the entire Las Vegas Valley with specialized knowledge of each 
@@ -393,7 +392,7 @@ export default function AboutPage() {
               What Clients Say About Dr. Jan Duffy
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              With a 4.9-star rating and hundreds of satisfied clients, Dr. Jan has built a 
+              With a 5.0★ rating on Realtor.com (50 reviews), Dr. Jan has built a 
               reputation for excellence, integrity, and personalized service.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
@@ -454,7 +453,7 @@ export default function AboutPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy
             </p>
           </section>
         </div>

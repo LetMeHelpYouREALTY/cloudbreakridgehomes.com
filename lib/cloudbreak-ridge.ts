@@ -27,7 +27,7 @@ export const CLOUDBREAK_RIDGE = {
   shortDescription:
     "KB Home new construction in La Madre Peaks, Summerlin West — gated Enclaves (single-story) and Reserves (two-story) homes from the $800,000s near Scout’s Point, Grand Park, and Downtown Summerlin®.",
   containedIn: ["La Madre Peaks", "Summerlin", "Las Vegas", "Clark County"],
-  /** Community / models address — not the BHHS brokerage office */
+  /** Community / models address — not the Dr. Duffy brokerage office */
   address: {
     street: "1168 Cloudbreak Cove Dr.",
     streetAlt: "1168 Cloudbreak Cove Drive",

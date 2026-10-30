@@ -13,7 +13,7 @@ export const LOCAL_AGENT_HEADSHOT_PATH = "/images/agent/dr-jan-duffy.jpg";
 const headshotMeta = {
   width: 512,
   height: 512,
-  alt: `${agentInfo.name}, ${agentInfo.title} | ${agentInfo.brokerage} — Cloudbreak Ridge Summerlin`,
+  alt: `${agentInfo.name}, ${agentInfo.title} — Cloudbreak Ridge Summerlin`,
 } as const;
 
 /**

@@ -21,16 +21,16 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Homes for Sale | MLS Property Search | Dr. Jan Duffy",
   description:
-    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 500-1955.",
+    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
     "Las Vegas homes for sale",
     "Henderson real estate",
     "MLS listings Las Vegas",
     "Summerlin homes",
     "houses for sale Las Vegas",
-    "Berkshire Hathaway listings",
+    "Dr. Jan Duffy listings",
   ],
 };
 
@@ -41,7 +41,7 @@ const listingsSchema = {
   description: "Live MLS property listings for Las Vegas, Henderson, and Summerlin homes for sale",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     telephone: "+17025001955",
   },
   areaServed: [
@@ -118,7 +118,7 @@ export default function ListingsPage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
-          <PageHero heroKey="listings" title={"Las Vegas Homes for Sale"} subtitle={"Search thousands of Las Vegas, Henderson, and Summerlin properties with live MLS listings updated every 15 minutes. Find your dream home with expert guidance from Dr. Jan Duffy at <strong>Berkshire Hathaway HomeServices</strong>."} />
+          <PageHero heroKey="listings" title={"Las Vegas Homes for Sale"} subtitle={"Search thousands of Las Vegas, Henderson, and Summerlin properties with live MLS listings updated every 15 minutes. Find your dream home with expert guidance from Dr. Jan Duffy."} />
           {/* RealScout Widget - Live MLS Listings */}
           <section className="mb-16">
             <div className="max-w-7xl mx-auto">
@@ -234,13 +234,13 @@ export default function ListingsPage() {
           {/* Why Use an Agent Section */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">
-              Why Work With a Berkshire Hathaway HomeServices Agent
+              Why Work With Dr. Jan Duffy Agent
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
               In today's competitive Las Vegas market, having expert representation can mean the 
               difference between winning your dream home and losing out. Dr. Jan Duffy brings 
-              the resources of Berkshire Hathaway HomeServices—the most trusted name in real estate—
-              combined with deep local market knowledge from serving Las Vegas since 2008.
+              the resources of Dr. Jan Duffy—the most trusted name in real estate—
+              combined with deep local market knowledge (licensed since 2008 · 35 years in Las Vegas).
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
@@ -321,8 +321,7 @@ export default function ListingsPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Buying a home is one of the most significant financial decisions you'll make. 
               Understanding the process helps reduce stress and ensures you're prepared at each 
-              step. Here's what to expect when purchasing a home in Las Vegas with Dr. Jan Duffy 
-              and Berkshire Hathaway HomeServices.
+              step. Here's what to expect when purchasing a home in Las Vegas with Dr. Jan Duffy.
             </p>
             <div className="space-y-6">
               <div className="flex items-start">
@@ -453,7 +452,7 @@ export default function ListingsPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for personalized guidance, off-market listings, and expert 
-              representation backed by Berkshire Hathaway HomeServices. Free buyer consultations 
+              representation backed by Dr. Jan Duffy. Free buyer consultations 
               available—the seller pays the commission.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -472,7 +471,7 @@ export default function ListingsPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy
             </p>
           </section>
         </div>

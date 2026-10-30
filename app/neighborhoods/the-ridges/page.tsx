@@ -7,11 +7,11 @@ import { Phone, Shield, Star, Mountain, Home as HomeIcon } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices The Ridges | Las Vegas Luxury Real Estate",
+  title: "Dr. Jan Duffy The Ridges | Las Vegas Luxury Real Estate",
   description:
-    "Find luxury homes in The Ridges with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Summerlin's most exclusive guard-gated community. Median price $2.5M. Call (702) 500-1955.",
+    "Find luxury homes in The Ridges with Dr. Jan Duffy. Dr. Jan Duffy specializes in Summerlin's most exclusive guard-gated community. Median price $2.5M. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices The Ridges",
+    "Dr. Jan Duffy The Ridges",
     "The Ridges homes for sale",
     "The Ridges Summerlin",
     "luxury homes Las Vegas",
@@ -49,10 +49,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Why use Berkshire Hathaway HomeServices for luxury home purchases?",
+      name: "Why use Dr. Jan Duffy for luxury home purchases?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BHHS represents a brand synonymous with trust and discretion—essential in luxury transactions. Our agents like Dr. Jan Duffy have access to off-market listings, understand high-end buyer requirements, and provide the confidentiality luxury clients expect.",
+        text: "Dr. Duffy represents a brand synonymous with trust and discretion—essential in luxury transactions. Our agents like Dr. Jan Duffy have access to off-market listings, understand high-end buyer requirements, and provide the confidentiality luxury clients expect.",
       },
     },
   ],
@@ -80,7 +80,7 @@ export default function TheRidgesPage() {
           </div>
 
           {/* Hero */}
-          <PageHero heroKey="the-ridges" title={"Berkshire Hathaway HomeServices The Ridges"} subtitle={"Las Vegas's most prestigious address. Experience The Ridges luxury with{\" \"} <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy."} />
+          <PageHero heroKey="the-ridges" title={"Dr. Jan Duffy The Ridges"} subtitle={"Las Vegas's most prestigious address. Experience The Ridges luxury with{\" \"} <strong>Dr. Jan Duffy</strong> and Dr. Jan Duffy."} />
 
         <RealScoutListings />
 
@@ -120,7 +120,7 @@ export default function TheRidgesPage() {
                 within Summerlin along the foothills of Red Rock Canyon, this ultra-exclusive guard-gated
                 community offers estate-quality homes with panoramic views of the Las Vegas Strip, the
                 surrounding mountains, and the pristine desert landscape. When the most discerning buyers
-                search for Las Vegas luxury, they turn to <strong>Berkshire Hathaway HomeServices</strong>—the
+                search for Las Vegas luxury, they turn to <strong>Dr. Jan Duffy</strong>—the
                 brand that matches The Ridges' standard of excellence.
               </p>
               <p>
@@ -132,10 +132,10 @@ export default function TheRidgesPage() {
                 aesthetic throughout.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has represented buyers
+                <strong>Dr. Jan Duffy</strong> has represented buyers
                 and sellers in The Ridges since the community's inception. Dr. Jan Duffy understands that
                 luxury transactions require more than market knowledge—they demand discretion, sophisticated
-                marketing, and access to qualified buyers worldwide. The BHHS global network connects The
+                marketing, and access to qualified buyers worldwide. The a global referral network connects The
                 Ridges properties with high-net-worth individuals actively seeking premier real estate
                 investments in Las Vegas.
               </p>
@@ -282,12 +282,12 @@ export default function TheRidgesPage() {
                 million for the most spectacular custom estates.
               </p>
               <p>
-                Working with <strong>Berkshire Hathaway HomeServices</strong> in The Ridges means working
+                Working with <strong>Dr. Jan Duffy</strong> in The Ridges means working
                 with agents who understand that luxury isn't just about price—it's about lifestyle,
                 privacy, and attention to detail. Dr. Jan Duffy provides the white-glove service that
                 Ridges buyers and sellers expect, from confidential off-market transactions to coordination
                 with architects, designers, and property managers. When the stakes are measured in millions,
-                the Berkshire Hathaway name provides the trust and expertise that matters.
+                Dr. Jan Duffy's name provides the trust and expertise that matters.
               </p>
             </div>
           </section>
@@ -296,13 +296,12 @@ export default function TheRidgesPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "The Ridges attracts clients who expect the very best—and they recognize Berkshire Hathaway
-                HomeServices as a brand that matches their standards. In luxury real estate, discretion and
+                "The Ridges attracts clients who expect the very best—and they recognize Dr. Jan Duffy as a brand that matches their standards. In luxury real estate, discretion and
                 trust are everything. My clients know their privacy is protected and their interests come first.
-                That's the BHHS difference in high-end transactions."
+                That's the Dr. Duffy difference in high-end transactions."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -345,10 +344,10 @@ export default function TheRidgesPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why use Berkshire Hathaway HomeServices for luxury home purchases?
+                  Why use Dr. Jan Duffy for luxury home purchases?
                 </h3>
                 <p className="text-slate-600">
-                  BHHS represents a brand synonymous with trust and discretion—essential in luxury
+                  Dr. Duffy represents a brand synonymous with trust and discretion—essential in luxury
                   transactions. Our agents like Dr. Jan Duffy have access to off-market listings, understand
                   high-end buyer requirements, and provide the confidentiality luxury clients expect.
                 </p>
@@ -373,7 +372,7 @@ export default function TheRidgesPage() {
               Call (702) 500-1955
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy
             </p>
           </section>
         </div>

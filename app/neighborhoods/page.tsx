@@ -149,7 +149,7 @@ export default function NeighborhoodsPage() {
                 representation from the first model visit.”
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, {agentInfo.brokerage}
+                — Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -190,7 +190,7 @@ export default function NeighborhoodsPage() {
               <strong>Cloudbreak Ridge models:</strong> {CLOUDBREAK_RIDGE.address.full}
             </p>
             <p className="text-slate-700 text-sm mb-4">
-              <strong>Brokerage office:</strong> {officeInfo.address.full} · {agentInfo.brokerage}
+              <strong>Brokerage office:</strong> {officeInfo.address.full}
             </p>
             <div className="flex flex-wrap gap-3">
               <a
@@ -227,7 +227,7 @@ export default function NeighborhoodsPage() {
               <Phone className="h-5 w-5 mr-2" aria-hidden />
               Call {CLOUDBREAK_RIDGE.ctaPhone}
             </a>
-            <p className="mt-4 text-blue-200 text-sm">{agentInfo.brokerage}</p>
+            
           </section>
         </div>
 

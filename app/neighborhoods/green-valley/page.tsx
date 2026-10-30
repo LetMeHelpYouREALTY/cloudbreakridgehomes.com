@@ -7,11 +7,11 @@ import { Phone, TreePine, ShoppingBag, GraduationCap, MapPin } from "lucide-reac
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Green Valley | Henderson Real Estate",
+  title: "Dr. Jan Duffy Green Valley | Henderson Real Estate",
   description:
-    "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Green Valley, Southern Nevada's first master-planned community (1978). Median price $520K. Call (702) 500-1955.",
+    "Find Green Valley homes with Dr. Jan Duffy. Dr. Jan Duffy specializes in Green Valley, Southern Nevada's first master-planned community (1978). Median price $520K. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices Green Valley",
+    "Dr. Jan Duffy Green Valley",
     "Green Valley homes for sale",
     "Green Valley Henderson",
     "Green Valley real estate",
@@ -52,7 +52,7 @@ const faqSchema = {
       name: "Is Green Valley a good investment?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Green Valley has shown consistent appreciation due to its prime Henderson location, established infrastructure, and ongoing demand from families seeking nearby public schools and safety. BHHS agents can provide detailed market analysis.",
+        text: "Green Valley has shown consistent appreciation due to its prime Henderson location, established infrastructure, and ongoing demand from families seeking nearby public schools and safety. Network agents can provide detailed market analysis.",
       },
     },
   ],
@@ -80,7 +80,7 @@ export default function GreenValleyPage() {
           </div>
 
           {/* Hero */}
-          <PageHero heroKey="green-valley" title={"Berkshire Hathaway HomeServices Green Valley"} subtitle={"Henderson's original master-planned community. Find your Green Valley home with{\" \"} <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy."} />
+          <PageHero heroKey="green-valley" title={"Dr. Jan Duffy Green Valley"} subtitle={"Henderson's original master-planned community. Find your Green Valley home with{\" \"} <strong>Dr. Jan Duffy</strong> and Dr. Jan Duffy."} />
 
         <RealScoutListings />
 
@@ -119,7 +119,7 @@ export default function GreenValleyPage() {
                 <strong>Green Valley</strong> holds a special place in Henderson's history as the city's
                 original master-planned community. Established in 1988, Green Valley pioneered the concept
                 of thoughtfully designed neighborhoods in Southern Nevada—long before master-planned
-                communities became the norm. Today, <strong>Berkshire Hathaway HomeServices</strong>
+                communities became the norm. Today, <strong>Dr. Jan Duffy</strong>
                 continues to serve Green Valley families, helping new generations discover what long-time
                 residents already know: this is one of the best places to live in Nevada.
               </p>
@@ -132,11 +132,11 @@ export default function GreenValleyPage() {
                 develops over generations.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> agents have been selling
+                <strong>Dr. Jan Duffy</strong> agents have been selling
                 homes in Green Valley since the beginning. Dr. Jan Duffy knows which streets offer the best
                 mountain views, which school zones are most sought-after, and which HOAs maintain their
                 communities to the highest standards. This institutional knowledge, combined with the
-                resources and reputation of BHHS, gives Green Valley buyers and sellers a distinct advantage.
+                resources and reputation of Dr. Duffy, gives Green Valley buyers and sellers a distinct advantage.
               </p>
 
               {/* Community Highlights */}
@@ -261,7 +261,7 @@ export default function GreenValleyPage() {
                 custom homes exceeding $1.2 million in Green Valley's more luxury enclaves.
               </p>
               <p>
-                Working with a <strong>Berkshire Hathaway HomeServices</strong> agent in Green Valley
+                Working with <strong>Dr. Jan Duffy</strong> agent in Green Valley
                 means understanding the subtle differences between Green Valley proper, Green Valley Ranch,
                 and Green Valley South. Each area has distinct characteristics, price points, and lifestyle
                 offerings. Dr. Jan Duffy helps buyers navigate these nuances and find the perfect fit—whether
@@ -281,7 +281,7 @@ export default function GreenValleyPage() {
                 It's the original, and still one of the best."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy
               </cite>
             </div>
           </section>
@@ -328,7 +328,7 @@ export default function GreenValleyPage() {
                 <p className="text-slate-600">
                   Green Valley has shown consistent appreciation due to its prime Henderson location,
                   established infrastructure, and ongoing demand from families seeking nearby public schools and
-                  safety. BHHS agents can provide detailed market analysis.
+                  safety. Network agents can provide detailed market analysis.
                 </p>
               </div>
             </div>
@@ -340,7 +340,7 @@ export default function GreenValleyPage() {
               Discover Green Valley Living
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Green Valley specialist,
+              Contact Dr. Jan Duffy, your Dr. Jan Duffy Green Valley specialist,
               for expert guidance in Green Valley, Southern Nevada's first master-planned community (1978).
             </p>
             <a
@@ -351,7 +351,7 @@ export default function GreenValleyPage() {
               Call (702) 500-1955
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy
             </p>
           </section>
         </div>

@@ -108,7 +108,7 @@ export const PAGE_HEROES = {
   },
   about: {
     src: "/images/hero/about.webp",
-    alt: "Dr. Jan Duffy, REALTOR with Berkshire Hathaway HomeServices Nevada Properties",
+    alt: "Dr. Jan Duffy, REALTOR with Dr. Jan Duffy",
   },
   contact: {
     src: "/images/hero/contact.webp",
@@ -124,7 +124,7 @@ export const PAGE_HEROES = {
   },
   "why-berkshire-hathaway": {
     src: "/images/hero/why-berkshire-hathaway.webp",
-    alt: "Berkshire Hathaway HomeServices Nevada Properties real estate",
+    alt: "Dr. Jan Duffy real estate",
   },
   "market-report": {
     src: "/images/hero/market-report.webp",

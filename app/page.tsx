@@ -134,8 +134,7 @@ export default async function Home() {
                 Why Work With Dr. Jan Duffy at Cloudbreak Ridge?
               </h2>
               <p className="text-lg text-slate-600">
-                Local guidance for Summerlin&apos;s newest neighborhood — Berkshire Hathaway
-                HomeServices Nevada Properties.
+                Local guidance for Summerlin&apos;s newest neighborhood — Dr. Jan Duffy.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -143,7 +142,7 @@ export default async function Home() {
                 {
                   icon: Shield,
                   title: "Trusted Brand",
-                  desc: "Backed by Warren Buffett's Berkshire Hathaway — unmatched integrity",
+                  desc: "Backed by a Warren Buffett company — unmatched integrity",
                 },
                 {
                   icon: Users,
@@ -240,8 +239,7 @@ export default async function Home() {
               />
             </LazyWhenVisible>
             <p className="mt-6 text-blue-200 text-sm">
-              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
-              Properties
+              Dr. Jan Duffy
             </p>
           </div>
         </section>

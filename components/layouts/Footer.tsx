@@ -39,8 +39,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-4">Cloudbreak Ridge Homes by Dr. Jan Duffy</h3>
             <p className="text-slate-300 mb-4 text-sm">
-              Your trusted Cloudbreak Ridge and Las Vegas real estate partner. Berkshire Hathaway
-              HomeServices Nevada Properties — backed by Warren Buffett&apos;s legacy of trust.
+              Your trusted Cloudbreak Ridge and Las Vegas real estate partner.
             </p>
             <div className="flex space-x-4">
               <a
@@ -156,7 +155,7 @@ export default function Footer() {
                   href="/why-berkshire-hathaway"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
-                  Why BHHS
+                  Why Dr. Duffy
                 </Link>
               </li>
               <li>
@@ -287,8 +286,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm text-center md:text-left">
-              © {currentYear} Cloudbreak Ridge Homes by Dr. Jan Duffy — Berkshire Hathaway
-              HomeServices Nevada Properties. All Rights Reserved.
+              © {currentYear} Cloudbreak Ridge Homes by Dr. Jan Duffy. All Rights Reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">
@@ -300,12 +298,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-slate-500 text-xs mt-4 text-center">
-            Dr. Jan Duffy, REALTOR® | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
-            Properties
-          </p>
-          <p className="text-slate-600 text-xs mt-2 text-center max-w-3xl mx-auto">
-            When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name
-            synonymous with trust, ethical standards, and financial strength.
+            Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
           </p>
         </div>
       </div>
