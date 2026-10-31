@@ -9,6 +9,7 @@ import Script from "next/script";
 import CalendlyProvider from "@/components/calendly/CalendlyProvider";
 import { REALSCOUT_WIDGET_JS } from "@/lib/realscout-config";
 import { PAGE_HEROES } from "@/lib/page-heroes";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 const canonicalSiteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
@@ -102,6 +103,7 @@ export default function RootLayout({
         {children}
         <CalendlyProvider />
         <Analytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
