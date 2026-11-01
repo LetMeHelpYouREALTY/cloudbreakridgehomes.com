@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/security-policy" },
   title: 'Security Policy',
   description: 'Security policy and responsible disclosure information for cloudbreakridgehomes.com',
   robots: {

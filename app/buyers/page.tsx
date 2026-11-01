@@ -23,6 +23,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/buyers" },
   title: "Buy Cloudbreak Ridge & Summerlin West Homes | Buyer Guide",
   description:
     "Buyer representation for Cloudbreak Ridge Enclaves & Reserves in La Madre Peaks, plus Summerlin West resale. Register Dr. Jan Duffy before your first model visit. Call 702-500-1955.",

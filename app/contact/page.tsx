@@ -8,6 +8,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact Dr. Jan Duffy | Cloudbreak Ridge La Madre Peaks Tours",
   description:
     "Contact Dr. Jan Duffy for Cloudbreak Ridge tours in La Madre Peaks. Models: 1168 Cloudbreak Cove Dr., Las Vegas, NV 89138. Client line 702-500-1955. Book Calendly. Office: 1168 Cloudbreak Cove Dr., Suite A.",

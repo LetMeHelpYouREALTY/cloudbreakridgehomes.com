@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Property Details | Las Vegas & Henderson Real Estate",
   description:
     "View detailed information about this property listing in Las Vegas or Henderson, NV.",
+  // Placeholder template (same sample data for every id) - keep it out of the index.
+  robots: { index: false, follow: true },
+  alternates: { canonical: "/listings" },
 };
 
 // This would typically fetch from RealScout API

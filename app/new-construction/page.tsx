@@ -21,6 +21,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/new-construction" },
   title: "New Construction Cloudbreak Ridge | KB Home Buyer Agent",
   description:
     "Independent buyer representation for Cloudbreak Ridge Enclaves & Reserves (KB Home) in La Madre Peaks, Summerlin West. Register before visit one. Call 702-500-1955.",

@@ -7,6 +7,7 @@ import { Phone, Mountain, Users, Home as HomeIcon, GraduationCap } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/skye-canyon" },
   title: "Berkshire Hathaway HomeServices Skye Canyon | Northwest Las Vegas",
   description:
     "Find Skye Canyon homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this premier northwest community. Median price $550K. Call (702) 500-1955.",

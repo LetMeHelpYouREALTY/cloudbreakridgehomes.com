@@ -22,6 +22,7 @@ import type { Metadata } from "next";
 import { drJanDuffyPhotos } from "@/lib/agent-photos";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About Dr. Jan Duffy | Cloudbreak Ridge & Summerlin West Realtor",
   description:
     "Meet Dr. Jan Duffy — Cloudbreak Ridge Homes specialist for La Madre Peaks, Summerlin West. License S.0197614.LLC, BHHS Nevada Properties. Call 702-500-1955 before your first KB Home visit.",

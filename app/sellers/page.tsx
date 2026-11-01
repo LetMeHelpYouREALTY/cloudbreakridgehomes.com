@@ -22,6 +22,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sellers" },
   title: "Sell Near Cloudbreak Ridge & Summerlin West | Listing Guide",
   description:
     "Sell in Summerlin West or compare move-up to Cloudbreak Ridge with Dr. Jan Duffy, BHHS Nevada Properties. Marketing, pricing strategy, and buyer network. Call 702-500-1955.",

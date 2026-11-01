@@ -14,6 +14,7 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/summerlin" },
   title: "Summerlin & La Madre Peaks Homes | Near Cloudbreak Ridge",
   description:
     "Summerlin West and La Madre Peaks guidance near Cloudbreak Ridge — parks, trails, golf adjacency, 215 commute to Downtown Summerlin®. Dr. Jan Duffy, BHHS. Call 702-500-1955.",

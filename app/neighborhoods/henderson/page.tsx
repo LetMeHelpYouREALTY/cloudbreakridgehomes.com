@@ -7,6 +7,7 @@ import { Phone, Shield, Users, GraduationCap, TreePine } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/neighborhoods/henderson" },
   title: "Henderson Homes vs Summerlin West | Cloudbreak Ridge Context",
   description:
     "Comparing Henderson (Green Valley, Inspirada) with Summerlin West and Cloudbreak Ridge in La Madre Peaks? Dr. Jan Duffy helps with amenities, sq ft, and commute facts. Call 702-500-1955.",

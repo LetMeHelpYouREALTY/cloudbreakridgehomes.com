@@ -8,6 +8,7 @@ import { Phone, CheckCircle, Home, TrendingUp, MapPin, Calculator, Clock, Dollar
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/home-valuation" },
   title: "Free Home Valuation Las Vegas | What's Your Home Worth? | Berkshire Hathaway HomeServices",
   description:
     "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 500-1955.",
